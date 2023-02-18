@@ -13,11 +13,24 @@
 	class="w-[10rem] relative left-[14rem] z-20 "
 />
 
+<img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
+<img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50" />
+<img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10" />
+
 <Skylines />
 
+<button class="blackButton text-white py-2 px-4 text-xl font-bold"> See work </button>
+
 <style>
+	.blackButton {
+		background-image: url(kraftTone/button-black-v0.1.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: repeat;
+	}
+
 	.paperBG {
-		background-image: url(kraftTone/bg-v0.1.png);
+		background-image: url(kraftTone/bg-v0.2.png);
 		background-position: top;
 		background-size: contain;
 		background-repeat: repeat;
