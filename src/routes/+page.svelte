@@ -2,38 +2,54 @@
 	import Skylines from '../lib/components/Skylines.svelte';
 </script>
 
-<div class=" top-0 paperBG w-full h-full absolute -z-10" />
-<div class="h-full w-[6vw] blueLine absolute right-0 z-20 " />
-<div class="h-full w-[6vw] greenLine absolute right-[12vw] z-20 " />
-<div class="h-full w-[6vw] beigeLine absolute right-[6vw]  z-20 " />
+<div class="h-full w-[6vw] blueLine absolute right-0 top-0 z-20 " />
+<div class="h-full w-[6vw] greenLine absolute right-[12vw] top-0 z-20 " />
+<div class="h-full w-[6vw] beigeLine absolute right-[6vw] top-0 z-20 " />
 
-<!-- <img
+<img
 	src="kraftTone/headshot-sytled-dots-v0.2.png"
 	alt="headshot of me"
-	class="w-[10rem] relative left-[14rem] z-20 "
-/> -->
+	class="w-[10rem] absolute right-[4rem] z-20 mt- "
+/>
 
 <img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
 <img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" />
 <img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
 
-<Skylines />
+<div class="relative  w-[20rem] h-[10rem] mt-20 ml-10">
+	<img src="text/header-text-w-effects-v0.1.png" alt="" class="absolute top-10 z-10" />
+</div>
 
 <!-- <img src="skylines-styled/auckland.png" alt="auckland skyline" class="relative z-30" /> -->
 
 <button class="blackButton text-white py-2 px-4 text-xl font-bold mt-40"> See work </button>
+<div
+	class="beigeHeader flex absolute right-0 z-50  text-3xl font-bold mt-[40rem] w-[20rem] text-left text-textPrimary"
+>
+	<div class="shading w-5  " />
+	<div class="py-2 px-4">See work</div>
+</div>
+
+<div class="mt-[10rem] relative w-full h-40">
+	<Skylines />
+</div>
 
 <style>
-	.blackButton {
-		background-image: url(kraftTone/button-black-v0.1.png);
+	.shading {
+		background-image: url(elements/shading.png);
 		background-position: center;
 		background-size: contain;
 		background-repeat: repeat;
 	}
-
-	.paperBG {
-		background-image: url(kraftTone/bg-v0.2.png);
-		background-position: top;
+	.beigeHeader {
+		background-image: url(elements/header.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: repeat;
+	}
+	.blackButton {
+		background-image: url(kraftTone/button-black-v0.1.png);
+		background-position: center;
 		background-size: contain;
 		background-repeat: repeat;
 	}
