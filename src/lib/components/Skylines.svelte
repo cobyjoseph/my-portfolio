@@ -3,12 +3,23 @@
 	import { quintOut } from 'svelte/easing';
 	import { onMount } from 'svelte';
 
-	let maskNum = 1;
+	let maskNum = 0;
 	let mountTransitions = false;
 
 	onMount(async () => {
 		mountTransitions = !mountTransitions;
+
+		const intervalId = setInterval(function () {
+			maskNum++;
+			if (maskNum === 7) {
+				clearInterval(intervalId);
+			}
+		}, 100);
 	});
+
+	// function maskTimer() {
+	// 	setTimeout((maskNum = +1), 3000);
+	// }
 </script>
 
 <!-- <div class="bg-red-100 z-50 flex h-[10vh] relative  outline">
@@ -17,7 +28,7 @@
 
 {#if mountTransitions}
 	<div
-		style="-webkit-mask-image: url('skylines-styled/masks/{maskNum}.png'); mask-image: url('skylines-styled/masks/{maskNum}.png')"
+		style="-webkit-mask-image: url('skylines-styled/masks/auckland/{maskNum}.png'); mask-image: url('skylines-styled/masks/auckland/{maskNum}.png')"
 		class="aucklandSkyline   z-50 "
 	/>
 

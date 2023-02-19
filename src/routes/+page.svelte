@@ -21,7 +21,7 @@
 
 <!-- <img src="skylines-styled/auckland.png" alt="auckland skyline" class="relative z-30" /> -->
 
-<button class="blackButton text-white py-2 px-4 text-xl font-bold mt-20"> See work </button>
+<button class="blackButton text-white py-2 px-4 text-xl font-bold mt-40"> See work </button>
 
 <style>
 	.blackButton {
