@@ -7,19 +7,21 @@
 <div class="h-full w-[6vw] greenLine absolute right-[12vw] z-20 " />
 <div class="h-full w-[6vw] beigeLine absolute right-[6vw]  z-20 " />
 
-<img
+<!-- <img
 	src="kraftTone/headshot-sytled-dots-v0.2.png"
 	alt="headshot of me"
 	class="w-[10rem] relative left-[14rem] z-20 "
-/>
+/> -->
 
 <img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
-<img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50" />
-<img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10" />
+<img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" />
+<img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
 
 <Skylines />
 
-<button class="blackButton text-white py-2 px-4 text-xl font-bold"> See work </button>
+<!-- <img src="skylines-styled/auckland.png" alt="auckland skyline" class="relative z-30" /> -->
+
+<button class="blackButton text-white py-2 px-4 text-xl font-bold mt-20"> See work </button>
 
 <style>
 	.blackButton {
