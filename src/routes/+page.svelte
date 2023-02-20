@@ -39,7 +39,7 @@
 	<div class="py-2 px-4">See work</div>
 </div>
 
-<div class="mt-[10rem] relative w-full h-40">
+<div class=" relative w-[100rem] h-[30rem]">
 	<Skylines />
 </div>
 
