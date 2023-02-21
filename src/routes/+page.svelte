@@ -26,6 +26,7 @@
 		<!-- Give this text a grainy effect - and make the stain more opaque -->
 		I build sites that help your business puts it's best foot forward
 	</div>
+
 	<img src="text/hero-text-bg-opaque-v0.1.png" alt="" class="absolute top-10 z-10" />
 </div>
 
@@ -39,9 +40,7 @@
 	<div class="py-2 px-4">See work</div>
 </div>
 
-<div class=" relative w-[100rem] h-[30rem]">
-	<Skylines />
-</div>
+<Skylines />
 
 <style>
 	.shading {

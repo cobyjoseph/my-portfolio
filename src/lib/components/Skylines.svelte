@@ -27,7 +27,9 @@
 </div> -->
 
 {#if mountTransitions}
-	<div class="aucklandSkyline    z-50 " />
+	<div class="relative z-50 min-w-full h-[50rem] ">
+		<div class="aucklandSkyline    z-50 " />
+	</div>
 
 	<!-- <img src="skylines-styled/auckland-cropped.png" alt="auckland skyline" class="absolute z-10 " />
 		<img src="skylines-styled/auckland-cropped.png" alt="auckland skyline" class="absolute z-10 " /> -->
@@ -38,16 +40,18 @@
 		position: absolute;
 		inset: 0;
 		background-image: url('skylines-styled/auckland-cropped.png');
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
+		max-width: 100%;
+		display: block;
 
-		-webkit-mask-image: url('skylines-styled/masks/auckland/test-three-masks-2.png');
-		-webkit-mask-size: cover;
-		-webkit-mask-position: -10rem 0;
+		-webkit-mask-image: url('skylines-styled/masks/auckland/cropped-masks-v0.1.png');
+		-webkit-mask-size: 3000%;
+		-webkit-mask-position: 100% 0;
 		-webkit-mask-repeat: no-repeat;
-		mask-image: url('skylines-styled/masks/auckland/test-three-masks-2.png');
-		mask-size: cover;
-		mask-position: -10rem 0;
+		mask-image: url('skylines-styled/masks/auckland/cropped-masks-v0.1.png');
+		mask-size: 3000%;
+		mask-position: 100% 0;
 		mask-repeat: no-repeat;
 	}
 </style>
