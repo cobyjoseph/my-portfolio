@@ -27,31 +27,63 @@
 </div> -->
 
 {#if mountTransitions}
-	<div class="relative z-50 min-w-full h-[50rem] ">
-		<div class="aucklandSkyline  bg-indigo-500  z-50 " />
+	<div class="relative z-50 min-w-full  h-[50rem] ">
+		<div class="aucklandStarter mr-[18vw]  z-50 " />
+
+		<div class="aucklandSkyline mask-animation mr-[18vw]  z-50 " />
 	</div>
 
 	<!-- <img src="skylines-styled/auckland-cropped.png" alt="auckland skyline" class="absolute z-10 " />
 		<img src="skylines-styled/auckland-cropped.png" alt="auckland skyline" class="absolute z-10 " /> -->
 {/if}
 
+<div class="aucklandStarter mr-[18vw]  z-50 " />
+
 <style>
+	.aucklandStarter {
+		position: absolute;
+		inset: 0;
+		background-image: url('skylines-styled/akl-start-v0.4.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		max-width: 100%;
+		display: block;
+		opacity: 0.7;
+	}
+
 	.aucklandSkyline {
 		position: absolute;
 		inset: 0;
-		/* background-image: url('skylines-styled/auckland-cropped.png'); */
+		background-image: url('skylines-styled/akl-pre-filter-v0.1.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		max-width: 100%;
 		display: block;
 
-		-webkit-mask-image: url('skylines-styled/masks/auckland/three-masks-v0.2.png');
-		-webkit-mask-size: 300% 100%;
-		-webkit-mask-position: 100% 0;
+		-webkit-mask-image: url('skylines-styled/masks/masks-v0.3.png');
+		-webkit-mask-size: 3500%;
+		-webkit-mask-position: 50% 0;
 		-webkit-mask-repeat: no-repeat;
-		mask-image: url('skylines-styled/masks/auckland/three-masks-v0.2.png');
-		mask-size: 300% 100%;
-		mask-position: 100% 0;
+		mask-image: url('skylines-styled/masks/masks-v0.3.png');
+		mask-size: 3500%;
+		mask-position: 50% 0;
 		mask-repeat: no-repeat;
+
+		transition: -webkit-mask-position;
+	}
+
+	.mask-animation {
+		animation: revealAnimate 11300ms steps(34) forwards;
+	}
+
+	@keyframes revealAnimate {
+		0% {
+			-webkit-mask-position: 0% 0%;
+			mask-position: 0% 0%;
+		}
+		100% {
+			-webkit-mask-position: 100% 0%;
+			mask-position: 100% 0%;
+		}
 	}
 </style>
