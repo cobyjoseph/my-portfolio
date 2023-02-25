@@ -1,4 +1,5 @@
 <script>
+	import LandingPage from '$lib/components/tutorSite/LandingPage.svelte';
 	import Skylines from '../lib/components/Skylines.svelte';
 </script>
 
@@ -13,7 +14,7 @@
 />
 
 <img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
-<img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" />
+<!-- <img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" /> -->
 <img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
 
 <div class="relative  w-[10rem]  h-[5rem] ml-10">
@@ -31,6 +32,10 @@
 </div>
 
 <!-- <img src="skylines-styled/auckland.png" alt="auckland skyline" class="relative z-30" /> -->
+
+<div class="h-[10rem] w-[20rem] outline">
+	<LandingPage />
+</div>
 
 <button class="blackButton text-white py-2 px-4 text-xl font-bold mt-40"> See work </button>
 <div
