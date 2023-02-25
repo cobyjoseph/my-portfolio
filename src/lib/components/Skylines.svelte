@@ -37,35 +37,35 @@
 		<img src="skylines-styled/auckland-cropped.png" alt="auckland skyline" class="absolute z-10 " /> -->
 {/if}
 
-<div class="aucklandStarter mr-[18vw]  z-50 " />
+
 
 <style>
-	/* .aucklandStarter {
+	.aucklandStarter {
 		position: absolute;
 		inset: 0;
-		background-image: url('skylines-styled/akl-pre-filter-v0.1.png');
+		background-image: url('skylines-styled/auckland/akl-pre-filter-v0.1.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		max-width: 100%;
 		display: block;
 		opacity: 0.7;
-	} */
+	}
 
 	.aucklandSkyline {
 		position: absolute;
 		inset: 0;
-		background-image: url('skylines-styled/akl-post-filter-base-v0.1.png');
+		background-image: url('skylines-styled/auckland/akl-post-filter-base-v0.1.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		max-width: 100%;
 		display: block;
 
-		-webkit-mask-image: url('skylines-styled/masks/auckland/inverted test.png');
-		-webkit-mask-size: 100%;
+		-webkit-mask-image: url('skylines-styled/masks/auckland/akl-masks-v0.1.png');
+		-webkit-mask-size: 3400%;
 		-webkit-mask-position: 0% 0;
 		-webkit-mask-repeat: no-repeat;
-		mask-image: url('skylines-styled/masks/auckland/inverted test.png');
-		mask-size: 100%;
+		mask-image: url('skylines-styled/masks/auckland/akl-masks-v0.1.png');
+		mask-size: 3400%;
 		mask-position: 0% 0;
 		mask-repeat: no-repeat;
 
@@ -73,7 +73,7 @@
 	}
 
 	.mask-animation {
-		animation: revealAnimate 500ms steps(33) forwards;
+		animation: revealAnimate 1500ms steps(33) forwards;
 	}
 
 	@keyframes revealAnimate {
