@@ -7,7 +7,7 @@
 	import LandingBackground from '$lib/components/tutorSite/LandingBackground.svelte';
 	import Menu from '$lib/components/tutorSite/Menu.svelte';
 
-	export let mountLandingAnimation: Boolean;
+	let mountLandingAnimation: Boolean;
 
 	function scrollIntoView({ target }) {
 		const element = document.querySelector(target.getAttribute('href'));
@@ -19,10 +19,26 @@
 </script>
 
 <!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
-<section class="relative flex  ">
+<section class="relative flex bg-[#fcf4e4]  ">
 	<LandingBackground />
 
-	<div class="layeredWave waveStyle absolute bottom-0 h-[32rem] w-full" />
+	<div class="layeredWave waveStyle absolute bottom-0 h-[12rem] w-full">
+		<svg
+			id="visual"
+			viewBox="0 0 960 250"
+			width="960"
+			height="250"
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			version="1.1"
+			><path
+				d="M0 221L12.3 220.2C24.7 219.3 49.3 217.7 74 220.3C98.7 223 123.3 230 148 230C172.7 230 197.3 223 221.8 219.5C246.3 216 270.7 216 295.2 219C319.7 222 344.3 228 369 230.3C393.7 232.7 418.3 231.3 443 231.8C467.7 232.3 492.3 234.7 517 232.5C541.7 230.3 566.3 223.7 591 222.3C615.7 221 640.3 225 664.8 226.7C689.3 228.3 713.7 227.7 738.2 228.5C762.7 229.3 787.3 231.7 812 230.7C836.7 229.7 861.3 225.3 886 224.2C910.7 223 935.3 225 947.7 226L960 227L960 251L947.7 251C935.3 251 910.7 251 886 251C861.3 251 836.7 251 812 251C787.3 251 762.7 251 738.2 251C713.7 251 689.3 251 664.8 251C640.3 251 615.7 251 591 251C566.3 251 541.7 251 517 251C492.3 251 467.7 251 443 251C418.3 251 393.7 251 369 251C344.3 251 319.7 251 295.2 251C270.7 251 246.3 251 221.8 251C197.3 251 172.7 251 148 251C123.3 251 98.7 251 74 251C49.3 251 24.7 251 12.3 251L0 251Z"
+				fill="#F0DDC1"
+				stroke-linecap="round"
+				stroke-linejoin="miter"
+			/></svg
+		>
+	</div>
 
 	<div class="  flex min-h-screen flex-col px-[7%] gap-[18vh] ">
 		<div class="relative z-[300] flex w-full flex-row place-self-start">

@@ -37,7 +37,7 @@
 					class=" customUnderline   font-semibold"
 					on:click|preventDefault={scrollIntoView}>My services</a
 				>
-
+cd ..
 				<a
 					href={'#section3'}
 					class=" customUnderline  font-semibold"

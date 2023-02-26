@@ -1,11 +1,10 @@
 <script>
-	import LandingPage from '$lib/components/tutorSite/LandingPage.svelte';
+	import TutorLandingPage from '$lib/components/tutorSite/TutorLandingPage.svelte';
 	import Skylines from '../lib/components/Skylines.svelte';
+	import BackgroundElements from '$lib/components/BackgroundElements.svelte';
 </script>
 
-<div class="h-full w-[6vw] blueLine absolute right-0 top-0 z-20 " />
-<div class="h-full w-[6vw] greenLine absolute right-[12vw] top-0 z-20 " />
-<div class="h-full w-[6vw] beigeLine absolute right-[6vw] top-0 z-20 " />
+<BackgroundElements />
 
 <img
 	src="kraftTone/headshot-sytled-dots-v0.2.png"
@@ -13,28 +12,8 @@
 	class="w-[9rem] absolute right-[2rem] top-12 z-20  "
 />
 
-<img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
-<!-- <img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" /> -->
-<img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
-
 <div class="relative  w-[10rem]  h-[5rem] ml-10">
 	<img src="text/header-text-w-effects-v0.1.png" alt="" class="absolute top-[8rem] z-10" />
-</div>
-
-<div class="relative  w-[20rem] h-[3rem] mt-[10rem] ml-50">
-	<!-- <img src="text/hero-text-v0.1.png" alt="" class="absolute top-10 z-10" /> -->
-	<div class="text-2xl font-bold text-[#705129] z-50 absolute top-10 max-w-[20rem] pl-10 pt-3  ">
-		<!-- Give this text a grainy effect - and make the stain more opaque -->
-		I build sites that help your business puts it's best foot forward
-	</div>
-
-	<img src="text/hero-text-bg-opaque-v0.1.png" alt="" class="absolute top-10 z-10" />
-</div>
-
-<!-- <img src="skylines-styled/auckland.png" alt="auckland skyline" class="relative z-30" /> -->
-
-<div class="h-[10rem] w-[20rem] outline">
-	<LandingPage />
 </div>
 
 <button class="blackButton text-white py-2 px-4 text-xl font-bold mt-40"> See work </button>
@@ -64,27 +43,6 @@
 		background-image: url(kraftTone/button-black-v0.1.png);
 		background-position: center;
 		background-size: contain;
-		background-repeat: repeat;
-	}
-
-	.blueLine {
-		background-image: url(kraftTone/blue-v0.1.png);
-		background-position: right;
-		background-size: cover;
-		background-repeat: repeat;
-	}
-
-	.greenLine {
-		background-image: url(kraftTone/green-v0.1.png);
-		background-position: right;
-		background-size: cover;
-		background-repeat: repeat;
-	}
-
-	.beigeLine {
-		background-image: url(kraftTone/beige-v0.1.png);
-		background-position: right;
-		background-size: cover;
 		background-repeat: repeat;
 	}
 </style>
