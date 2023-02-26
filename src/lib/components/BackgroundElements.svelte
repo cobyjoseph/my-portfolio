@@ -1,4 +1,4 @@
-<div class="h-full w-[6vw] blueLine absolute right-0 top-0 z-20 " />
+<div class="h-full w-[6vw] blueLine absolute right-0 top-0 z-20  " />
 <div class="h-full w-[6vw] greenLine absolute right-[12vw] top-0 z-20 " />
 <div class="h-full w-[6vw] beigeLine absolute right-[6vw] top-0 z-20 " />
 

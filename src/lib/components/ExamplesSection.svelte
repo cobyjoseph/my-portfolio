@@ -2,13 +2,31 @@
 	import TutorLandingPage from '$lib/components/tutorSite/TutorLandingPage.svelte';
 </script>
 
-<div class="relative  w-[20rem] h-[3rem] mt-[10rem] ml-50">
-	<div class="text-2xl font-bold text-[#705129] z-50 absolute top-10 max-w-[20rem] pl-10 pt-3  ">
+<div class="flex flex-col ">
+	<div
+		class="text-2xl m-5  relative px-10 py-3 flex font-bold text-[#705129] z-50 bgSmudge   bg-green-200   "
+	>
 		I build sites that help your business puts it's best foot forward
 	</div>
 
-	<img src="text/hero-text-bg-opaque-v0.1.png" alt="" class="absolute top-10 z-10" />
-	<div class="h-[15rem] w-[25rem] outline relative overflow-hidden">
+	<div class="h-[15rem] w-[25rem] outline relative overflow-hidden flex">
 		<TutorLandingPage />
 	</div>
+	<button class="blackButton text-white py-2 px-4 text-xl font-bold mt-40"> See work </button>
 </div>
+
+<style>
+	.bgSmudge {
+		background-image: url(text/hero-text-bg-opaque-v0.1.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.blackButton {
+		background-image: url(kraftTone/button-black-v0.1.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: repeat;
+	}
+</style>
