@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 body {
-	background-image: url(kraftTone/bg-v0.2.png);
-	background-position: top;
-	background-size: contain;
+	background-image: url(background/bg-dark-v0.7.png);
+	background-position: center;
+	background-size: cover;
 	background-repeat: repeat;
 }

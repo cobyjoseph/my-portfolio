@@ -4,12 +4,11 @@
 	import ExamplesSection from '$lib/components/ExamplesSection.svelte';
 	import HeroSection from '$lib/components/HeroSection.svelte';
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
-
 </script>
 
 <BackgroundElements />
 
-<div class="flex flex-col mr-[18vw] gap-4 px-[5%]">
+<div class="flex flex-col mr-[18vw] gap-4 px-[7%]">
 	<div>
 		<Menu />
 	</div>
