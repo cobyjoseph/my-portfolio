@@ -10,9 +10,9 @@
 	</div>
 	<img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" />
 
-	<div class="h-[12rem] w-[22rem] relative overflow-hidden  flex">
+	<div class="h-[10rem] w-[18rem] relative  flex">
 		<TutorLandingPage />
-		<div class="lineFill w-full h-full absolute top-[2rem] -z-10 left-[2rem]" />
+		<div class="lineFill w-full h-full absolute top-[0.7rem] -z-10 left-[0.7rem]" />
 	</div>
 	<div class="relative">
 		<button class="blackButton relative  text-white py-2 px-5 text-xl font-bold   flex">

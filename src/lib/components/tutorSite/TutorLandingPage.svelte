@@ -19,10 +19,10 @@
 </script>
 
 <!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
-<section class="relative flex bg-[#fcf4e4]   ">
+<section class="relative flex bg-[#fcf4e4] w-full   ">
 	<LandingBackground />
 
-	<div class="layeredWave waveStyle absolute bottom-0 h-[12rem] w-full">
+	<div class="layeredWave waveStyle absolute bottom-0 h-[10rem] w-full">
 		<svg
 			id="visual"
 			viewBox="0 0 960 250"
@@ -40,26 +40,26 @@
 		>
 	</div>
 
-	<div class="  flex min-h-screen flex-col px-[7%] gap-[18vh] ">
+	<div class="  flex min-h-screen flex-col px-[7%] gap-[2rem] ">
 		<div class="relative z-[300] flex w-full flex-row place-self-start">
 			<Menu />
 		</div>
 
-		<div class="  gap-4 landscape:grid landscape:grid-cols-4">
+		<div class="  gap-2 grid-cols-4">
 			<div class=" relative z-50 bg-clip-text font-extrabold landscape:col-span-4 ">
 				<TypingAnimation />
 			</div>
 
 			<img
-				class=" z-20 flex max-w-[100%] -scale-x-100  self-end col-span-2 col-start-3 mt-[-5rem] absolute top-1/2 right-[4rem] h-[13rem] w-[15rem] sm:w-[20rem]  "
-				src="other/tutor-graphic-1.svg"
+				class=" z-20 flex max-w-[100%]   self-end col-span-2 col-start-3  absolute top-[1rem] right-[0.5rem] h-[8rem] w-[8rem] sm:w-[20rem]  "
+				src="tutorSite/tutor-graphic-1.svg"
 				alt="Student working at computer"
 			/>
 			{#if mountLandingAnimation}
-				<div class=" col-span-2 col-start-1 row-start-2 pt-2">
+				<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem]">
 					<div
 						transition:fly={{ duration: 400, delay: 3500, easing: sineIn, x: -30 }}
-						class=" text-xs"
+						class=" text-[0.7rem]"
 					>
 						Personalized high school and middle school tutoring for a range of subjects.
 					</div>
@@ -67,7 +67,7 @@
 						href={'#section2'}
 						on:click|preventDefault={scrollIntoView}
 						transition:fly={{ duration: 200, delay: 4200, easing: sineIn, y: 30 }}
-						class="  buttonUnderline bg-clip relative z-40 inline-block pt-1 font-bold text-primaryBright text-xs   "
+						class="  buttonUnderline bg-clip relative z-40 inline-block pt-[0.3rem] font-bold text-[#2A2AAC] text-[0.7rem]   "
 					>
 						See services
 					</a>
@@ -123,8 +123,8 @@
 
 	.buttonUnderline:after {
 		content: '';
-		width: 12rem;
-		height: 8px;
+		width: 3rem;
+		height: 1rem;
 		opacity: 70%;
 		position: relative;
 		background: #f6991b;

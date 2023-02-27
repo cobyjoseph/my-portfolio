@@ -17,27 +17,27 @@
 	}
 </script>
 
-<div class="  mt-6 w-full items-start justify-center lg:mt-10  ">
+<div class="  mt-2 w-full items-start justify-center   ">
 	<div
-		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-xs text-[#2A2AAC] "
+		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-[0.5rem] text-[#2A2AAC] "
 	>
-		<div class="flex items-center gap-4">
-			<img class="w-7 sm:w-12" src="other/book-logo.svg" alt="rise tutoring logo" />
+		<div class="flex items-center gap-1">
+			<img class="w-4 " src="tutorSite/book-logo.svg" alt="rise tutoring logo" />
 
-			<div class=" relative font-Caveat text-xs font-bold text-[#CC3232]   ">Rise tutoring</div>
+			<div class=" relative font-Caveat text-[0.6rem] font-bold text-[#CC3232] ">Rise tutoring</div>
 		</div>
 
 		<!-- THIS IS FULL MENU-->
 
 		<div class="  flex  gap-20   ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
-			<div class="hidden gap-14 lg:flex ">
+			<div class="flex gap-[0.8rem] ">
 				<a
 					href={'#section2'}
 					class=" customUnderline   font-semibold"
 					on:click|preventDefault={scrollIntoView}>My services</a
 				>
-cd ..
+
 				<a
 					href={'#section3'}
 					class=" customUnderline  font-semibold"
@@ -91,7 +91,7 @@ cd ..
 	.customUnderline:after {
 		content: '';
 		width: 100%;
-		height: 4px;
+		height: 2px;
 		opacity: 70%;
 		position: relative;
 		background: #f6991b;
@@ -126,7 +126,7 @@ cd ..
 	.underlineMenu:after {
 		content: '';
 		width: 40%;
-		height: 4px;
+		height: 2px;
 		opacity: 70%;
 		position: relative;
 		background: #f6991b;

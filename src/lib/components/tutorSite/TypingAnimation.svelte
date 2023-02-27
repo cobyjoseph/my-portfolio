@@ -37,7 +37,7 @@
 	typing2();
 </script>
 
-<div class="text-sm ">
+<div class="text-[1rem] ">
 	{#if pause}
 		<div class="gradientText  after:pl-1 after:font-bold after:text-[#544E4E] after:content-['|'] ">
 			{typedChars}

@@ -4,9 +4,9 @@
 	<div class="absolute top-2 -left-2 transform ">
 		<svg
 			id="visual"
-			viewBox="400 150 100 340"
-			width="100"
-			height="100"
+			viewBox="350 80 80 340"
+			width="50"
+			height="50"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			version="1.1"
