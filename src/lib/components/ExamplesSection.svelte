@@ -3,9 +3,7 @@
 </script>
 
 <div class="flex flex-col ">
-	<div
-		class="text-2xl m-5  relative px-10 py-3 flex font-bold text-[#705129] z-50 bgSmudge   bg-green-200   "
-	>
+	<div class="text-2xl m-5  relative px-10 py-3 flex font-bold text-[#705129] z-50 bgSmudge      ">
 		I build sites that help your business puts it's best foot forward
 	</div>
 

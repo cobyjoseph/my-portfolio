@@ -11,10 +11,13 @@
 	<div class="flex flex-col">
 		<HeroSection />
 	</div>
-	<div class="flex flex-col">
+	<div class="flex flex-col font-Chivo ">
 		<ExamplesSection />
 	</div>
 	<div class="flex flex-col">
 		<AboutMeSection />
 	</div>
 </div>
+
+<style>
+</style>
