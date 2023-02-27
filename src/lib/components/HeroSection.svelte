@@ -6,7 +6,7 @@
 			class="relative bg-cover w-[8rem] flex aspect-auto "
 		/> -->
 
-		<div class="text-primaryLight text-2xl font-Chivo italic p-3 font-medium ">
+		<div class="text-black text-2xl font-Chivo italic p-3 font-medium ">
 			<div>Hi.</div>
 			<div>I'm Coby.</div>
 		</div>

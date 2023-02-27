@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-	background-image: url(background/bg-dark-v0.7.png);
+	background-image: url(background/light-texture-v0.1.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat;

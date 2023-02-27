@@ -7,11 +7,11 @@
 </script>
 
 <BackgroundElements />
+<div class="relative z-10">
+	<Menu />
+</div>
 
-<div class="flex flex-col mr-[18vw] gap-4 px-[7%]">
-	<div>
-		<Menu />
-	</div>
+<div class="flex flex-col gap-4 px-[7%]">
 	<div class="flex flex-col">
 		<HeroSection />
 	</div>

@@ -19,7 +19,7 @@
 </script>
 
 <!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
-<section class="relative flex bg-[#fcf4e4]  ">
+<section class="relative flex bg-[#fcf4e4]   ">
 	<LandingBackground />
 
 	<div class="layeredWave waveStyle absolute bottom-0 h-[12rem] w-full">
