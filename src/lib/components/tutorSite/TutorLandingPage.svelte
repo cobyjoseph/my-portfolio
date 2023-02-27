@@ -55,24 +55,21 @@
 				src="tutorSite/tutor-graphic-1.svg"
 				alt="Student working at computer"
 			/>
-			{#if mountLandingAnimation}
-				<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem]">
-					<div
-						transition:fly={{ duration: 400, delay: 3500, easing: sineIn, x: -30 }}
-						class=" text-[0.7rem]"
-					>
-						Personalized high school and middle school tutoring for a range of subjects.
-					</div>
-					<a
-						href={'#section2'}
-						on:click|preventDefault={scrollIntoView}
-						transition:fly={{ duration: 200, delay: 4200, easing: sineIn, y: 30 }}
-						class="  buttonUnderline bg-clip relative z-40 inline-block pt-[0.3rem] font-bold text-[#2A2AAC] text-[0.7rem]   "
-					>
-						See services
-					</a>
+
+			<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem]">
+				<div
+					transition:fly={{ duration: 400, delay: 2500, easing: sineIn, x: -30 }}
+					class=" text-[0.5rem]"
+				>
+					Personalized high school and middle school tutoring for a range of subjects.
 				</div>
-			{/if}
+				<div
+					transition:fly={{ duration: 200, delay: 3200, easing: sineIn, y: 30 }}
+					class="  buttonUnderline bg-clip relative z-40 inline-block pt-[0.3rem] font-bold text-[#2A2AAC] text-[0.7rem]   "
+				>
+					See services
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
