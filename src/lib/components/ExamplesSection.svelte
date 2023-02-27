@@ -10,17 +10,33 @@
 	</div>
 	<img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" />
 
-	<div class="h-[12rem] w-[22rem] relative overflow-hidden flex">
+	<div class="h-[12rem] w-[22rem] relative overflow-hidden  flex">
 		<TutorLandingPage />
+		<div class="lineFill w-full h-full absolute top-[2rem] -z-10 left-[2rem]" />
 	</div>
-	<div>
-		<button class="blackButton text-white py-2 px-6 text-xl font-bold   flex">
+	<div class="relative">
+		<button class="blackButton relative  text-white py-2 px-5 text-xl font-bold   flex">
 			See work
+			<div class="absolute -z-20 w-full h-full top-[0.4rem] left-[0.4rem] dotsFill" />
 		</button>
 	</div>
 </div>
 
 <style>
+	.lineFill {
+		background-image: url(elements/bg-blue-lines-v0.1.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: repeat;
+	}
+
+	.dotsFill {
+		background-image: url(elements/menu-dots-v0.1.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: repeat;
+	}
+
 	.blackButton {
 		background-image: url(elements/button-black-v0.1.png);
 		background-position: center;

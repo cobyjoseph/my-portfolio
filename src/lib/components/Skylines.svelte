@@ -3,7 +3,7 @@
 </script>
 
 <InView let:isVisible>
-	<div class="relative z-50 min-w-full h-[50rem] ">
+	<div class="relative z-50 min-w-full  h-[10rem] outline ">
 		<div class="aucklandStarter   z-50 " />
 
 		<div class="{isVisible ? 'aucklandSkyline mask-animation  z-50' : 'hidden'} " />

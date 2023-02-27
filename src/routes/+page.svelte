@@ -18,9 +18,9 @@
 	<div class="flex flex-col  ">
 		<ExamplesSection />
 	</div>
-	<div class="flex flex-col">
-		<AboutMeSection />
-	</div>
+</div>
+<div class="flex flex-col mt-10">
+	<AboutMeSection />
 </div>
 
 <style>
