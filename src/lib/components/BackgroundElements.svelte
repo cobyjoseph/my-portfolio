@@ -2,7 +2,7 @@
 <div class="h-full w-[6vw] greenLine absolute right-[12vw] top-0 z-20 " />
 <div class="h-full w-[6vw] beigeLine absolute right-[6vw] top-0 z-20 " />
 
-<img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-20   " />
+<img src="kraftTone/stain-v0.1.png" alt="" class="absolute -top-1 w-[8rem] left-0 z-10   " />
 <!-- <img src="kraftTone/paint-splatter-v0.1.png" alt="" class="absolute top-50 z-10" /> -->
 <img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
 

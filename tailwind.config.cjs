@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				textPrimary: '#4A4A55'
+				textPrimary: '#3b3b44',
+				gold: '#EDB280'
 			},
 			fontFamily: {
 				Yantramanav: ['Yantramanav'],

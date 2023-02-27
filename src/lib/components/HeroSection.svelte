@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 justify-center  ">
+<div class="grid grid-cols-2 justify-center gap-6  ">
 	<img
 		src="text/header-text-w-effects-v0.1.png"
 		alt=""
