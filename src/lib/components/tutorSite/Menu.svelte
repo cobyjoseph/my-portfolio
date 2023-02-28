@@ -17,21 +17,21 @@
 	}
 </script>
 
-<div class="  mt-2 w-full items-start justify-center   ">
+<div class="  mt-[0.4rem] w-full items-start justify-center   ">
 	<div
-		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-[0.5rem] text-[#2A2AAC] "
+		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-[0.42rem] text-[#2A2AAC] "
 	>
-		<div class="flex items-center gap-1">
-			<img class="w-4 " src="tutorSite/book-logo.svg" alt="rise tutoring logo" />
+		<div class="flex mb-[0.1rem]  gap-[0.3rem] ">
+			<img class="w-3  " src="tutorSite/book-logo.svg" alt="rise tutoring logo" />
 
-			<div class=" relative font-Caveat text-[0.6rem] font-bold text-[#CC3232] ">Rise tutoring</div>
+			<div class=" relative font-Caveat text-[0.5rem] font-bold text-[#CC3232] ">Rise tutoring</div>
 		</div>
 
 		<!-- THIS IS FULL MENU-->
 
-		<div class="  flex  gap-20   ">
+		<div class="  flex     ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
-			<div class="flex gap-[0.8rem] ">
+			<div class="flex gap-[0.6rem] ">
 				<a
 					href={'#section2'}
 					class=" customUnderline   font-semibold"
@@ -96,7 +96,7 @@
 		position: relative;
 		background: #f6991b;
 		display: block;
-		transform: translate(-2px, -4px) scaleX(0.42) skew(-50deg);
+		transform: translate(-1px, -2.5px) scaleX(0.42) skew(-50deg);
 		transform-origin: left;
 		transition: transform 250ms ease-in;
 		z-index: -1;

@@ -25,19 +25,19 @@
 		index2++;
 	};
 
-	const typing = () => setInterval(addChars, 100);
+	const typing = () => setInterval(addChars, 85);
 
 	const typing2 = () => {
 		setTimeout(() => {
-			setInterval(addChars2, 100);
-		}, 2500);
+			setInterval(addChars2, 85);
+		}, 1900);
 	};
 
 	typing();
 	typing2();
 </script>
 
-<div class="text-[0.9rem] leading-4 ">
+<div class="text-[0.6rem] leading-[0.8rem] ">
 	{#if pause}
 		<div class="gradientText  after:pl-1 after:font-bold after:text-[#544E4E] after:content-['|'] ">
 			{typedChars}
@@ -52,7 +52,7 @@
 		</div>
 
 		<div
-			class=" gradientText after:animate-blinking after:pl-1 after:text-sm after:font-bold after:text-[#544E4E] after:content-['|'] "
+			class=" gradientText after:animate-blinking after:pl-1 after:text-[0.6rem] after:font-bold after:text-[#544E4E] after:content-['|'] "
 		>
 			{typedChars2}
 		</div>

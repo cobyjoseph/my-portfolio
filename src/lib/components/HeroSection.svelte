@@ -6,7 +6,7 @@
 			class="relative bg-cover w-[8rem] flex aspect-auto "
 		/> -->
 
-		<div class="text-black text-2xl font-Chivo italic p-3 font-medium ">
+		<div class="text-black text-4xl font-Chivo font-thin italic  ">
 			<div>Hi.</div>
 			<div>I'm Coby.</div>
 		</div>
@@ -20,7 +20,7 @@
 	<img
 		src="kraftTone/headshot-sytled-dots-v0.2.png"
 		alt="headshot of me"
-		class="w-[8rem]  flex place-self-start  z-20  "
+		class="w-[8rem]  flex place-self-start -mt-2  z-20  "
 	/>
 </div>
 

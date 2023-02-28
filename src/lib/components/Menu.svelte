@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-0">
 	<div class="bg-[#820141] w-full h-4" />
 	<div class="bg-[#D80039] w-full h-4" />
 
@@ -7,7 +7,7 @@
 </div>
 
 <div
-	class="flex sm:gap-10 text-xl gap-6 px-[7%]  -mt-[4rem]  text-white py-4 font-Chivo font-bold relative z-20 col-span-3 "
+	class="flex sm:gap-10 text-xl gap-6 px-[8%]  -mt-[4rem]  text-white py-4 font-Chivo font-bold relative z-20 col-span-3 "
 >
 	<div>About me</div>
 	<div>My work</div>

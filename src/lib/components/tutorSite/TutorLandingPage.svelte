@@ -7,15 +7,19 @@
 	import LandingBackground from '$lib/components/tutorSite/LandingBackground.svelte';
 	import Menu from '$lib/components/tutorSite/Menu.svelte';
 
-	let mountLandingAnimation: Boolean;
+	let mountLandingAnimation = false;
 
-	function scrollIntoView({ target }) {
-		const element = document.querySelector(target.getAttribute('href'));
-		if (!element) return;
-		element.scrollIntoView({
-			behavior: 'smooth'
-		});
-	}
+	onMount(() => {
+		setTimeout(() => (mountLandingAnimation = !mountLandingAnimation), 1000);
+	});
+
+	// function scrollIntoView({ target }) {
+	// 	const element = document.querySelector(target.getAttribute('href'));
+	// 	if (!element) return;
+	// 	element.scrollIntoView({
+	// 		behavior: 'smooth'
+	// 	});
+	// }
 </script>
 
 <!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
@@ -51,25 +55,27 @@
 			</div>
 
 			<img
-				class=" z-20 flex max-w-[100%]   self-end col-span-2 col-start-3  absolute top-[1rem] right-[0.5rem] h-[8rem] w-[8rem]   "
+				class=" z-20 flex max-w-[100%]   self-end col-span-2 col-start-3  absolute top-[1rem] right-[0.5rem] h-[6.5rem] w-[6.5rem]   "
 				src="tutorSite/tutor-graphic-1.svg"
-				alt="Student working at computer"
+				alt="Students working at computer"
 			/>
 
-			<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem] ">
-				<div
-					transition:fly={{ duration: 400, delay: 2500, easing: sineIn, x: -30 }}
-					class=" text-[0.43rem] max-w-[8rem]"
-				>
-					Personalized high school and middle school tutoring for a range of subjects.
+			{#if mountLandingAnimation}
+				<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem] ">
+					<div
+						transition:fly={{ duration: 400, delay: 2500, easing: sineIn, x: -30 }}
+						class=" text-[0.4rem] max-w-[8rem] leading-[0.45rem]"
+					>
+						Personalized high school and middle school tutoring for a range of subjects.
+					</div>
+					<div
+						transition:fly={{ duration: 200, delay: 3200, easing: sineIn, y: 30 }}
+						class="  buttonUnderline bg-clip relative z-40 inline-block pt-[0.25rem] font-bold text-[#2A2AAC] text-[0.6rem]   "
+					>
+						See services
+					</div>
 				</div>
-				<div
-					transition:fly={{ duration: 200, delay: 3200, easing: sineIn, y: 30 }}
-					class="  buttonUnderline bg-clip relative z-40 inline-block pt-[0.3rem] font-bold text-[#2A2AAC] text-[0.7rem]   "
-				>
-					See services
-				</div>
-			</div>
+			{/if}
 		</div>
 	</div>
 </section>
@@ -77,7 +83,7 @@
 <!-- both columns end -->
 <style>
 	section {
-		background-image: url(/waves/central-wave.svg);
+		background-image: url(tutorSite/central-wave.svg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -120,13 +126,13 @@
 
 	.buttonUnderline:after {
 		content: '';
-		width: 5rem;
-		height: 0.3rem;
+		width: 4rem;
+		height: 0.25rem;
 		opacity: 70%;
 		position: relative;
 		background: #f6991b;
 		display: block;
-		transform: translate(-0px, -6px) scaleX(0.42) skew(-50deg);
+		transform: translate(-2px, -5px) scaleX(0.62) skew(-50deg);
 		transform-origin: left;
 		transition: transform 250ms ease-in;
 		z-index: -1;

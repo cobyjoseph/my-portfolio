@@ -11,7 +11,7 @@
 	<Menu />
 </div>
 
-<div class="flex flex-col gap-4 px-[7%]">
+<div class="flex flex-col gap-2 px-[8%]">
 	<div class="flex flex-col">
 		<HeroSection />
 	</div>

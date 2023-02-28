@@ -2,24 +2,31 @@
 	import TutorLandingPage from '$lib/components/tutorSite/TutorLandingPage.svelte';
 </script>
 
-<div class="flex flex-col gap-4 relative">
-	<div
-		class="text-2xl relative px-3 py-3 mr-auto flex font-Chivo font-bold italic text-black z-50       "
-	>
+<div class="flex flex-col relative">
+	<div class="text-xl relative  flex font-Chivo font-bold italic text-black z-50       ">
 		I build sites that help your business puts it's best foot forward.
 	</div>
-	<img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" />
+	<!-- <img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" /> -->
 
-	<div class="h-[10rem] w-[18rem] relative  flex">
+	<div class="h-[8.44rem] w-[15em] relative flex mt-4">
 		<TutorLandingPage />
-		<div class="lineFill w-full h-full absolute top-[0.7rem] -z-10 left-[0.7rem]" />
+		<div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" />
 	</div>
-	<div class="relative">
-		<button class="blackButton relative  text-white py-2 px-5 text-xl font-bold   flex">
-			See work
-			<div class="absolute -z-20 w-full h-full top-[0.4rem] left-[0.4rem] dotsFill" />
-		</button>
+
+	<div class="h-[8.44rem] w-[15rem] relative self-center -z-20 -translate-y-[2rem] flex">
+		<TutorLandingPage />
+		<div class="lineFill w-full h-full absolute top-[0.3rem] -z-20 right-[0.3rem]" />
 	</div>
+
+	<div class="h-[8.44rem] w-[15rem] relative -z-30 self-end -translate-y-[4rem] flex">
+		<TutorLandingPage />
+		<div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" />
+	</div>
+
+	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
+		See work
+		<!-- <div class="absolute -z-20 w-full h-full top-[0.4rem] left-[0.4rem] dotsFill" /> -->
+	</button>
 </div>
 
 <style>
