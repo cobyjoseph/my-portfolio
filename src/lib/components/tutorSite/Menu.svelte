@@ -104,7 +104,7 @@
 
 	.customUnderline:hover::after {
 		/* background: linear-gradient(90deg, #cc3232, #f6991b 100%); */
-		transform: translate(-2px, -5px) skew(-40deg);
+		transform: translate(-1px, -2px) skew(-40deg);
 		opacity: 70%;
 		width: 100%;
 

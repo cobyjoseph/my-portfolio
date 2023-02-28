@@ -19,15 +19,15 @@
 </script>
 
 <!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
-<section class="relative flex bg-[#fcf4e4] w-full   ">
+<section class="relative flex bg-[#fcf4e4] w-full  ">
 	<LandingBackground />
 
-	<div class="layeredWave waveStyle absolute bottom-0 h-[10rem] w-full">
+	<div class="layeredWave waveStyle absolute bottom-0  w-full overflow-clip">
 		<svg
 			id="visual"
 			viewBox="0 0 960 250"
-			width="960"
-			height="250"
+			width="480"
+			height="125"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			version="1.1"
@@ -40,26 +40,26 @@
 		>
 	</div>
 
-	<div class="  flex min-h-screen flex-col px-[7%] gap-[2rem] ">
+	<div class="  flex min-h-screen flex-col px-[7%] gap-[1.2rem] ">
 		<div class="relative z-[300] flex w-full flex-row place-self-start">
 			<Menu />
 		</div>
 
 		<div class="  gap-2 grid-cols-4">
-			<div class=" relative z-50 bg-clip-text font-extrabold landscape:col-span-4 ">
+			<div class=" relative z-50 bg-clip-text font-extrabold  ">
 				<TypingAnimation />
 			</div>
 
 			<img
-				class=" z-20 flex max-w-[100%]   self-end col-span-2 col-start-3  absolute top-[1rem] right-[0.5rem] h-[8rem] w-[8rem] sm:w-[20rem]  "
+				class=" z-20 flex max-w-[100%]   self-end col-span-2 col-start-3  absolute top-[1rem] right-[0.5rem] h-[8rem] w-[8rem]   "
 				src="tutorSite/tutor-graphic-1.svg"
 				alt="Student working at computer"
 			/>
 
-			<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem]">
+			<div class=" col-span-2 col-start-1 row-start-2 pt-[0.3rem] ">
 				<div
 					transition:fly={{ duration: 400, delay: 2500, easing: sineIn, x: -30 }}
-					class=" text-[0.5rem]"
+					class=" text-[0.43rem] max-w-[8rem]"
 				>
 					Personalized high school and middle school tutoring for a range of subjects.
 				</div>
@@ -120,20 +120,20 @@
 
 	.buttonUnderline:after {
 		content: '';
-		width: 3rem;
-		height: 1rem;
+		width: 5rem;
+		height: 0.3rem;
 		opacity: 70%;
 		position: relative;
 		background: #f6991b;
 		display: block;
-		transform: translate(-4px, -8px) scaleX(0.42) skew(-50deg);
+		transform: translate(-0px, -6px) scaleX(0.42) skew(-50deg);
 		transform-origin: left;
 		transition: transform 250ms ease-in;
 		z-index: -1;
 	}
 
 	.buttonUnderline:hover::after {
-		transform: translate(-6px, -3px) skew(-40deg);
+		transform: translate(-3px, -4px) skew(-40deg);
 		width: 100%;
 		opacity: 70%;
 
