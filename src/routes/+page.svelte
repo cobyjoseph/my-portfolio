@@ -1,27 +1,16 @@
 <script>
-	import Menu from '$lib/components/Menu.svelte';
-	import BackgroundElements from '$lib/components/BackgroundElements.svelte';
-	import ExamplesSection from '$lib/components/ExamplesSection.svelte';
-	import HeroSection from '$lib/components/HeroSection.svelte';
+
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
+	import Page1 from '$lib/components/Page1.svelte';
 </script>
 
-<BackgroundElements />
-<div class="relative z-10">
-	<Menu />
-</div>
+<Page1 />
 
-<div class="flex flex-col gap-2 px-[8%]">
-	<div class="flex flex-col">
-		<HeroSection />
-	</div>
-	<div class="flex flex-col  ">
-		<ExamplesSection />
-	</div>
-</div>
 <div class="flex flex-col mt-10">
 	<AboutMeSection />
 </div>
+
+
 
 <style>
 </style>
