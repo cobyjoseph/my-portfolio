@@ -23,4 +23,3 @@
 	</div>
 </div>
 
-no video with supported format and MIME type found
