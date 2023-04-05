@@ -5,8 +5,10 @@
 @tailwind utilities;
 
 body {
-	background-image: url(background/light-texture-v0.1.png);
+	background-color: #f4f4ff;
+	
+	/* background-image: url(background/light-texture-v0.1.png);
 	background-position: center;
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: repeat; */
 }
