@@ -8,6 +8,8 @@
 	alt=""
 	class="absolute max-w-[15rem] top-[7rem] left-[5rem] z-10"
 />
+
+
 <img src="kraftTone/subtle-paint-splatter-v0.1.png" alt="" class="absolute bottom-10 z-10" />
 
 <style>

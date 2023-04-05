@@ -23,6 +23,8 @@
 		<div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" />
 	</div>
 
+
+
 	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
 		See work
 		<!-- <div class="absolute -z-20 w-full h-full top-[0.4rem] left-[0.4rem] dotsFill" /> -->

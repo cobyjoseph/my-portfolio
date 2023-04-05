@@ -27,3 +27,5 @@
         height: 100%;
       }
     </style>
+
+<!-- need to figure out why the images look different on the sceren s -->
