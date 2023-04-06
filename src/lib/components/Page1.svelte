@@ -14,7 +14,7 @@
 
 <div class="flex flex-col gap-2 px-[8%]">
       
-      <TutorSiteVideo />
+      <!-- <TutorSiteVideo /> -->
 	<div class="flex flex-col">
 		<HeroSection />
 	</div>

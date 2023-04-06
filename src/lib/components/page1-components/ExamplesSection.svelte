@@ -7,20 +7,21 @@
 		I build sites that help your business puts it's best foot forward.
 	</div>
 	<!-- <img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" /> -->
+	<div class="flex flex-col outline align ">
+		<div class="relative flex mt-4  ">
+			<TutorLandingPage />
+			<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" /> -->
+		</div>
 
-	<div class="relative flex mt-4   ">
-		<TutorLandingPage />
-		<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" /> -->
-	</div>
+		<div class=" relative -z-20 -mt-[10rem]  justify-center flex">
+			<TutorLandingPage />
+			<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-20 right-[0.3rem]" /> -->
+		</div>
 
-	<div class="h-[8.44rem] w-[15rem] relative self-center -z-20 -translate-y-[2rem] flex">
-		<TutorLandingPage />
-		<div class="lineFill w-full h-full absolute top-[0.3rem] -z-20 right-[0.3rem]" />
-	</div>
-
-	<div class="h-[8.44rem] w-[15rem] relative -z-30 self-end -translate-y-[4rem] flex">
-		<TutorLandingPage />
-		<div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" />
+		<div class=" relative -z-30  flex -mt-[10rem] justify-end">
+			<TutorLandingPage />
+			<!-- <div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" /> -->
+		</div>
 	</div>
 
 	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
