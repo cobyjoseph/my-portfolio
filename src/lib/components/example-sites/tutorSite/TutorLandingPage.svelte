@@ -22,12 +22,12 @@
 	// }
 </script>
 
-<div class="relative p-3 outline-red-400 outline iphoneOutline w-[60%] aspect-[1/2.067] ">
+<div class="relative  outline-red-400 outline iphoneOutline w-[60%] aspect-[1/2.067] ">
 	<!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
-	<section class="  bg-[#fcf4e4] relative  outline h-full w-full ">
+	<section class="  bg-[#fcf4e4]    h-full w-full  relative -z-10 rounded-[19%] ">
 		<LandingBackground />
 
-		<div class="layeredWave waveStyle absolute bottom-0  w-full overflow-clip">
+		<div class="layeredWave waveStyle bottom-0  w-full overflow-clip">
 			<svg
 				id="visual"
 				viewBox="0 0 960 250"
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="  flex min-h-full flex-col px-[7%] gap-[1.2rem] ">
-			<div class="relative z-[300] flex w-full flex-row place-self-start">
+			<div class="relative z-[100] flex w-full flex-row place-self-start">
 				<Menu />
 			</div>
 
