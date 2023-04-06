@@ -1,5 +1,5 @@
 <script>
-	import TutorLandingPage from '$lib/components/tutorSite/TutorLandingPage.svelte';
+	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
 </script>
 
 <div class="flex flex-col relative">
@@ -8,9 +8,9 @@
 	</div>
 	<!-- <img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" /> -->
 
-	<div class="h-[8.44rem] w-[15em] relative flex mt-4">
+	<div class="relative flex mt-4   ">
 		<TutorLandingPage />
-		<div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" />
+		<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" /> -->
 	</div>
 
 	<div class="h-[8.44rem] w-[15rem] relative self-center -z-20 -translate-y-[2rem] flex">
@@ -22,8 +22,6 @@
 		<TutorLandingPage />
 		<div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" />
 	</div>
-
-
 
 	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
 		See work
