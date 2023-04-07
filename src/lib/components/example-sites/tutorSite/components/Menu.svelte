@@ -17,19 +17,56 @@
 	}
 </script>
 
-<div class="  mt-[0.4rem] w-full items-start justify-center   ">
+<div
+	class="  mt-[0.5rem] w-full  landscape:hidden flex  items-center justify-between rounded-lg font-Heebo text-[0.42rem] text-[#2A2AAC]   "
+>
+	<div class="flex gap-1 pl-1 ">
+		<img
+			class="w-2 translate-x-[0.1rem]  "
+			src="tutorSite/book-logo.svg"
+			alt="rise tutoring logo"
+		/>
+		<div class=" flex flex-col font-Chivo text-[0.25rem] font-bold text-[#CC3232] ">
+			<div class="flex">Rise</div>
+			<div class="flex -mt-[0.05rem]">Tutoring</div>
+		</div>
+	</div>
+
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke-width="1.5"
+		stroke="currentColor"
+		class="  h-4 w-4 pr-1 "
+	>
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+		/>
+	</svg>
+</div>
+
+<div class="  mt-[0.4rem] w-full items-start justify-center portrait:hidden   ">
 	<div
 		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-[0.42rem] text-[#2A2AAC] "
 	>
-		<div class="flex mb-[0.1rem]  gap-[0.3rem] ">
-			<img class="w-3  " src="tutorSite/book-logo.svg" alt="rise tutoring logo" />
+		<div class="flex mb-[0.1rem]  gap-[0.3rem] portrait:hidden ">
+			<img
+				class="w-2 translate-x-[0.1rem]  "
+				src="tutorSite/book-logo.svg"
+				alt="rise tutoring logo"
+			/>
 
-			<div class=" relative font-Caveat text-[0.5rem] font-bold text-[#CC3232] ">Rise tutoring</div>
+			<div class="landscape:relative hidden font-Caveat text-[0.5rem] font-bold text-[#CC3232] ">
+				Rise tutoring
+			</div>
 		</div>
 
 		<!-- THIS IS FULL MENU-->
 
-		<div class="  flex     ">
+		<div class="  landscape:flex hidden     ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
 			<div class="flex gap-[0.6rem] ">
 				<a
