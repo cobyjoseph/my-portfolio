@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between  w-full  ">
+<div class="flex items-center justify-between  w-full relative  ">
 	<div class="flex flex-col ">
 		<!-- <img
 			src="text/hero-text-v0.3.png"
@@ -6,7 +6,15 @@
 			class="relative bg-cover w-[8rem] flex aspect-auto "
 		/> -->
 
-		<div class="text-black text-4xl font-Chivo font-thin italic  ">
+		<img
+			src="kraftTone/headshot-sytled-dots-v0.2.png"
+			alt="headshot of me"
+			class="w-[8rem] right-10 absolute  flex  -mt-2  z-20  "
+		/>
+
+		<div
+			class="text-dark1 largeClamp font-genSans font-bold -mx-[10%] outline w-screen opacity-40 absolute  "
+		>
 			<div>Hi.</div>
 			<div>I'm Coby.</div>
 		</div>
@@ -16,15 +24,13 @@
 			I build sites that help your business puts it's best foot forward.
 		</div> -->
 	</div>
-
-	<img
-		src="kraftTone/headshot-sytled-dots-v0.2.png"
-		alt="headshot of me"
-		class="w-[8rem]  flex place-self-start -mt-2  z-20  "
-	/>
 </div>
 
 <style>
+	.largeClamp {
+		font-size: clamp(5.5rem, 10vw + 2rem, 30rem);
+	}
+
 	.blackButton {
 		background-image: url(kraftTone/button-black-v0.1.png);
 		background-position: center;

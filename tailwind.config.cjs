@@ -4,6 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
+				base: '#F9F1DB',
+				shade: '#E9EBF5',
+				light1: '#A2B6DC',
+				dark1: '#3F63A9',
+				bright1: '#0B34FF',
 				primaryDark: '#3b3b44',
 				primaryLight: '#F0D7AF',
 				retroYellow: '#FEBF26',
@@ -16,7 +21,9 @@ module.exports = {
 			},
 			fontFamily: {
 				Yantramanav: ['Yantramanav'],
-				Chivo: ['Chivo']
+				Chivo: ['Chivo'],
+				satoshi: ['Satoshi', 'sans-serif'],
+				genSans: ['General Sans', 'sans-serif']
 			}
 		}
 	},
