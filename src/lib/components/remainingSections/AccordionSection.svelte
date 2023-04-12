@@ -1,19 +1,13 @@
 <script>
-	import { onMount, getContext } from 'svelte';
-	let title;
+	import { getContext } from 'svelte';
+	export let title;
 	let isOpen = false;
 	const setActiveSection = getContext('setActiveSection');
 
 	function toggleSection() {
-		setActiveSection(isOpen ? null : title);
+		isOpen = !isOpen;
+		setActiveSection(isOpen ? title : null);
 	}
-
-	onMount(() => {
-		setActiveSection((current) => {
-			isOpen = current === title;
-			return current;
-		});
-	});
 </script>
 
 <div class="accordion-section" on:click={toggleSection}>
