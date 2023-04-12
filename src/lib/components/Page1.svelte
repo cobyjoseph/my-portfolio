@@ -4,8 +4,6 @@
 	import HeroSection from '$lib/components/page1-components/HeroSection.svelte';
 	import ExamplesSection from '$lib/components/page1-components/ExamplesSection.svelte';
 	import ThreeDObject from '$lib/components/page1-components/ThreeDObject.svelte';
-	import tutorVideo from '$lib/assets/videos/tutor-site-trimmed-v0.1.mp4';
-	import TutorSiteVideo from '$lib/components/page1-components/TutorSiteVideo.svelte';
 
 	import { onMount } from 'svelte';
 	import { Application } from '@splinetool/runtime';
