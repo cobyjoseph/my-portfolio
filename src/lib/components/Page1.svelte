@@ -41,7 +41,7 @@
 		<ExamplesSection />
 
 		<div class="outline w-full h-[80vh]">
-			<spline-viewer url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode" />
+			<spline-viewer loading="eager" url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode" />
 		</div>
 	</div>
 </div>
