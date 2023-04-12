@@ -1,7 +1,7 @@
 <script lang="ts">
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
 	import Page1 from '$lib/components/Page1.svelte';
-
+	import AccordionContainer from '$lib/components/remainingSections/AccordionContainer.svelte'
 
 </script>
 
@@ -13,6 +13,8 @@
 </svelte:head>
 
 <Page1 />
+
+<AccordionContainer />
 
 <div class="flex flex-col mt-10">
 	<AboutMeSection />

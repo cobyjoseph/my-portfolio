@@ -16,13 +16,6 @@
 	});
 </script>
 
-<svelte:head>
-	<script
-		type="module"
-		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
-	></script>
-</svelte:head>
-
 <BackgroundElements />
 <div class="relative z-10">
 	<Menu />
@@ -39,15 +32,5 @@
 
 	<div class="flex flex-col  ">
 		<ExamplesSection />
-
-		<div class="outline w-full h-[80vh]">
-			<spline-viewer loading="eager" url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode" />
-		</div>
 	</div>
 </div>
-
-<style>
-	#canvas3d {
-		background-color: transparent;
-	}
-</style>

@@ -2,6 +2,13 @@
 	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
 </script>
 
+<svelte:head>
+	<script
+		type="module"
+		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
+	></script>
+</svelte:head>
+
 <div class="flex flex-col relative">
 	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark1 z-50       ">
 		I design and develop sites for:
@@ -11,22 +18,25 @@
 			<li>ambitious entrepreneurs</li>
 		</ul>
 	</div>
-	<!-- <img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" /> -->
-	<div class="flex flex-col outline align ">
+	<!-- <div class="flex flex-col outline align ">
 		<div class="relative flex mt-4  ">
 			<TutorLandingPage />
-			<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-10 right-[0.3rem]" /> -->
 		</div>
 
 		<div class=" relative -z-20 -mt-[10rem]  justify-center flex">
 			<TutorLandingPage />
-			<!-- <div class="lineFill w-full h-full absolute top-[0.3rem] -z-20 right-[0.3rem]" /> -->
 		</div>
 
 		<div class=" relative -z-30  flex -mt-[10rem] justify-end">
 			<TutorLandingPage />
-			<!-- <div class="lineFill w-full h-full absolute  top-[0.3rem] -z-30 right-[0.3rem]" /> -->
 		</div>
+	</div> -->
+
+	<div class="w-screen justify-center sm:w-[40vw] h-[60vh] -mt-[2rem]">
+		<spline-viewer
+			loading="eager"
+			url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
+		/>
 	</div>
 
 	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
