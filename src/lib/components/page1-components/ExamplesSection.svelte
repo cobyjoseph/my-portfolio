@@ -3,8 +3,13 @@
 </script>
 
 <div class="flex flex-col relative">
-	<div class="text-xl relative  flex font-Chivo font-bold italic text-black z-50       ">
-		I build sites that help your business puts it's best foot forward.
+	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark1 z-50       ">
+		I design and develop sites for:
+		<ul class="list-disc list-inside ml-4">
+			<li>small business</li>
+			<li>professional services companies</li>
+			<li>ambitious entrepreneurs</li>
+		</ul>
 	</div>
 	<!-- <img src="text/underline-v0.1.png" alt="" class="absolute top-10 opacity-[0.4]" /> -->
 	<div class="flex flex-col outline align ">

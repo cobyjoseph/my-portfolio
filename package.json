@@ -34,5 +34,10 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@types/three": "^0.150.1",
+		"three": "^0.151.3",
+		"three-obj-mtl-loader": "^1.0.3"
+	}
 }

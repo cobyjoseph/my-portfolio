@@ -245,8 +245,4 @@
 		background-position: center;
 		background-size: cover;
 	}
-
-	.layeredWave {
-		background-image: url('/waves/short-1.svg');
-	}
 </style>
