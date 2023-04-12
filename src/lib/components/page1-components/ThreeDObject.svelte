@@ -31,13 +31,17 @@
 		container.appendChild(renderer.domElement);
 
 		const gltfLoader = new GLTFLoader();
-		gltfLoader.load('/phone_portfolio_home_page.gltf', (gltf) => {
+		gltfLoader.load('/path/to/your/3d-object.gltf', (gltf) => {
 			scene.add(gltf.scene);
 		});
 
 		const light = new THREE.DirectionalLight(0xffffff, 1);
 		light.position.set(1, 1, 1);
 		scene.add(light);
+
+		// Add an ambient light to improve the appearance of the model
+		const ambientLight = new THREE.AmbientLight(0x404040, 1);
+		scene.add(ambientLight);
 	}
 
 	function animate() {

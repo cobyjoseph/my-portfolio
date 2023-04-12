@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
 	import Page1 from '$lib/components/Page1.svelte';
+
+
 </script>
 
 <svelte:head>

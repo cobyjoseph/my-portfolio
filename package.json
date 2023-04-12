@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@splinetool/runtime": "^0.9.293",
 		"@types/three": "^0.150.1",
 		"three": "^0.151.3",
 		"three-obj-mtl-loader": "^1.0.3"

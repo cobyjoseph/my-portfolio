@@ -6,7 +6,24 @@
 	import ThreeDObject from '$lib/components/page1-components/ThreeDObject.svelte';
 	import tutorVideo from '$lib/assets/videos/tutor-site-trimmed-v0.1.mp4';
 	import TutorSiteVideo from '$lib/components/page1-components/TutorSiteVideo.svelte';
+
+	import { onMount } from 'svelte';
+	import { Application } from '@splinetool/runtime';
+
+	let canvas;
+
+	onMount(() => {
+		// const spline = new Application(canvas);
+		// spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
+	});
 </script>
+
+<svelte:head>
+	<script
+		type="module"
+		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
+	></script>
+</svelte:head>
 
 <BackgroundElements />
 <div class="relative z-10">
@@ -18,8 +35,21 @@
 	<div class="flex flex-col">
 		<HeroSection />
 	</div>
-	<ThreeDObject />
+	<!-- <ThreeDObject />
+	 -->
+	<!-- <canvas id="canvas3d" bind:this={canvas} class="outline h-[50vh]" /> -->
+
 	<div class="flex flex-col  ">
 		<ExamplesSection />
+
+		<div class="outline w-full h-[80vh]">
+			<spline-viewer url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode" />
+		</div>
 	</div>
 </div>
+
+<style>
+	#canvas3d {
+		background-color: transparent;
+	}
+</style>
