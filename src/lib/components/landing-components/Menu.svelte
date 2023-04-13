@@ -17,8 +17,7 @@
 	}
 </script>
 
-<div class="flex items-center justify-between pb-2 pt-9 text-white px-[8%]">
-	
+<div class="flex items-center justify-between pb-2 pt-9 text-white">
 	<div class="flex gap-10 font-satoshi text-lg font-semibold">
 		<div class="  flex  gap-20   ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->

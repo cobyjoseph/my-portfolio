@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="flex flex-col relative">
-	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark1 z-50       ">
+	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark2 z-50       ">
 		I design and develop sites for:
 		<ul class="list-disc list-inside ml-4">
 			<li>small business and freelancers</li>
@@ -38,11 +38,6 @@
 			url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 		/>
 	</div>
-
-	<button class="blackButton relative   text-white py-2 px-5 text-xl font-bold self-end   flex">
-		See work
-		<!-- <div class="absolute -z-20 w-full h-full top-[0.4rem] left-[0.4rem] dotsFill" /> -->
-	</button>
 </div>
 
 <style>

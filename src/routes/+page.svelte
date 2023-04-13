@@ -1,8 +1,7 @@
 <script lang="ts">
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
 	import Landing from '$lib/components/sections/Landing.svelte';
-	import AccordionContainer from '$lib/components/accordion-contents/AccordionContainer.svelte'
-
+	import AccordionContainer from '$lib/components/accordion-contents/AccordionContainer.svelte';
 </script>
 
 <svelte:head>
@@ -12,11 +11,11 @@
 	/>
 </svelte:head>
 
-<Landing />
+<div class="px-[8%]">
+	<Landing />
 
-<AccordionContainer />
-
-
+	<AccordionContainer />
+</div>
 
 <style>
 </style>
