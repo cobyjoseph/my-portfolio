@@ -2,6 +2,7 @@
 	import { setContext } from 'svelte';
 	import Accordion from './Accordion.svelte';
 	import AccordionSection from '../sections/AccordionSection.svelte';
+	import WhoAmI from '$lib/components/accordion-contents/WhoAmI.svelte';
 
 	let activeSection;
 
@@ -12,19 +13,28 @@
 	setContext('setActiveSection', setActiveSection);
 </script>
 
-<div class="text-3xl gap-4 flex flex-col font-satoshi font-semibold text-dark2">
+<div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2 ">
 	<Accordion>
 		<AccordionSection title="Who am I?">
-			<p>Content for Section 1.</p>
+			<WhoAmI />
 		</AccordionSection>
+
+		<div class="bg-dark2 w-full h-[0.05rem]" />
+
 		<AccordionSection title="What do I do?">
 			<p>Content for Section 2.</p>
 		</AccordionSection>
-		<AccordionSection title="Example work">
+
+		<div class="bg-dark2 w-full h-[0.05rem]" />
+
+		<AccordionSection title="Example projects">
+			<p>Content for Section 3.</p>
+		</AccordionSection>
+
+		<div class="bg-dark2 w-full h-[0.05rem]" />
+
+		<AccordionSection title="Let's chat">
 			<p>Content for Section 3.</p>
 		</AccordionSection>
 	</Accordion>
-	<AccordionSection title="Let's chat">
-		<p>Content for Section 3.</p>
-	</AccordionSection>
 </div>
