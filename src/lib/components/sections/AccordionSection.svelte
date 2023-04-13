@@ -13,7 +13,7 @@
 <div class="accordion-section" on:click={toggleSection}>
 	<div class="accordion-header">
 		<h3>{title}</h3>
-		<span class="toggle-icon">{isOpen ? '-' : '+'}</span>
+		<span class="toggle-icon">{isOpen ? '>' : '+'}</span>
 	</div>
 	{#if isOpen}
 		<div class="accordion-content">

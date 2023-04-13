@@ -1,7 +1,7 @@
 <script>
       import { setContext } from "svelte";
       import Accordion from "./Accordion.svelte";
-      import AccordionSection from "./AccordionSection.svelte";
+      import AccordionSection from "../sections/AccordionSection.svelte";
     
       let activeSection;
     

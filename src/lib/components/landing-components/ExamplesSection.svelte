@@ -13,7 +13,7 @@
 	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark1 z-50       ">
 		I design and develop sites for:
 		<ul class="list-disc list-inside ml-4">
-			<li>small business</li>
+			<li>small business and freelancers</li>
 			<li>professional services companies</li>
 			<li>ambitious entrepreneurs</li>
 		</ul>
