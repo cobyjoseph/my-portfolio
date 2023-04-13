@@ -11,7 +11,12 @@
 	}
 </script>
 
-<div class="accordion-section -m-4 hover:bg-shade2 rounded-lg" on:click={toggleSection}>
+<div
+	class="accordion-section -m-4 rounded-lg overflow-hidden"
+	class:hover:bg-shade2={!isOpen}
+	class:bg-shade2={isOpen}
+	on:click={toggleSection}
+>
 	<div class="accordion-header m-4">
 		<h3>{title}</h3>
 		{#if isOpen}

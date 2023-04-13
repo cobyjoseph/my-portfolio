@@ -19,19 +19,19 @@
 			<WhoAmI />
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem]" />
+		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
 
-		<AccordionSection title="What do I do?">
+		<AccordionSection title="What can I do for you?">
 			<p>Content for Section 2.</p>
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem]" />
+		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
 
 		<AccordionSection title="Example projects">
 			<p>Content for Section 3.</p>
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem]" />
+		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
 
 		<AccordionSection title="Let's chat">
 			<p>Content for Section 3.</p>
