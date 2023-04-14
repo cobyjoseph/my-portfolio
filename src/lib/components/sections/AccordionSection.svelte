@@ -1,6 +1,7 @@
 <script>
 	import { getContext } from 'svelte';
 	import { slide } from 'svelte/transition';
+	import Globe from '$lib/components/accordion-contents/Globe.svelte';
 	export let title;
 	let isOpen = false;
 	const setActiveSection = getContext('setActiveSection');
@@ -10,6 +11,8 @@
 		setActiveSection(isOpen ? title : null);
 	}
 </script>
+
+<!-- <Globe /> -->
 
 <div
 	class="accordion-section -m-4 rounded-lg overflow-hidden"
