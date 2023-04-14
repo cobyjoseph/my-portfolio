@@ -30,7 +30,7 @@
 	 -->
 	<!-- <canvas id="canvas3d" bind:this={canvas} class="outline h-[50vh]" /> -->
 
-	<div class="flex flex-col  ">
+	<div class="flex flex-col ">
 		<ExamplesSection />
 	</div>
 </div>

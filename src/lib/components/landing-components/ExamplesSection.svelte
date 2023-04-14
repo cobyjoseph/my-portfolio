@@ -9,7 +9,7 @@
 	></script>
 </svelte:head>
 
-<div class="flex flex-col relative">
+<div class="flex flex-col relative sm:grid sm:grid-cols-2 ">
 	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark2 z-50       ">
 		I design and develop sites for:
 		<ul class="list-disc list-inside ml-4">
@@ -32,7 +32,7 @@
 		</div>
 	</div> -->
 
-	<div class="w-screen justify-center sm:w-[40vw] h-[60vh] -mt-[2rem]">
+	<div class="w-full justify-center  h-[60vh] -mt-[2rem]  ">
 		<spline-viewer
 			loading="eager"
 			url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"

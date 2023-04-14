@@ -1,7 +1,6 @@
 <script>
 	import { getContext } from 'svelte';
 	import { slide } from 'svelte/transition';
-	import Globe from '$lib/components/accordion-contents/Globe.svelte';
 	export let title;
 	let isOpen = false;
 	const setActiveSection = getContext('setActiveSection');
