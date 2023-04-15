@@ -1,8 +1,9 @@
 <script>
 	import { setContext } from 'svelte';
 	import Accordion from '../accordion-contents/Accordion.svelte';
-	import AccordionSection from '../accordion-contents/AccordionSection.svelte'
+	import AccordionSection from '../accordion-contents/AccordionSection.svelte';
 	import WhoAmI from '$lib/components/accordion-contents/WhoAmI.svelte';
+	import WhatCanIDo from '$lib/components/accordion-contents/WhatCanIDo.svelte';
 
 	let activeSection;
 
@@ -22,7 +23,7 @@
 		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
 
 		<AccordionSection title="What can I do for you?">
-			<p>Content for Section 2.</p>
+			<WhatCanIDo />
 		</AccordionSection>
 
 		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
