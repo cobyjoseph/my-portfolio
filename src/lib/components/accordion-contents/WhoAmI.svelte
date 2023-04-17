@@ -1,6 +1,8 @@
 <script>
 	import Skylines from '$lib/components/Skylines.svelte';
 	import { cityStore } from '$lib/stores/Cities';
+	import { fly } from 'svelte/transition';
+	import { sineIn } from 'svelte/easing';
 
 	let cities;
 	let count = 0;
@@ -161,13 +163,30 @@
 	</div>
 	<div class="-mt-[9%] flex flex-col gap-2">
 		{#each [cities[count]] as city (city.id)}
-			<div class=" text-3xl flex justify-end font-satoshi gap-2 font-extrabold cityUnderline">
-				<div class="text-lg place-self-end font-semibold">{city.years}</div>
-				<div class=" ">{city.cityName}</div>
-			</div>
+			<div
+				in:fly={{
+					delay: 0,
+					y: 20,
+					duration: 200,
+					easing: sineIn
+				}}
+			>
+				<div class=" text-3xl flex justify-end font-satoshi gap-2 font-extrabold cityUnderline">
+					<div class="text-lg place-self-end font-semibold">{city.years}</div>
+					<div class=" ">{city.cityName}</div>
+				</div>
 
-			<div class=" ">
-				{city.text}
+				<div
+					in:fly={{
+						delay: 50,
+						y: 20,
+						duration: 200,
+						easing: sineIn
+					}}
+					class=" mt-2"
+				>
+					{@html city.text}
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -177,6 +196,10 @@
 </div>
 
 <style>
+	br {
+		display: block;
+		margin-bottom: 8px; /* Adjust the value to create the desired gap between lines */
+	}
 	/* .cityUnderline::after {
 		content: '';
 		width: 100%;
