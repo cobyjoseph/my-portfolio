@@ -1,0 +1,9 @@
+
+<svg width="100%" height="100%" viewBox="0 0 888 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-561.828,-28.4976)">
+        <rect id="mask" x="561.828" y="28.498" width="887.404" height="197.915" style="fill:url(#_Linear1);"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(7.75084e-15,126.581,-126.581,7.75084e-15,1029.57,67.5533)"><stop offset="0" style="stop-color:black;stop-opacity:1"/><stop offset="0.56" style="stop-color:rgb(37,37,37);stop-opacity:1"/><stop offset="0.86" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

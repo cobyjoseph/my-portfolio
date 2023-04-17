@@ -14,7 +14,7 @@
 <div class="px-[8%]">
 	<Landing />
 
-	<div class="relative z-50">
+	<div class="relative z-50 -mx-[3%]">
 		<AccordionContainer />
 	</div>
 </div>
