@@ -17,9 +17,8 @@
 	class="accordion-section -m-4 rounded-lg overflow-hidden px-[2%]"
 	class:hover:bg-shade2={!isOpen}
 	class:bg-shade2={isOpen}
-	on:click={toggleSection}
 >
-	<div class="accordion-header m-4">
+	<div on:click={toggleSection} class="accordion-header m-4">
 		<h3>{title}</h3>
 		{#if isOpen}
 			<svg
