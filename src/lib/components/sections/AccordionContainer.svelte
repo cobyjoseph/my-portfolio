@@ -14,25 +14,25 @@
 	setContext('setActiveSection', setActiveSection);
 </script>
 
-<div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2 ">
+<div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2  ">
 	<Accordion>
 		<AccordionSection title="Who am I?">
 			<WhoAmI />
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
+		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
 		<AccordionSection title="What can I do for you?">
 			<WhatCanIDo />
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
+		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
 		<AccordionSection title="Example projects">
 			<p>Content for Section 3.</p>
 		</AccordionSection>
 
-		<div class="bg-dark2 w-full h-[0.05rem] my-[0.4rem]" />
+		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
 		<AccordionSection title="Let's chat">
 			<p>Content for Section 3.</p>

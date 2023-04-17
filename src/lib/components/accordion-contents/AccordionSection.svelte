@@ -14,7 +14,7 @@
 <!-- <Globe /> -->
 
 <div
-	class="accordion-section -m-4 rounded-lg overflow-hidden"
+	class="accordion-section -m-4 rounded-lg overflow-hidden px-[2%]"
 	class:hover:bg-shade2={!isOpen}
 	class:bg-shade2={isOpen}
 	on:click={toggleSection}
