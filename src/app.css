@@ -6,9 +6,11 @@
 
 body {
 	background-color: #F9F1DB;
-	
+	overflow-x: hidden;	
 	/* background-image: url(background/light-texture-v0.1.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat; */
 }
+
+
