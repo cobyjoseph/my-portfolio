@@ -54,7 +54,7 @@
 		A project manager for international development projects, turned sustainable urban planner,
 		turned designer and developer.
 	</div> -->
-	<div>Scroll through my journey in a few seconds:</div>
+	<div>Click on the cities below to see the highlights of my journey:</div>
 
 	<div class="flex flex-col relative -mx-10    ">
 		<svg
