@@ -154,7 +154,7 @@
 					duration: 200,
 					easing: sineIn
 				}}
-				class=" mt-1"
+				class=" mt-2"
 			>
 				I was born and raised in San Mateo, CA, outside of San Francisco.
 			</div>
@@ -163,7 +163,7 @@
 
 	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
-			class="-mt-[12.5%] pointer-events-none"
+			class="-mt-[14.5%] pointer-events-none"
 			width="100%"
 			height="100%"
 			viewBox="0 0 888 182"
@@ -213,7 +213,7 @@
 					duration: 200,
 					easing: sineIn
 				}}
-				class=" mt-1"
+				class=" mt-2"
 			>
 				At the University of Michigan I studied philosophy, politics, and economics. I also
 				co-founded an organization that puts on charity concerts and raises $100k+ annually.
@@ -273,7 +273,7 @@
 					duration: 200,
 					easing: sineIn
 				}}
-				class=" mt-1"
+				class=" mt-2"
 			>
 				In DC I was a Project Manager for several $1m+ international development projects
 				simultaneously. I also led business development trips and organized conferences in four
@@ -284,7 +284,7 @@
 
 	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
-			class="-mt-[14%] pointer-events-none"
+			class="-mt-[15%] pointer-events-none"
 			width="100%"
 			height="100%"
 			viewBox="0 0 888 198"
@@ -314,7 +314,7 @@
 		</svg>
 	</div>
 
-	<div class="{showAKL ? 'block' : 'hidden'}  flex flex-col gap-2 ">
+	<div class="{showAKL ? 'block' : 'hidden'}  flex flex-col gap-2 -mt-[15%] ">
 		<div
 			in:fly={{
 				delay: 0,
@@ -335,7 +335,7 @@
 					duration: 200,
 					easing: sineIn
 				}}
-				class=" mt-1"
+				class=" mt-2"
 			>
 				I played key role in analysis and design of transformative urban design and transport
 				projects as a Sustainable Transport Planner.
@@ -365,7 +365,7 @@
 						duration: 200,
 						easing: sineIn
 					}}
-					class=" mt-1"
+					class=" mt-2"
 				>
 					{city.text}
 				</div>
