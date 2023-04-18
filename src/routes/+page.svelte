@@ -2,6 +2,9 @@
 	import AboutMeSection from '$lib/components/AboutMeSection.svelte';
 	import Landing from '$lib/components/sections/Landing.svelte';
 	import AccordionContainer from '$lib/components/sections/AccordionContainer.svelte';
+	import { landingPageHeightInitial } from '$lib/stores/heightStore';
+
+	let landingHeight;
 </script>
 
 <svelte:head>
@@ -12,7 +15,9 @@
 </svelte:head>
 
 <div class="px-[8%]">
-	<Landing />
+	<div bind:clientHeight={$landingPageHeightInitial}>
+		<Landing />
+	</div>
 
 	<div class="relative z-50 -mx-[2%]">
 		<AccordionContainer />

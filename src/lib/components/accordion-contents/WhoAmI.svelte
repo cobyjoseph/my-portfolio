@@ -3,15 +3,43 @@
 	import { cityStore } from '$lib/stores/Cities';
 	import { fly } from 'svelte/transition';
 	import { sineIn } from 'svelte/easing';
+	import { landingPageHeightInitial } from '$lib/stores/heightStore';
 
+	let landingPageHeight;
+	let whoAmIHeight;
+	let scroll;
 	let cities;
 	let count = 0;
+	let showSF = false;
+	let showAA = false;
+	let showDC = false;
+	let showAKL = false;
 
 	cityStore.subscribe((value) => {
 		cities = value;
 	});
 
-	console.log('cities:', cities);
+	landingPageHeightInitial.subscribe((value) => {
+		landingPageHeight = value;
+	});
+
+	$: percentScrolled = (scroll - landingPageHeight) / whoAmIHeight;
+
+	if (percentScrolled < 0.2) {
+		showSF = true;
+	}
+
+	if (percentScroll < 0.4 && percentScrolled < 0.5) {
+		showAA = true;
+	}
+
+	if (percentScroll < 0.5 && percentScrolled < 0.7) {
+		showDC = true;
+	}
+
+	if (percentScroll < 0.7) {
+		showAKL = true;
+	}
 
 	let active1 = false;
 	let active2 = false;
@@ -48,13 +76,22 @@
 	}
 </script>
 
-<div class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  ">
+<svelte:window bind:scrollY={scroll} />
+
+<div
+	bind:clientHeight={whoAmIHeight}
+	class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  "
+>
 	<!-- <div>A California kid who has lived on four continents.</div> -->
 	<!-- <div>
 		A project manager for international development projects, turned sustainable urban planner,
 		turned designer and developer.
 	</div> -->
-	<div>Click on the cities below to see the highlights of my journey:</div>
+	<div>Keep scrolling to see the highlights of my journey:</div>
+	scroll {scroll}
+	whoAmIHeight{whoAmIHeight}
+	landingPageHeight{landingPageHeight}
+	percent{percentScrolled}
 
 	<div class="flex flex-col relative  -mx-[8%]   ">
 		<svg
@@ -196,14 +233,10 @@
 	</div>
 	<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[20%]" />
 	<div>I now work as a designer and developer remotely (I'm currently in Buenos Aires).</div>
-	<div>When working I'm probably playing soccer, a board game, or rock climbing.</div>
+	<div>When not working I'm probably playing soccer, a board game, or rock climbing.</div>
 </div>
 
 <style>
-	br {
-		display: block;
-		margin-bottom: 8px; /* Adjust the value to create the desired gap between lines */
-	}
 	/* .cityUnderline::after {
 		content: '';
 		width: 100%;
