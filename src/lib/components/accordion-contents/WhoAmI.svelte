@@ -24,21 +24,21 @@
 	});
 
 	$: percentScrolled = scroll / whoAmIHeight;
-	$: showSF = percentScrolled > 0.4;
-	$: showAA = percentScrolled > 1.0;
-	$: showDC = percentScrolled > 1.2;
-	$: showAKL = percentScrolled > 1.4;
+	$: showSF = scroll > 300;
+	$: showAA = scroll > 800;
+	$: showDC = scroll > 900;
+	$: showAKL = scroll > 1050;
 
-	$: if (percentScrolled > 0.4 && percentScrolled < 1.0) {
+	$: if (scroll > 300 && scroll < 800) {
 		count = 0;
 	}
-	$: if (percentScrolled > 1.0 && percentScrolled < 1.2) {
+	$: if (scroll > 800 && scroll < 900) {
 		count = 1;
 	}
-	$: if (percentScrolled > 1.2 && percentScrolled < 1.4) {
+	$: if (scroll > 900 && scroll < 1050) {
 		count = 2;
 	}
-	$: if (percentScrolled > 1.4) {
+	$: if (scroll > 1050) {
 		count = 3;
 	}
 
@@ -101,7 +101,7 @@
 	showAKL{showAKL}
 	count: {count}
 
-	<div class="flex flex-col relative  -mx-[8%]   ">
+	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
 			class=" pointer-events-none"
 			width="100%"
@@ -131,7 +131,37 @@
 				</g>
 			</g>
 		</svg>
+	</div>
 
+	<div class="{showSF && !showAA ? 'block' : 'hidden'}  flex flex-col gap-2 ">
+		<div
+			in:fly={{
+				delay: 0,
+				y: 20,
+				duration: 200,
+				easing: sineIn
+			}}
+		>
+			<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
+				<div class="text-lg place-self-end font-semibold">1992</div>
+				<div class=" ">SF Bay Area</div>
+			</div>
+
+			<div
+				in:fly={{
+					delay: 50,
+					y: 20,
+					duration: 200,
+					easing: sineIn
+				}}
+				class=" mt-1"
+			>
+				I was born and raised in San Mateo, CA, outside of San Francisco.
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
 			class="-mt-[12.5%] pointer-events-none"
 			width="100%"
@@ -160,7 +190,38 @@
 				/>
 			</g>
 		</svg>
+	</div>
 
+	<div class="{showAA && !showDC ? 'block' : 'hidden'}  flex flex-col gap-2 ">
+		<div
+			in:fly={{
+				delay: 0,
+				y: 20,
+				duration: 200,
+				easing: sineIn
+			}}
+		>
+			<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
+				<div class="text-lg place-self-end font-semibold">2010 - 14</div>
+				<div class=" ">Ann Arbor, MI</div>
+			</div>
+
+			<div
+				in:fly={{
+					delay: 50,
+					y: 20,
+					duration: 200,
+					easing: sineIn
+				}}
+				class=" mt-1"
+			>
+				At the University of Michigan I studied philosophy, politics, and economics. I also
+				co-founded an organization that puts on charity concerts and raises $100k+ annually.
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
 			class="-mt-[13.5%] pointer-events-none"
 			width="100%"
@@ -189,7 +250,39 @@
 				/>
 			</g>
 		</svg>
+	</div>
 
+	<div class="{showDC && !showAKL ? 'block' : 'hidden'}  flex flex-col gap-2 ">
+		<div
+			in:fly={{
+				delay: 0,
+				y: 20,
+				duration: 200,
+				easing: sineIn
+			}}
+		>
+			<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
+				<div class="text-lg place-self-end font-semibold">2015 - 17</div>
+				<div class=" ">Washington, DC</div>
+			</div>
+
+			<div
+				in:fly={{
+					delay: 50,
+					y: 20,
+					duration: 200,
+					easing: sineIn
+				}}
+				class=" mt-1"
+			>
+				In DC I was a Project Manager for several $1m+ international development projects
+				simultaneously. I also led business development trips and organized conferences in four
+				different countries.
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col relative  -mx-[55%] sm:-mx-[10%]  ">
 		<svg
 			class="-mt-[14%] pointer-events-none"
 			width="100%"
@@ -220,6 +313,36 @@
 			</g>
 		</svg>
 	</div>
+
+	<div class="{showAKL ? 'block' : 'hidden'}  flex flex-col gap-2 ">
+		<div
+			in:fly={{
+				delay: 0,
+				y: 20,
+				duration: 200,
+				easing: sineIn
+			}}
+		>
+			<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
+				<div class="text-lg place-self-end font-semibold">2018 - 21</div>
+				<div class=" ">Auckland, NZ</div>
+			</div>
+
+			<div
+				in:fly={{
+					delay: 50,
+					y: 20,
+					duration: 200,
+					easing: sineIn
+				}}
+				class=" mt-1"
+			>
+				I played key role in analysis and design of transformative urban design and transport
+				projects as a Sustainable Transport Planner.
+			</div>
+		</div>
+	</div>
+
 	<div class="-mt-[9%] flex flex-col gap-2">
 		{#each [cities[count]] as city (city.id)}
 			<div
@@ -242,7 +365,7 @@
 						duration: 200,
 						easing: sineIn
 					}}
-					class=" mt-2"
+					class=" mt-1"
 				>
 					{city.text}
 				</div>
