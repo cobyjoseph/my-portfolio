@@ -1,9 +1,9 @@
 <script>
 	import { setContext } from 'svelte';
-	import Accordion from '../accordion-contents/Accordion.svelte';
-	import AccordionSection from '../accordion-contents/AccordionSection.svelte';
-	import WhoAmI from '$lib/components/accordion-contents/WhoAmI.svelte';
-	import WhatCanIDo from '$lib/components/accordion-contents/WhatCanIDo.svelte';
+	import Accordion from './accordion-contents/Accordion.svelte';
+	import AccordionSection from './accordion-contents/AccordionSection.svelte';
+	import WhoAmI from '$lib/components/sections/accordion-contents/WhoAmI.svelte';
+	import WhatCanIDo from '$lib/components/sections/accordion-contents/WhatCanIDo.svelte';
 
 	let activeSection;
 

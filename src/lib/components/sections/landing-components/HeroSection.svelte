@@ -1,24 +1,29 @@
-<svelte:head>
+<!-- <svelte:head>
 	<script
 		type="module"
 		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
 	></script>
-</svelte:head>
+</svelte:head> -->
 
 <div class="flex items-center justify-center  w-full relative mt-2   ">
-	<div class="flex  items-center gap-2 sm:grid sm:grid-cols-2">
-		<div class="text-light1 largeClamp font-genSans font-bold  w-full relative justify-center ">
-			<div class="text-sm font-extrabold font-satoshi text-[#24FFDA]">Hi. My name is</div>
-			<div class="">Coby Joseph</div>
-			<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark2 z-50       ">
+	<div class="flex flex-col items-center gap-2 sm:grid sm:grid-cols-2">
+		<div class=" font-genSans w-full relative justify-center gap-3 ">
+			<div class="text-md  font-satoshi text-[#5B93FE]">Hi. My name is</div>
+			<div class="text-light1 font-bold largeClamp">Coby Joseph</div>
+			<div
+				class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark2 z-50 leading-[1.35rem]       "
+			>
 				I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
+			</div>
+			<div class="text-xl relative   font-thin  text-dark2  leading-[1.35rem]       ">
+				Like that one
 			</div>
 		</div>
 		<div class="w-full justify-center  h-[60vh] -mt-[2rem]  ">
-			<spline-viewer
+			<!-- <spline-viewer
 				loading="eager"
 				url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
-			/>
+			/> -->
 		</div>
 	</div>
 

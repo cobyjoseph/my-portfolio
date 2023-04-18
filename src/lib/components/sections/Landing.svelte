@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Menu from '$lib/components/landing-components/Menu.svelte';
-	import BackgroundElements from '$lib/components/landing-components/BackgroundElements.svelte';
-	import HeroSection from '$lib/components/landing-components/HeroSection.svelte';
-	import ExamplesSection from '$lib/components/landing-components/ExamplesSection.svelte';
-	import ThreeDObject from '$lib/components/landing-components/ThreeDObject.svelte';
+	import Menu from '$lib/components/sections/landing-components/Menu.svelte';
+	import BackgroundElements from '$lib/components/sections/landing-components/BackgroundElements.svelte';
+	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
+	import ExamplesSection from '$lib/components/sections/landing-components/ExamplesSection.svelte';
+	import ThreeDObject from '$lib/components/sections/landing-components/ThreeDObject.svelte';
 
 	import { onMount } from 'svelte';
 	import { Application } from '@splinetool/runtime';
