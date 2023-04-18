@@ -56,7 +56,7 @@
 	</div> -->
 	<div>Click on the cities below to see the highlights of my journey:</div>
 
-	<div class="flex flex-col relative -mx-10    ">
+	<div class="flex flex-col relative  -mx-[8%]   ">
 		<svg
 			class=" pointer-events-none"
 			width="100%"
@@ -68,6 +68,7 @@
 			xml:space="preserve"
 			xmlns:serif="http://www.serif.com/"
 			style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+			stroke="white"
 		>
 			<g transform="matrix(1,0,0,1,-695.602,-392.675)">
 				<g transform="matrix(1,0,0,1,130.572,-47.6196)">
@@ -85,7 +86,7 @@
 		</svg>
 
 		<svg
-			class="-mt-[15%] pointer-events-none"
+			class="-mt-[12.5%] pointer-events-none"
 			width="100%"
 			height="100%"
 			viewBox="0 0 888 182"
@@ -95,6 +96,7 @@
 			xml:space="preserve"
 			xmlns:serif="http://www.serif.com/"
 			style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+			stroke="white"
 		>
 			<g transform="matrix(1,0,0,1,-565.03,-251.191)">
 				<path
@@ -110,7 +112,7 @@
 		</svg>
 
 		<svg
-			class="-mt-[17%] pointer-events-none"
+			class="-mt-[13.5%] pointer-events-none"
 			width="100%"
 			height="100%"
 			viewBox="0 0 887 195"
@@ -120,6 +122,7 @@
 			xml:space="preserve"
 			xmlns:serif="http://www.serif.com/"
 			style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+			stroke="white"
 		>
 			<g transform="matrix(1,0,0,1,-548.43,-669.858)">
 				<path
@@ -145,6 +148,7 @@
 			xml:space="preserve"
 			xmlns:serif="http://www.serif.com/"
 			style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+			stroke="white"
 		>
 			<g transform="matrix(1,0,0,1,-562.232,-101.375)">
 				<g transform="matrix(1.0282,0,0,1.0697,70.1664,-263.347)">
