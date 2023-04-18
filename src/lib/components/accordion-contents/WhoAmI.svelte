@@ -83,12 +83,32 @@
 	bind:clientHeight={whoAmIHeight}
 	class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  "
 >
+	<div class=" sm:flex gap-2">
+		<img
+			src="kraftTone/headshot-sytled-dots-v0.2.png"
+			alt="headshot of me"
+			class="w-[4rem]  float-left mr-2 "
+		/>
+
+			<p class="sm:hidden">
+				I work remotely as a freelance designer and developer. I'm currently in Buenos Aires. When
+				not working I'm probably playing soccer, a board game, or rock climbing.
+			</p>
+			<div class="hidden justify-center   sm:flex sm:flex-col sm:gap-3">
+				<p>I work remotely as a freelance designer and developer. I'm currently in Buenos Aires.</p>
+				<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
+			</div>
+		
+	</div>
+
 	<!-- <div>A California kid who has lived on four continents.</div> -->
 	<!-- <div>
 		A project manager for international development projects, turned sustainable urban planner,
 		turned designer and developer.
 	</div> -->
-	<div>Keep scrolling to see the highlights of my journey:</div>
+	<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[20%]" />
+
+	<div>Keep scrolling to see some highlights of how I got here:</div>
 	<!-- scroll {scroll}
 	whoAmIHeight{whoAmIHeight}
 	landingPageHeight{landingPageHeight}
@@ -419,10 +439,6 @@
 	</div> -->
 
 	<!-- ------------------------------------------------------------------------------------- -->
-
-	<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[20%]" />
-	<div>I now work as a designer and developer remotely (I'm currently in Buenos Aires).</div>
-	<div>When not working I'm probably playing soccer, a board game, or rock climbing.</div>
 </div>
 
 <style>
