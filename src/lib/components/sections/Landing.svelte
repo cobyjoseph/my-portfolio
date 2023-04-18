@@ -16,10 +16,10 @@
 	});
 </script>
 
-<BackgroundElements />
-<div class="relative z-10">
+<!-- <BackgroundElements /> -->
+<!-- <div class="relative z-10">
 	<Menu />
-</div>
+</div> -->
 
 <div class="flex flex-col gap-2">
 	<!-- <TutorSiteVideo /> -->

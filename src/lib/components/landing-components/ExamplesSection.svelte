@@ -3,10 +3,10 @@
 </script>
 
 <svelte:head>
-	<!-- <script
+	<script
 		type="module"
 		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
-	></script> -->
+	></script>
 </svelte:head>
 
 <div class="flex flex-col relative sm:grid sm:grid-cols-2 ">
@@ -33,10 +33,10 @@
 	</div> -->
 
 	<div class="w-full justify-center  h-[60vh] -mt-[2rem]  ">
-		<!-- <spline-viewer
+		<spline-viewer
 			loading="eager"
 			url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
-		/> -->
+		/>
 	</div>
 </div>
 
