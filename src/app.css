@@ -7,11 +7,11 @@
 body {
 	background-color: #F9F1DB;
 	overflow-x: hidden;
-	mask-image: url(background/light-texture-v0.1.png);	
+	/* mask-image: url(background/light-texture-v0.1.png);	 */
 	/* background-image: url(background/light-texture-v0.1.png); */
-	background-position: center;
+	/* background-position: center;
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: repeat; */
 }
 
 

@@ -23,7 +23,7 @@
 
 <div class="flex flex-col gap-2">
 	<!-- <TutorSiteVideo /> -->
-	<div class="flex flex-col">
+	<div class="flex flex-col mt-[10%] sm:mt-0">
 		<HeroSection />
 	</div>
 	<!-- <ThreeDObject />
