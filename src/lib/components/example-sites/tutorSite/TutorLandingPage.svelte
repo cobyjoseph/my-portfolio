@@ -22,8 +22,9 @@
 	// }
 </script>
 
+<!-- 
 <div class="relative  iphoneOutline w-[40%] aspect-[1/2.067] ">
-	<!-- the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? -->
+	 the RELATIVE creates a reference point for the background item, which is absolute. Otherwise it would absolutely position relative to the page itself. And flex is used for the different pages/sections to be one after the other. flex necessary? 
 	<section class="  bg-[#fcf4e4]    h-full w-full  relative -z-10 rounded-[19%]  ">
 		<LandingBackground />
 
@@ -80,7 +81,7 @@
 			</div>
 		</div>
 	</section>
-</div>
+</div> -->
 
 <!-- LANDSCAPE FORMATTING BELOW -------------------------------------------- -->
 <!-- ------------------------------------------------------------------------ -->
@@ -95,7 +96,7 @@
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
 
-<section class="relative  bg-[#fcf4e4] w-full portrait:!hidden landscape:flex  ">
+<section class="relative  bg-[#fcf4e4] w-full  flex  ">
 	<LandingBackground />
 
 	<div class="layeredWave waveStyle absolute bottom-0  w-full overflow-clip">

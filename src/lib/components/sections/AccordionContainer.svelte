@@ -4,6 +4,7 @@
 	import AccordionSection from './accordion-contents/AccordionSection.svelte';
 	import WhoAmI from '$lib/components/sections/accordion-contents/WhoAmI.svelte';
 	import WhatCanIDo from '$lib/components/sections/accordion-contents/WhatCanIDo.svelte';
+	import ExampleProjects from '$lib/components/sections/accordion-contents/ExampleProjects.svelte';
 
 	let activeSection;
 
@@ -29,7 +30,7 @@
 		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
 		<AccordionSection title="Example projects">
-			<p>Content for Section 3.</p>
+			<ExampleProjects />
 		</AccordionSection>
 
 		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
