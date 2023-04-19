@@ -14,7 +14,7 @@
 	setContext('setActiveSection', setActiveSection);
 </script>
 
-<div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2  ">
+<div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2 pb-10 ">
 	<Accordion>
 		<AccordionSection title="Who am I?">
 			<WhoAmI />
