@@ -28,7 +28,7 @@
 	</div>
 	<!-- <ThreeDObject />
 	 -->
-	<!-- <canvas id="canvas3d" bind:this={canvas} class="outline h-[50vh]" /> -->
+	<!-- <canvas id="canvas3d" bind:this={canvas} class=" h-[50vh]" /> -->
 
 	<!-- <div class="flex flex-col ">
 		<ExamplesSection />
