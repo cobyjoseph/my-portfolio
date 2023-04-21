@@ -19,9 +19,7 @@
 	});
 </script>
 
-
-
-<div class="flex items-center justify-center  w-full relative outline sm:py-[30vh] ">
+<div class="flex items-center justify-center  w-full relative  sm:py-[30vh] ">
 	<div class="flex flex-col items-center gap-2 ">
 		<div class=" font-genSans w-full relative justify-center flex flex-col gap-2 ">
 			<div class="text-lg  font-satoshi text-dark2 -mb-2 flex">Hi. My name is:</div>
@@ -67,7 +65,6 @@
 				</svg>
 			</div>
 		</div>
-	
 	</div>
 
 	<div class="flex flex-col relative sm:grid sm:grid-cols-2 " />

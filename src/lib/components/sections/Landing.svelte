@@ -22,9 +22,7 @@
 	></script>
 </svelte:head> -->
 
-
-
-<div class="flex flex-col gap-2 sm:flex-row outline outline-green-400">
+<div class="flex flex-col gap-2 sm:flex-row">
 	<!-- <TutorSiteVideo /> -->
 	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full">
 		<HeroSection />
@@ -35,6 +33,5 @@
 		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/> -->
 
-	<canvas id="canvas3d" bind:this={canvas} class="outline outline-red-500  sm:my-auto sm:ml-auto" />
+	<canvas id="canvas3d" bind:this={canvas} class="  sm:my-auto sm:ml-auto sm:scale-[175%]" />
 </div>
-
