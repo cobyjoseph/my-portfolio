@@ -2,12 +2,12 @@
 	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
 	<script
 		type="module"
 		src="https://unpkg.com/@splinetool/viewer@0.9.293/build/spline-viewer.js"
 	></script>
-</svelte:head>
+</svelte:head> -->
 
 <div class="flex flex-col relative sm:grid sm:grid-cols-2 ">
 	<div class="text-xl relative  flex flex-col font-satoshi font-bold  text-dark2 z-50       ">
@@ -32,12 +32,12 @@
 		</div>
 	</div> -->
 
-	<div class="w-full justify-center  h-[60vh] -mt-[2rem]  ">
+	<!-- <div class="w-full justify-center  h-[60vh] -mt-[2rem]  ">
 		<spline-viewer
 			loading="eager"
 			url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 		/>
-	</div>
+	</div> -->
 </div>
 
 <style>
