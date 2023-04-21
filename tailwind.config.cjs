@@ -40,7 +40,9 @@ module.exports = {
 				Yantramanav: ['Yantramanav'],
 				Chivo: ['Chivo'],
 				satoshi: ['Satoshi', 'sans-serif'],
-				genSans: ['General Sans', 'sans-serif']
+				genSans: ['General Sans', 'sans-serif'],
+				switzer: ['Switzer, sans-serif'],
+				neco: ['Neco, serif']
 			}
 		}
 	},

@@ -16,6 +16,7 @@
 		});
 	}
 </script>
+
 <!-- 
 <div
 	class="  mt-[0.5rem] w-full  landscape:hidden flex  items-center justify-between rounded-lg font-Heebo text-[0.42rem] text-[#2A2AAC]   "
@@ -52,14 +53,14 @@
 	<div
 		class=" flex w-full items-center justify-between rounded-lg font-Heebo text-[0.42rem] text-[#2A2AAC] "
 	>
-		<div class="flex mb-[0.1rem]  gap-[0.3rem] ">
+		<div class="flex mb-[0.1rem]  gap-[0.5rem] ">
 			<img
-				class="w-3 translate-x-[0.1rem]  "
+				class="w-4 translate-x-[0.1rem]  "
 				src="tutorSite/book-logo.svg"
 				alt="rise tutoring logo"
 			/>
 
-			<div class="font-Caveat text-[0.5rem] font-bold text-[#CC3232] ">
+			<div class="text-[0.7rem] sm:text-[1rem] font-satoshi font-bold text-[#CC3232] ">
 				Rise tutoring
 			</div>
 		</div>
@@ -68,7 +69,7 @@
 
 		<div class="  flex   ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
-			<div class="flex gap-[0.6rem] ">
+			<div class="flex gap-[0.6rem] sm:gap-[0.8rem] text-[0.5rem] sm:text-[0.65rem] ">
 				<a
 					href={'#section2'}
 					class=" customUnderline   font-semibold"
@@ -133,7 +134,7 @@
 		position: relative;
 		background: #f6991b;
 		display: block;
-		transform: translate(-1px, -2.5px) scaleX(0.42) skew(-50deg);
+		transform: translate(-1px, -12px) scaleX(0.42) skew(-50deg);
 		transform-origin: left;
 		transition: transform 250ms ease-in;
 		z-index: -1;
@@ -141,7 +142,7 @@
 
 	.customUnderline:hover::after {
 		/* background: linear-gradient(90deg, #cc3232, #f6991b 100%); */
-		transform: translate(-1px, -2px) skew(-40deg);
+		transform: translate(-1px, -12px) skew(-40deg);
 		opacity: 70%;
 		width: 100%;
 

@@ -37,7 +37,7 @@
 	typing2();
 </script>
 
-<div class="text-[0.6rem] leading-[0.8rem] ">
+<div class="text-[0.9rem] sm:text-[1.2rem] sm:leading-[1.3rem] leading-[1rem] ">
 	{#if pause}
 		<div class="gradientText  after:pl-1 after:font-bold after:text-[#544E4E] after:content-['|'] ">
 			{typedChars}
@@ -52,7 +52,7 @@
 		</div>
 
 		<div
-			class=" gradientText after:animate-blinking after:pl-1 after:text-[0.6rem] after:font-bold after:text-[#544E4E] after:content-['|'] "
+			class=" gradientText after:animate-blinking after:pl-1 after:text-[1rem] sm:after:text-[1.4rem] after:font-bold after:text-[#544E4E] after:content-['|'] "
 		>
 			{typedChars2}
 		</div>
