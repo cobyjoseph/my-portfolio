@@ -67,7 +67,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col relative sm:grid sm:grid-cols-2 " />
+	<!-- <div class="flex flex-col relative sm:grid sm:grid-cols-2 " /> -->
 </div>
 
 <style>

@@ -33,5 +33,5 @@
 		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/> -->
 
-	<canvas id="canvas3d" bind:this={canvas} class="  sm:my-auto sm:ml-auto sm:scale-[175%]" />
+	<canvas id="canvas3d" bind:this={canvas} class="  sm:my-auto sm:ml-auto " />
 </div>
