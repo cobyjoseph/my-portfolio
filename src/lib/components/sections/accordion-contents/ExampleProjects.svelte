@@ -6,9 +6,14 @@
 <div class="flex flex-col gap-6  font-satoshi  ">
 	<div class="flex w-full sm:flex-row flex-col ml-1 sm:ml-0  gap-3 sm:gap-5">
 		<div
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative   sm:h-[15rem] sm:max-w-[26rem]    flex rounded-lg  overflow-hidden "
+			on:click={() => window.open('https://example-site-gilt.vercel.app/', '_blank')}
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative   sm:h-[15rem] sm:max-w-[26rem] relative hover:cursor-pointer   flex rounded-lg  overflow-hidden "
 		>
 			<TutorLandingPage />
+
+			<div
+				class="absolute top-0 left-0 w-full z-50 h-full bg-gray-300 opacity-0 hover:opacity-50  rounded-lg"
+			/>
 		</div>
 
 		<div class="flex flex-col gap-3 ">
@@ -34,6 +39,9 @@
 			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative   sm:h-[15rem] sm:max-w-[26rem] hover:cursor-pointer   flex rounded-lg  overflow-hidden "
 		>
 			<TutorLandingPage />
+			<div
+				class="absolute top-0 left-0 w-full h-full bg-gray-300 opacity-0 hover:opacity-50 z-50 rounded-lg"
+			/>
 		</div>
 
 		<div class="flex flex-col gap-3  ">
@@ -55,7 +63,7 @@
 
 	<div class="flex w-full gap-3 sm:gap-5 sm:flex-row flex-col ">
 		<div
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem] outline flex rounded-lg overflow-hidden "
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem]  flex rounded-lg overflow-hidden "
 		>
 			<img
 				src={indelvve}
@@ -85,6 +93,6 @@
 	</div>
 
 	<div class="flex w-full gap-3 sm:flex-row flex-col text-xl  ">
-		I also designed and developed this portfolio site
+		I also designed and developed this portfolio site 😄
 	</div>
 </div>

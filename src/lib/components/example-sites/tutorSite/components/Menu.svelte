@@ -97,14 +97,12 @@
 		position: relative;
 	}
 
-	.customUnderline:hover {
+	/* .customUnderline:hover {
 		color: transparent;
 		background-clip: text;
-		/* background-image: linear-gradient(90deg, #cc3232, #f6991b 100%); */
 
 		background-color: #ca4246;
 
-		/* Create the gradient. */
 		background-image: linear-gradient(
 			45deg,
 			#2a2aac 16.666%,
@@ -124,7 +122,7 @@
 
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	}
+	} */
 
 	.customUnderline:after {
 		content: '';
@@ -139,9 +137,8 @@
 		transition: transform 250ms ease-in;
 		z-index: -1;
 	}
-
+	/* 
 	.customUnderline:hover::after {
-		/* background: linear-gradient(90deg, #cc3232, #f6991b 100%); */
 		transform: translate(-1px, -12px) skew(-40deg);
 		opacity: 70%;
 		width: 100%;
@@ -159,7 +156,7 @@
 			#c8c0b2 98%,
 			#c8c0b2 98%
 		);
-	}
+	} */
 
 	.underlineMenu:after {
 		content: '';
@@ -176,7 +173,6 @@
 	}
 
 	.underlineMenu:hover::after {
-		/* background: linear-gradient(90deg, #cc3232, #f6991b 100%); */
 		transform: translate(-2px, -5px) skew(-40deg);
 		opacity: 70%;
 		width: 4.5rem;

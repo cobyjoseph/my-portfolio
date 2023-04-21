@@ -107,10 +107,9 @@
 		z-index: 50;
 	}
 
-	.buttonUnderline:hover {
+	/* .buttonUnderline:hover {
 		background-color: #ca4246;
 
-		/* Create the gradient. */
 		background-image: linear-gradient(
 			45deg,
 			#2a2aac 15%,
@@ -130,7 +129,7 @@
 
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	}
+	} */
 
 	.buttonUnderline:after {
 		content: '';
@@ -146,12 +145,11 @@
 		z-index: -1;
 	}
 
-	.buttonUnderline:hover::after {
+	/* .buttonUnderline:hover::after {
 		transform: translate(-3px, -12px) skew(-40deg);
 		width: 100%;
 		opacity: 70%;
 
-		/* Create the gradient. */
 		background-image: linear-gradient(
 			45deg,
 			#2a2aac 16%,
@@ -165,7 +163,7 @@
 			#c8c0b2 98%,
 			#c8c0b2 98%
 		);
-	}
+	} */
 
 	.waveStyle {
 		aspect-ratio: 960/250;
