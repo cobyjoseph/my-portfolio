@@ -1,19 +1,23 @@
 <script lang="ts">
 	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
 	import indelvve from '$lib/assets/example-sites/indelvve-ui-v2.png';
+	import LuminaryLandingPage from '$lib/components/example-sites/luminaryPartners/LuminaryLandingPage.svelte';
 </script>
 
 <div class="flex flex-col gap-6  font-satoshi  ">
 	<div class="flex w-full sm:flex-row flex-col ml-1 sm:ml-0  gap-3 sm:gap-5">
 		<div
 			on:click={() => window.open('https://example-site-gilt.vercel.app/', '_blank')}
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative   sm:h-[15rem] sm:max-w-[26rem] relative hover:cursor-pointer   flex rounded-lg  overflow-hidden "
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem] cursor-pointer flex rounded-lg overflow-hidden"
 		>
-			<TutorLandingPage />
-
-			<div
-				class="absolute top-0 left-0 w-full z-50 h-full bg-gray-300 opacity-0 hover:opacity-50  rounded-lg"
-			/>
+			<LuminaryLandingPage />
+			<div class="absolute top-0 left-0 w-full h-full z-[500] rounded-lg">
+				<div
+					class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-black bg-opacity-[70%] hover:opacity-100"
+				>
+					<span class="text-white font-normal text-xl">Visit Site</span>
+				</div>
+			</div>
 		</div>
 
 		<div class="flex flex-col gap-3 ">
@@ -33,15 +37,19 @@
 		</div>
 	</div>
 
-	<div class="flex w-full gap-3 sm:flex-row flex-col gap-3 sm:gap-5 ">
+	<div class="flex w-full sm:flex-row flex-col gap-3 sm:gap-5 font-genSans ">
 		<div
 			on:click={() => window.open('https://risetutoring.vercel.app/', '_blank')}
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative   sm:h-[15rem] sm:max-w-[26rem] hover:cursor-pointer   flex rounded-lg  overflow-hidden "
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem] cursor-pointer flex rounded-lg overflow-hidden"
 		>
 			<TutorLandingPage />
-			<div
-				class="absolute top-0 left-0 w-full h-full bg-gray-300 opacity-0 hover:opacity-50 z-50 rounded-lg"
-			/>
+			<div class="absolute top-0 left-0 w-full h-full z-[500] rounded-lg">
+				<div
+					class="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 bg-black bg-opacity-[70%] hover:opacity-100"
+				>
+					<span class="text-white font-normal text-xl">Visit Site</span>
+				</div>
+			</div>
 		</div>
 
 		<div class="flex flex-col gap-3  ">
@@ -68,7 +76,7 @@
 			<img
 				src={indelvve}
 				alt="mock of indelvve website"
-				class="scale-150 translate-y-[3rem] sm:translate-y-[3.8rem] translate-x-[1.5rem] sm:translate-x-[0.5rem]"
+				class="scale-150 translate-y-[3rem] sm:translate-y-[3.8rem] translate-x-[0.5rem] sm:translate-x-[0.5rem]"
 			/>
 		</div>
 
@@ -93,6 +101,6 @@
 	</div>
 
 	<div class="flex w-full gap-3 sm:flex-row flex-col text-xl  ">
-		I also designed and developed this portfolio site 😄
+		I also designed and developed this portfolio site 🙂
 	</div>
 </div>

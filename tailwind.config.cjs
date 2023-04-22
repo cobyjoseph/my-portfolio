@@ -34,7 +34,8 @@ module.exports = {
 				retroPink: '#D12368',
 				retroPurple: '#720965',
 				retroGray: '#2D2D2D',
-				retroBase: '#F4F4F4'
+				retroBase: '#F4F4F4',
+				lpButton: '#2155FF'
 			},
 			fontFamily: {
 				Yantramanav: ['Yantramanav'],
