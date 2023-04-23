@@ -26,10 +26,10 @@
 	{#if mountAnimations}
 		<div class=" relative z-20 mt-[2.5rem] flex flex-col items-center justify-center font-satoshi ">
 			<div class="flex flex-col  items-center  gap-2 text-center text-white  ">
-				<div class=" flex flex-col  items-center justify-center max-w-[65%] gap-2  ">
+				<div class=" flex flex-col  items-center justify-center max-w-[68%] gap-2 sm:gap-[0.5rem] ">
 					<div
 						in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
-						class="text-[1rem] max-w-[90%] mt-3 font-satoshi font-extrabold leading-5 text-white sm:px-[5vw]  sm:leading-[2.8rem]   "
+						class="text-[1rem] max-w-[90%] mt-3 sm:mt-10 font-satoshi font-extrabold leading-5 text-white     "
 					>
 						Strategic marketing for innovative companies
 					</div>
@@ -44,7 +44,7 @@
 					<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 						<a
 							href={'#services'}
-							class=" text-[0.45rem] leading-[1rem] flex items-center bg-lpButton justify-center  rounded-md bg-bright px-[0.6rem]  font-bold text-white  "
+							class=" text-[0.45rem] leading-[1rem] flex items-center bg-lpButton justify-center  rounded-sm bg-bright px-[0.6rem]  font-bold text-white mt-1  "
 							on:click|preventDefault={scrollIntoView}>Learn More</a
 						>
 					</div>

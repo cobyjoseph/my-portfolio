@@ -43,6 +43,7 @@ module.exports = {
 				satoshi: ['Satoshi', 'sans-serif'],
 				genSans: ['General Sans', 'sans-serif'],
 				switzer: ['Switzer, sans-serif'],
+				ranade: ['Ranade, sans-serif'],
 				neco: ['Neco, serif']
 			}
 		}
