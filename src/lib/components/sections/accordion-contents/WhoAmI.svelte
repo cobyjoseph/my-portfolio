@@ -109,18 +109,9 @@
 	<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[20%]" />
 
 	<div>Keep scrolling to see some highlights of how I got here:</div>
-	<!-- scroll {scroll}
-	whoAmIHeight{whoAmIHeight}
-	landingPageHeight{landingPageHeight}
-	<div>
-		percentscrolled: {percentScrolled}
-	</div>
-	showSF{showSF}
-	showAA{showAA}
-	showDC{showDC}
-	showAKL{showAKL}
-	count: {count} -->
 
+
+	
 	{#if showSF}
 		<div
 			transition:fly={{
