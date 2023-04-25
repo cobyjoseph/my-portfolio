@@ -4,11 +4,18 @@
 	export let title;
 	let isOpen = false;
 	const setActiveSection = getContext('setActiveSection');
+	const activeSection = getContext('activeSection');
 
 	function toggleSection() {
-		isOpen = !isOpen;
-		setActiveSection(isOpen ? title : null);
+		if (title === $activeSection) {
+			setActiveSection(null);
+		} else {
+			setActiveSection(title);
+		}
 	}
+
+	// Reactive statement to update isOpen based on the activeSection store value
+	$: isOpen = $activeSection === title;
 </script>
 
 <!-- <Globe /> -->

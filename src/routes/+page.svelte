@@ -3,6 +3,7 @@
 	import Landing from '$lib/components/sections/Landing.svelte';
 	import AccordionContainer from '$lib/components/sections/AccordionContainer.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
+	import LetsChat from '$lib/components/sections/LetsChat.svelte';
 
 	let landingHeight;
 </script>
@@ -22,6 +23,7 @@
 	<div class="relative z-50 -mx-[2%]">
 		<AccordionContainer />
 	</div>
+	<LetsChat />
 </div>
 
 <style>
