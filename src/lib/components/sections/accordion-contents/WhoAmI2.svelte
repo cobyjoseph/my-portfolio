@@ -336,7 +336,7 @@
 	<div class="hidden sm:block ">
 		<InView yThreshold="0" let:isVisible>
 			{#if isVisible}
-				<div class="">
+				<div class="grid grid-cols-2  gap-4">
 					<div class=" order-2 ">
 						<div
 							transition:fly={{
@@ -374,7 +374,7 @@
 						</div>
 					</div>
 
-					<InView2 yThreshold="-200" let:isVisible>
+					<InView2 yThreshold="-180" let:isVisible>
 						{#if isVisible}
 							<div class=" flex flex-col gap-2  relative mt-[5%] ">
 								<div
@@ -409,7 +409,7 @@
 			{/if}
 		</InView>
 
-		<InView yThreshold="-200" let:isVisible>
+		<InView yThreshold="-150" let:isVisible>
 			{#if isVisible}
 				<div class="grid grid-cols-2  gap-4">
 					<div class=" order-2 ">
@@ -423,7 +423,7 @@
 							class="flex flex-col relative     "
 						>
 							<svg
-								class="-mt-[15.5%]  "
+								class="-mt-[12%]  "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 182"
@@ -447,9 +447,9 @@
 						</div>
 					</div>
 
-					<InView2 yThreshold="-340" let:isVisible>
+					<InView2 yThreshold="-320" let:isVisible>
 						{#if isVisible}
-							<div class="flex flex-col gap-2  sm:relative sm:-mt-[14.5%]">
+							<div class="flex flex-col gap-2  relative -mt-[14.5%]">
 								<div
 									in:fly={{
 										delay: 0,
@@ -498,7 +498,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[18%] pointer-events-none"
+								class="-mt-[13%] pointer-events-none"
 								width="100%"
 								height="100%"
 								viewBox="0 0 887 195"
@@ -522,9 +522,9 @@
 						</div>
 					</div>
 
-					<InView2 yThreshold="-390" let:isVisible>
+					<InView2 yThreshold="-400" let:isVisible>
 						{#if isVisible}
-							<div class="  flex flex-col gap-2 sm:-mt-[14.5%]  sm:relative">
+							<div class="  flex flex-col gap-2 sm:-mt-[14%]  sm:relative">
 								<div
 									in:fly={{
 										delay: 0,
@@ -559,7 +559,7 @@
 			{/if}
 		</InView>
 
-		<InView yThreshold="-350" let:isVisible>
+		<InView yThreshold="-380" let:isVisible>
 			{#if isVisible}
 				<div class="grid grid-cols-2  gap-4">
 					<!-- first div below -->
@@ -574,7 +574,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[19%] pointer-events-none"
+								class="-mt-[13%] pointer-events-none"
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 198"
@@ -598,7 +598,7 @@
 						</div>
 					</div>
 					<!-- second div below -->
-					<div class="  flex flex-col gap-2  sm:relative sm:-mt-[14.5%] ">
+					<div class="  flex flex-col gap-2  -mt-[15%] ">
 						<div
 							transition:fly={{
 								delay: 20,
