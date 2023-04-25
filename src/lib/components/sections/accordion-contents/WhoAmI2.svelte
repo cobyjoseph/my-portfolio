@@ -4,6 +4,7 @@
 	import { fly } from 'svelte/transition';
 	import { sineIn } from 'svelte/easing';
 	import InView from '$lib/components/InView.svelte';
+	import InView2 from '$lib/components/InView2.svelte';
 </script>
 
 <div
@@ -70,33 +71,37 @@
 					</div>
 				</div>
 
-				<div class=" flex flex-col gap-2 absolute bg-shade2 sm:relative ">
-					<div
-						in:fly={{
-							delay: 0,
-							y: 20,
-							duration: 200,
-							easing: sineIn
-						}}
-					>
-						<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
-							<div class="text-lg place-self-end font-semibold">1992</div>
-							<div class=" ">SF Bay Area</div>
-						</div>
+				<InView2 yThreshold="-400" let:isVisible>
+					{#if isVisible}
+						<div class=" flex flex-col gap-2 absolute  sm:relative ">
+							<div
+								in:fly={{
+									delay: 0,
+									y: 20,
+									duration: 200,
+									easing: sineIn
+								}}
+							>
+								<div class="  text-3xl flex justify-end font-satoshi gap-2 font-extrabold ">
+									<div class="text-lg place-self-end font-semibold">1992</div>
+									<div class=" ">SF Bay Area</div>
+								</div>
 
-						<div
-							in:fly={{
-								delay: 50,
-								y: 20,
-								duration: 200,
-								easing: sineIn
-							}}
-							class=" mt-2"
-						>
-							I was born and raised in San Mateo, CA, outside of San Francisco.
+								<div
+									in:fly={{
+										delay: 50,
+										y: 20,
+										duration: 200,
+										easing: sineIn
+									}}
+									class=" mt-2"
+								>
+									I was born and raised in San Mateo, CA, outside of San Francisco.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					{/if}
+				</InView2>
 			</div>
 		{/if}
 	</InView>
@@ -139,7 +144,7 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col gap-2 absolute bg-shade2 sm:relative ">
+				<div class="flex flex-col gap-2 absolute  sm:relative ">
 					<div
 						in:fly={{
 							delay: 0,
@@ -209,7 +214,7 @@
 					</div>
 				</div>
 
-				<div class="  flex flex-col gap-2 absolute bg-shade2 sm:relative">
+				<div class="  flex flex-col gap-2 absolute  sm:relative">
 					<div
 						in:fly={{
 							delay: 0,
@@ -280,7 +285,7 @@
 					</div>
 				</div>
 
-				<div class="  flex flex-col gap-2 bg-shade2 sm:relative ">
+				<div class="  flex flex-col gap-2  sm:relative ">
 					<div
 						transition:fly={{
 							delay: 20,
