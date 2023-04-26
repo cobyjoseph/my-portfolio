@@ -19,51 +19,49 @@
 	});
 </script>
 
-<div class="flex items-center justify-center mt-5 sm:mt-0 w-full relative  sm:py-[30vh] ">
-	<div class="flex flex-col items-center gap-2 ">
-		<div class=" font-genSans w-full relative justify-center flex flex-col gap-2 ">
-			<div class="text-lg  font-satoshi text-dark2 -mb-2 flex">Hi. My name is:</div>
-			<div class="text-light1 font-bold largeClamp flex">Coby Joseph</div>
-			<div
-				class="text-xl relative w-full  flex flex-col font-satoshi font-bold  text-dark2 z-50 leading-[1.35rem]       "
+<div class="flex items-center justify-center  w-full    ">
+	<div class=" font-genSans w-full  justify-center flex flex-col gap-2 ">
+		<div class="text-lg  font-satoshi text-dark2  flex">Hi. My name is:</div>
+		<div class="text-light1 font-bold largeClamp flex -mt-2">Coby Joseph</div>
+		<div
+			class="text-xl relative w-full  flex flex-col font-satoshi font-bold  text-dark2 z-50 leading-[1.35rem]       "
+		>
+			I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
+		</div>
+		<div class="flex items-center gap-2">
+			<div class=" flex text-lg relative   text-dark2 ">Like that one</div>
+
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="w-6 h-6 hidden sm:flex"
+				style="transform: translateX({$x}px);"
 			>
-				I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
-			</div>
-			<div class="flex items-center gap-2">
-				<div class=" flex text-lg relative   text-dark2 ">Like that one</div>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+				/>
+			</svg>
 
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="w-6 h-6 hidden sm:flex"
-					style="transform: translateX({$x}px);"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-					/>
-				</svg>
-
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="w-6 h-6 sm:hidden flex"
-					style="transform: translateY({$x}px);"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
-					/>
-				</svg>
-			</div>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="w-6 h-6 sm:hidden flex"
+				style="transform: translateY({$x}px);"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
+				/>
+			</svg>
 		</div>
 	</div>
 

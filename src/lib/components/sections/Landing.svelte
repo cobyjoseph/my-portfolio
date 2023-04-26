@@ -22,18 +22,20 @@
 	></script>
 </svelte:head> -->
 
-<div class="flex flex-col gap-2 sm:grid-cols-4">
-	<!-- <TutorSiteVideo /> -->
-	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:grid-span-3">
-		<HeroSection />
-	</div>
-
-	<!-- <spline-viewer
+<!-- <spline-viewer
 		class="h-full outline"
 		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/> -->
 
-	<div class="relative">
-		<canvas id="canvas3d" bind:this={canvas} class="outline -my-[35%]  " />
+<div class="flex flex-col gap-2 sm:grid-cols-8 sm:py-[30vh] sm:grid mt-5 sm:mt-0">
+	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:col-span-5">
+		<HeroSection />
+	</div>
+	<div class="relative sm:col-span-3">
+		<canvas
+			id="canvas3d"
+			bind:this={canvas}
+			class="outline -my-[7rem] sm:my-0 sm:absolute sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
+		/>
 	</div>
 </div>
