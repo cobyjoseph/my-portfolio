@@ -574,7 +574,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[13%] pointer-events-none"
+								class="-mt-[14%] pointer-events-none"
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 198"
