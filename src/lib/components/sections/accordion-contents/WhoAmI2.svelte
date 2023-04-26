@@ -7,7 +7,7 @@
 	import InView2 from '$lib/components/InView2.svelte';
 </script>
 
-<div class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  ">
+<div class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3">
 	<div class=" sm:flex gap-2">
 		<img
 			src="kraftTone/headshot-sytled-dots-v0.2.png"
@@ -374,7 +374,7 @@
 						</div>
 					</div>
 
-					<InView2 yThreshold="-180" let:isVisible>
+					<InView2 yThreshold="-240" let:isVisible>
 						{#if isVisible}
 							<div class=" flex flex-col gap-2  relative mt-[5%] ">
 								<div
@@ -522,7 +522,7 @@
 						</div>
 					</div>
 
-					<InView2 yThreshold="-400" let:isVisible>
+					<InView2 yThreshold="-440" let:isVisible>
 						{#if isVisible}
 							<div class="  flex flex-col gap-2 sm:-mt-[14%]  sm:relative">
 								<div

@@ -28,11 +28,28 @@
 				I designed and developed the Rise Tutoring website with Sveltekit as an example site for a
 				private tutoring company.
 			</div>
+
 			<button
 				on:click={() => window.open('https://example-site-gilt.vercel.app/', '_blank')}
-				class=" bg-light1 text-dark1  px-4 py-[0.1rem] items-center rounded-lg text-base flex max-w-fit hover:bg-white hover:text-dark1 "
-			>
-				Visit site
+				class="bg-white items-start  font-medium  text-dark1  px-4 py-[0.1rem] rounded-lg text-lg flex max-w-fit hover:bg-slate-100 hover:text-dark1  glow-effect"
+				data-glow-offset="true"
+				>Visit Site
+				<svg class="glow-container">
+					<rect
+						pathLength="100"
+						stroke-linecap="round"
+						class="glow-blur"
+						rx="0.75rem"
+						ry="0.75rem"
+					/>
+					<rect
+						pathLength="100"
+						stroke-linecap="round"
+						class="glow-line"
+						rx="0.75rem"
+						ry="0.75rem"
+					/>
+				</svg>
 			</button>
 		</div>
 	</div>
@@ -60,11 +77,28 @@
 				I designed and developed the Rise Tutoring website with Sveltekit as an example site for a
 				private tutoring company.
 			</div>
+
 			<button
 				on:click={() => window.open('https://risetutoring.vercel.app/', '_blank')}
-				class=" bg-light1 text-dark1  px-4 py-[0.1rem] items-center rounded-lg text-base flex max-w-fit hover:bg-white hover:text-dark1 "
-			>
-				Visit site
+				class="bg-white font-medium text-dark1  px-4 py-[0.1rem] items-center rounded-lg text-lg flex max-w-fit hover:bg-slate-100  glow-effect"
+				data-glow-offset="true"
+				>Visit Site
+				<svg class="glow-container">
+					<rect
+						pathLength="100"
+						stroke-linecap="round"
+						class="glow-blur"
+						rx="0.75rem"
+						ry="0.75rem"
+					/>
+					<rect
+						pathLength="100"
+						stroke-linecap="round"
+						class="glow-line"
+						rx="0.75rem"
+						ry="0.75rem"
+					/>
+				</svg>
 			</button>
 		</div>
 	</div>
@@ -104,3 +138,84 @@
 		I also designed and developed this portfolio site 🙂
 	</div>
 </div>
+
+<style>
+	.glow-effect {
+		--glow-line-color: #654e34;
+		--glow-line-thickness: 1px;
+		--glow-line-length: 15px;
+		--glow-blur-color: #654e34;
+		--glow-blur-size: 1px;
+		--glow-offset: 0px;
+		--animation-speed: 1200ms;
+		/* do not change, used for calculations */
+		--container-offset: 110px;
+		position: relative;
+	}
+
+	.glow-container {
+		pointer-events: none;
+		position: absolute;
+		inset: calc(var(--container-offset) / -2);
+		width: calc(100% + var(--container-offset));
+		height: calc(100% + var(--container-offset));
+		opacity: 0;
+		/* outline: 3px solid blue; */
+	}
+
+	.glow-blur,
+	.glow-line {
+		width: calc(100% - var(--container-offset) + var(--glow-offset));
+		height: calc(100% - var(--container-offset) + var(--glow-offset));
+		x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+		y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+		/* rx: 1.25rem; */
+		fill: transparent;
+		stroke: black;
+		stroke-width: 5px;
+		stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
+	}
+
+	.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
+		stroke-dashoffset: -80px;
+		transition: stroke-dashoffset var(--animation-speed) ease-in;
+	}
+
+	.glow-line {
+		stroke: var(--glow-line-color);
+		stroke-width: var(--glow-line-thickness);
+	}
+
+	.glow-blur {
+		filter: blur(var(--glow-blur-size));
+		stroke: var(--glow-blur-color);
+		stroke-width: var(--glow-blur-size);
+	}
+
+	.glow-effect:is(:hover, :focus) .glow-container {
+		animation: glow-visibility ease-in-out var(--animation-speed);
+	}
+
+	@keyframes glow-visibility {
+		0%,
+		100% {
+			opacity: 0;
+		}
+		25%,
+		75% {
+			opacity: 1;
+		}
+	}
+
+	.glow-effect[data-glow-animation='false'] {
+		--glow-line-length: 50px;
+	}
+	.glow-effect[data-glow-offset='true'] {
+		--glow-offset: 5px;
+	}
+
+	.glow-effect[data-glow-animation='grow']:is(:hover, :focus) .glow-container {
+		scale: 1.3;
+		transition: scale var(--animation-speed) linear;
+	}
+</style>

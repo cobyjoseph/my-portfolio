@@ -22,9 +22,9 @@
 	></script>
 </svelte:head> -->
 
-<div class="flex flex-col gap-2 sm:flex-row">
+<div class="flex flex-col gap-2 sm:grid-cols-4">
 	<!-- <TutorSiteVideo /> -->
-	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full">
+	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:grid-span-3">
 		<HeroSection />
 	</div>
 
@@ -33,5 +33,7 @@
 		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/> -->
 
-	<canvas id="canvas3d" bind:this={canvas} class="  sm:my-auto sm:ml-auto " />
+	<div class="relative">
+		<canvas id="canvas3d" bind:this={canvas} class="outline -my-[35%]  " />
+	</div>
 </div>
