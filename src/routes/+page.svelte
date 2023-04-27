@@ -4,7 +4,6 @@
 	import AccordionContainer from '$lib/components/sections/AccordionContainer.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
 	import LetsChat from '$lib/components/sections/LetsChat.svelte';
-	import Loading from '$lib/components/Loading.svelte';
 
 	let landingHeight;
 </script>
@@ -26,3 +25,6 @@
 	</div>
 	<LetsChat />
 </div>
+
+<style>
+</style>

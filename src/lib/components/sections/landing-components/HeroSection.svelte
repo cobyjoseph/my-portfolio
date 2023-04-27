@@ -29,8 +29,11 @@
 			I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
 		</div>
 		<div class="flex items-center gap-2">
-			<div class=" flex text-lg relative   text-dark2 ">
-				Like that one. Click and drag it!
+			<div class=" flex text-lg relative sm:hidden  text-dark2 ">
+				Like that one below. Click and drag it!
+			</div>
+			<div class="hidden sm:block text-lg relative   text-dark2 ">
+				Like the one on that phone. Click and drag it!
 			</div>
 
 			<svg
@@ -39,7 +42,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-8 h-8 hidden sm:flex"
+				class="w-8 h-8 hidden sm:flex self-end"
 				style="transform: translateX({$x}px);"
 			>
 				<path
@@ -55,7 +58,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-6 h-6 sm:hidden flex"
+				class="w-6 h-6 sm:hidden flex self-end"
 				style="transform: translateY({$x}px);"
 			>
 				<path
