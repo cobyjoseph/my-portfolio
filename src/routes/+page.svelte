@@ -4,8 +4,14 @@
 	import AccordionContainer from '$lib/components/sections/AccordionContainer.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
 	import LetsChat from '$lib/components/sections/LetsChat.svelte';
+	import Loading from '$lib/components/Loading.svelte';
 
 	let landingHeight;
+	let isLoading = true;
+
+	function handleSplineLoad() {
+		isLoading = false;
+	}
 </script>
 
 <svelte:head>
@@ -15,16 +21,20 @@
 	/>
 </svelte:head>
 
-<div class="px-[8%]">
-	<div bind:clientHeight={$landingPageHeightInitial}>
-		<Landing />
-	</div>
+{#if isLoading}
+	<Loading />
+{:else}
+	<div class="px-[8%]">
+		<div bind:clientHeight={$landingPageHeightInitial}>
+			<Landing on:load={handleSplineLoad} />
+		</div>
 
-	<div class="relative z-50 -mx-[2%]">
-		<AccordionContainer />
+		<div class="relative z-50 -mx-[2%]">
+			<AccordionContainer />
+		</div>
+		<LetsChat />
 	</div>
-	<LetsChat />
-</div>
+{/if}
 
 <style>
 </style>
