@@ -7,11 +7,6 @@
 	import Loading from '$lib/components/Loading.svelte';
 
 	let landingHeight;
-	let isLoading = true;
-
-	function handleSplineLoad() {
-		isLoading = false;
-	}
 </script>
 
 <svelte:head>
@@ -21,20 +16,13 @@
 	/>
 </svelte:head>
 
-{#if isLoading}
-	<Loading />
-{:else}
-	<div class="px-[8%]">
-		<div bind:clientHeight={$landingPageHeightInitial}>
-			<Landing on:load={handleSplineLoad} />
-		</div>
-
-		<div class="relative z-50 -mx-[2%]">
-			<AccordionContainer />
-		</div>
-		<LetsChat />
+<div class="px-[8%]">
+	<div bind:clientHeight={$landingPageHeightInitial}>
+		<Landing />
 	</div>
-{/if}
 
-<style>
-</style>
+	<div class="relative z-50 -mx-[2%]">
+		<AccordionContainer />
+	</div>
+	<LetsChat />
+</div>

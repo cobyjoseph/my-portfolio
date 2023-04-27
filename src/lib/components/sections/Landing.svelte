@@ -1,15 +1,23 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Application } from '@splinetool/runtime';
-
-	export let onLoad = () => {};
+	import { beforeNavigate } from '$app/navigation';
+	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
+	
 
 	let canvas;
+	let loaded = false;
 
 	onMount(async () => {
 		const spline = new Application(canvas);
 		await spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
-		onLoad();
+		loaded = true;
+	});
+
+	beforeNavigate(({ to, from }) => {
+		if (!loaded) {
+			to.preventDefault();
+		}
 	});
 </script>
 
@@ -21,7 +29,7 @@
 		<canvas
 			id="canvas3d"
 			bind:this={canvas}
-			class=" -ml-6  xl:-ml-48 2xl:-ml-64 sm:ml-0 -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
+			class=" -ml-6  xl:-ml-12 2xl:-ml-48 sm:ml-0 -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
 		/>
 	</div>
 </div>
