@@ -19,7 +19,7 @@
 	});
 </script>
 
-<div class="bgPhoto">
+<div class="bgPhoto w-full relative">
 	<Menu />
 	<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-80 " />
 

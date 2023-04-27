@@ -5,10 +5,10 @@
 </script>
 
 <div class="flex flex-col gap-6  font-satoshi  ">
-	<div class="flex w-full sm:flex-row flex-col ml-1 sm:ml-0  gap-3 sm:gap-5">
+	<div class="flex w-full lg:flex-row flex-col ml-1 sm:ml-0  gap-3 sm:gap-5">
 		<div
 			on:click={() => window.open('https://example-site-gilt.vercel.app/', '_blank')}
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem] cursor-pointer flex rounded-lg overflow-hidden"
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem]  sm:w-[26rem] sm:min-w-[26rem]  relative sm:h-[15rem] sm:w-[106rem] cursor-pointer flex rounded-lg overflow-hidden"
 		>
 			<LuminaryLandingPage />
 			<div class="absolute top-0 left-0 w-full h-full z-[500] rounded-lg">
@@ -25,8 +25,11 @@
 				<div class="text-2xl leading-6  ">Luminary Partners</div>
 			</div>
 			<div class="text-base font-normal sm:mr-[25%] leading-[1.35rem]">
-				I designed and developed the Luminary Partners website with Sveltekit as an example site for a
-				boutique marketing consulting company. <a href="https://danielarey.myportfolio.com/" class="underline">Dani Rey</a> assisted with the design.
+				I designed and developed the Luminary Partners website with Sveltekit as an example site for
+				a boutique marketing consulting company. <a
+					href="https://danielarey.myportfolio.com/"
+					class="underline">Dani Rey</a
+				> assisted with the design.
 			</div>
 
 			<button
@@ -54,10 +57,10 @@
 		</div>
 	</div>
 
-	<div class="flex w-full sm:flex-row flex-col gap-3 sm:gap-5 font-genSans ">
+	<div class="flex w-full lg:flex-row flex-col gap-3 sm:gap-5 font-genSans  ">
 		<div
 			on:click={() => window.open('https://risetutoring.vercel.app/', '_blank')}
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem] cursor-pointer flex rounded-lg overflow-hidden"
+			class="h-[12rem] sm:ml-1  max-w-[21rem] relative sm:h-[15rem] sm:w-[26rem] sm:min-w-[26rem] cursor-pointer flex rounded-lg overflow-hidden"
 		>
 			<TutorLandingPage />
 			<div class="absolute top-0 left-0 w-full h-full z-[500] rounded-lg">
@@ -103,9 +106,9 @@
 		</div>
 	</div>
 
-	<div class="flex w-full gap-3 sm:gap-5 sm:flex-row flex-col ">
+	<div class="flex w-full gap-3 sm:gap-5 lg:flex-row flex-col ">
 		<div
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] relative sm:h-[15rem] sm:max-w-[26rem]  flex rounded-lg overflow-hidden "
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem]  sm:w-[26rem] sm:min-w-[26rem] relative sm:h-[15rem]  sm:max-w-[26rem]  flex rounded-lg overflow-hidden "
 		>
 			<img
 				src={indelvve}
@@ -134,7 +137,7 @@
 		</div>
 	</div>
 
-	<div class="flex w-full gap-3 sm:flex-row flex-col text-xl  ">
+	<div class="flex w-full gap-3 lg:flex-row flex-col text-xl  ">
 		I also designed and developed this portfolio site 🙂
 	</div>
 </div>
