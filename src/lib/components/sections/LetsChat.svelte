@@ -18,9 +18,7 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 </svelte:head>
 
-<div
-	class="mb-[80%] p-5 font-genSans mt-5 justify-center text-center  gap-5 flex flex-col "
->
+<div class="mb-[8rem] p-5 font-genSans mt-5 justify-center text-center  gap-5 flex flex-col ">
 	<div class="text-3xl font-semibold text-dark2">Let's chat</div>
 
 	<div class="text-xl text-dark2">
@@ -40,7 +38,9 @@
 	<button
 		class="bg-white mx-auto text-dark1  px-6 py-[0.2rem] items-center rounded-lg text-lg flex max-w-fit hover:bg-slate-100 hover:text-dark1  glow-effect"
 		data-glow-offset="true"
-		>Show Calendar
+		on:click={openCalendly}
+	>
+		Show Calendar
 		<svg class="glow-container">
 			<rect pathLength="100" stroke-linecap="round" class="glow-blur" rx="0.75rem" ry="0.75rem" />
 			<rect pathLength="100" stroke-linecap="round" class="glow-line" rx="0.75rem" ry="0.75rem" />
