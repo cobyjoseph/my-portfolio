@@ -35,7 +35,7 @@
 		<canvas
 			id="canvas3d"
 			bind:this={canvas}
-			class=" -ml-4 sm:ml-0 -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
+			class=" -ml-6 lg:-ml-16 xl:-ml-48 2xl:-ml-64 sm:ml-0 -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
 		/>
 	</div>
 </div>
