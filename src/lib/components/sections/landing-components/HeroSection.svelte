@@ -29,7 +29,9 @@
 			I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
 		</div>
 		<div class="flex items-center gap-2">
-			<div class=" flex text-lg relative   text-dark2 ">Like that one</div>
+			<div class=" flex text-lg relative   text-dark2 ">
+				Like that one. Click and drag it!
+			</div>
 
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +39,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-6 h-6 hidden sm:flex"
+				class="w-8 h-8 hidden sm:flex"
 				style="transform: translateX({$x}px);"
 			>
 				<path
