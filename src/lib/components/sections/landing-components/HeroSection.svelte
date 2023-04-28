@@ -30,10 +30,10 @@
 		</div>
 		<div class="flex items-center gap-2">
 			<div class=" flex text-lg relative sm:hidden  text-dark2 ">
-				Like that one below. Click and drag it!
+				Like the one I designed on that phone. Click and drag it!
 			</div>
 			<div class="hidden sm:block text-lg relative   text-dark2 ">
-				Like the one on that phone. Click and drag it!
+				Like the one I designed on that phone. Click and drag it!
 			</div>
 
 			<svg
@@ -58,7 +58,7 @@
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-6 h-6 sm:hidden flex self-end"
+				class="w-6 h-6 sm:hidden   flex "
 				style="transform: translateY({$x}px);"
 			>
 				<path
