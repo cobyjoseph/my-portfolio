@@ -26,9 +26,7 @@
 			</div>
 			<div class="text-base font-normal sm:mr-[25%] leading-[1.35rem]">
 				I designed and developed the Luminary Partners website with Sveltekit as an example site for
-				a boutique marketing consulting company. <a
-					href="https://danielarey.myportfolio.com/"
-					class="underline">Dani Rey</a
+				a boutique marketing consulting company. <a href="https://danielarey.myportfolio.com/" class="underline" target="_blank">Dani Rey</a
 				> assisted with the design.
 			</div>
 

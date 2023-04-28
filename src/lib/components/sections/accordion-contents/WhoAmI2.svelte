@@ -321,7 +321,7 @@
 								}}
 								class=" mt-2"
 							>
-								I played key role in analysis and design of transformative urban design and
+								In Auckland, I played key roles analysing and designing transformative urban design and
 								transport projects as a Sustainable Transport Planner.
 							</div>
 						</div>
@@ -621,7 +621,7 @@
 								}}
 								class=" mt-2"
 							>
-								I played key role in analysis and design of transformative urban design and
+								In Auckland, I played key roles analysing and designing transformative urban design and
 								transport projects as a Sustainable Transport Planner.
 							</div>
 						</div>
@@ -921,7 +921,7 @@
 								}}
 								class=" mt-2"
 							>
-								I played key role in analysis and design of transformative urban design and
+								In Auckland, I played key roles analysing and designing transformative urban design and
 								transport projects as a Sustainable Transport Planner.
 							</div>
 						</div>
