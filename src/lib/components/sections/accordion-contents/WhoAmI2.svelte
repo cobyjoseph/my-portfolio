@@ -44,7 +44,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class=" pointer-events-none "
+								class=" pointer-events-none rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 195"
@@ -119,7 +119,7 @@
 							class="flex flex-col relative     "
 						>
 							<svg
-								class="-mt-[11%]  "
+								class="-mt-[11%] rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 182"
@@ -196,7 +196,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[12%] pointer-events-none"
+								class="-mt-[12%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 887 195"
@@ -274,7 +274,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[13%] pointer-events-none"
+								class="-mt-[13%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 198"
@@ -348,7 +348,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class=" pointer-events-none "
+								class=" pointer-events-none rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 195"
@@ -423,7 +423,7 @@
 							class="flex flex-col relative     "
 						>
 							<svg
-								class="-mt-[12%]  "
+								class="-mt-[12%] rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 182"
@@ -498,7 +498,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[13%] pointer-events-none"
+								class="-mt-[13%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 887 195"
@@ -574,7 +574,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[14%] pointer-events-none"
+								class="-mt-[14%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 198"
@@ -648,7 +648,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class=" pointer-events-none "
+								class=" pointer-events-none rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 195"
@@ -723,7 +723,7 @@
 							class="flex flex-col relative     "
 						>
 							<svg
-								class="-mt-[12%]  "
+								class="-mt-[12%] rounded-b-lg "
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 182"
@@ -798,7 +798,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[13%] pointer-events-none"
+								class="-mt-[13%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 887 195"
@@ -874,7 +874,7 @@
 							class="flex flex-col relative    "
 						>
 							<svg
-								class="-mt-[14%] pointer-events-none"
+								class="-mt-[14%] pointer-events-none rounded-b-lg"
 								width="100%"
 								height="100%"
 								viewBox="0 0 888 198"
