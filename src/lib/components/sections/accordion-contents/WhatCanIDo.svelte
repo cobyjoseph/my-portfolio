@@ -1,4 +1,5 @@
 <script>
+	import ScrubOut from '$lib/components/ScrubOut.svelte';
 </script>
 
 <div class="font-satoshi -mt-6 mx-1 text-xl leading-[1.65rem] flex flex-col gap-3 ">
@@ -12,6 +13,8 @@
 			pages to those with complex data interactivity.
 		</div>
 	</div>
+
+	<!-- <ScrubOut /> -->
 
 	<div class="flex flex-col gap-1 font-normal ">
 		<ul>
