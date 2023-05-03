@@ -36,7 +36,7 @@
 				stroke="currentColor"
 				class="w-6 h-6"
 			>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+				<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
 			</svg>
 		{:else}
 			<svg
