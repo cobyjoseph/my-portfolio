@@ -29,10 +29,10 @@
 			I design and develop interactive sites for freelancers, businesses, and entrepreneurs.
 		</div>
 		<div class="flex items-center gap-2">
-			<div class=" flex text-lg relative lg:hidden  text-dark2 ">
+			<div class=" flex text-lg relative lg:hidden  text-dark2 leading-[1.35rem]">
 				Like the one I designed on that phone. Use two fingers to drag it around!
 			</div>
-			<div class="hidden lg:block text-lg relative   text-dark2 ">
+			<div class="hidden lg:block text-lg relative   text-dark2 leading-[1.35rem]">
 				Like the one I designed on that phone. Click and drag it!
 			</div>
 
