@@ -23,7 +23,7 @@
 		<HeroSection />
 	</div>
 	<div class="relative sm:col-span-3 sm:mt-[10rem]  ">
-		<div class="canvas-container">
+		<div class="canvas-container  overflow-hidden sm:overflow-visible">
 			{#if loading}
 				<div class="loading-indicator">
 					<div class="spinner" />
@@ -41,7 +41,7 @@
 <style>
 	.canvas-container {
 		position: relative;
-		overflow: hidden
+		
 	}
 
 	.loading-indicator {
