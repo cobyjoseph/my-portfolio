@@ -23,7 +23,7 @@
 		<HeroSection />
 	</div>
 	<div class="relative sm:col-span-3 sm:mt-[10rem]  ">
-		<div class="canvas-container">
+		<!-- <div class="canvas-container">
 			{#if loading}
 				<div class="loading-indicator">
 					<div class="spinner" />
@@ -34,7 +34,7 @@
 				bind:this={canvas}
 				class="transform -translate-x-[13rem] -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
 			/>
-		</div>
+		</div> -->
 	</div>
 </div>
 
