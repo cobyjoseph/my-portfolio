@@ -22,7 +22,7 @@
 	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:col-span-5">
 		<HeroSection />
 	</div>
-	<div class="relative sm:col-span-3 sm:mt-[10rem] outline ">
+	<div class="relative sm:col-span-3 sm:mt-[10rem]  ">
 		<div class="canvas-container">
 			{#if loading}
 				<div class="loading-indicator">
