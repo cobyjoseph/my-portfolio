@@ -22,7 +22,7 @@
 	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:col-span-5">
 		<HeroSection />
 	</div>
-	<div class="relative sm:col-span-3 sm:mt-[10rem]">
+	<div class="relative sm:col-span-3 sm:mt-[10rem] outline ">
 		<div class="canvas-container">
 			{#if loading}
 				<div class="loading-indicator">
@@ -32,7 +32,7 @@
 			<canvas
 				id="canvas3d"
 				bind:this={canvas}
-				class=" -ml-[13rem] 2xl:-ml-36 sm:ml-0 -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
+				class="transform -translate-x-[13rem] -my-[7rem] sm:my-0 sm:absolute sm:top-[55%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2"
 			/>
 		</div>
 	</div>
@@ -73,3 +73,6 @@
 		animation: spin 1s linear infinite;
 	}
 </style>
+
+
+<!-- old spline styel -ml-[13rem] 2xl:-ml-36 sm:ml-0  -->
