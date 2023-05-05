@@ -18,11 +18,11 @@
 
 
 
-<div class="flex flex-col gap-2 sm:grid-cols-8 sm:py-[30vh] sm:grid mt-5 sm:mt-0 ">
-	<div class="flex flex-col mt-[10%] sm:mt-0 sm:w-full sm:col-span-5">
+<div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
+	<div class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5 ">
 		<HeroSection />
 	</div>
-	<div class="relative sm:col-span-3 sm:mt-[10rem]  ">
+	<div class="relative sm:col-span-3   ">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
 			{#if loading}
 				<div class="loading-indicator">
@@ -32,7 +32,7 @@
 			<canvas
 				id="canvas3d"
 				bind:this={canvas}
-				class="transform -translate-x-[13rem] -my-[7rem] sm:my-0 sm:transform sm:-translate-x-[rem] sm:-translate-y-1/2"
+				class="transform -translate-x-[13rem] -my-[7rem] sm:my-0 sm:transform sm:-translate-x-[rem] "
 			/>
 		</div>
 	</div>

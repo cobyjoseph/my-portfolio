@@ -79,18 +79,7 @@
 		line-height: 1.2;
 	}
 
-	.blackButton {
-		background-image: url(kraftTone/button-black-v0.1.png);
-		background-position: center;
-		background-size: contain;
-		background-repeat: repeat;
-	}
 
-	.bgSmudge {
-		background-image: url(text/hero-text-bg-opaque-v0.1.png);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		margin-right: -4rem;
-	}
 </style>
+
+
