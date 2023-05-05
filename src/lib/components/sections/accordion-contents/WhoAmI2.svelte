@@ -16,11 +16,10 @@
 		/>
 
 		<p class="sm:hidden">
-			I work remotely as a freelance designer and developer. I'm currently in Buenos Aires. When not
-			working I'm probably playing soccer, a board game, or rock climbing.
+			I work as a freelance designer and developer for a range of clients. 
 		</p>
 		<div class="hidden justify-center   sm:flex sm:flex-col sm:gap-3">
-			<p>I work remotely as a freelance designer and developer. I'm currently in Buenos Aires.</p>
+			<p>I work as a freelance designer and developer for a range of clients.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
 	</div>
