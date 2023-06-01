@@ -16,7 +16,11 @@
 	});
 </script>
 
-
+{#if loading}
+	<div class="loading-overlay">
+		<div class="spinner" />
+	</div>
+{/if}
 
 <div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
 	<div class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5 ">
@@ -24,11 +28,6 @@
 	</div>
 	<div class="relative sm:col-span-3   ">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
-			{#if loading}
-				<div class="loading-indicator">
-					<div class="spinner" />
-				</div>
-			{/if}
 			<canvas
 				id="canvas3d"
 				bind:this={canvas}
@@ -39,9 +38,21 @@
 </div>
 
 <style>
+	.loading-overlay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.9);
+		z-index: 1000;
+	}
+
 	.canvas-container {
 		position: relative;
-		
 	}
 
 	.loading-indicator {
@@ -74,6 +85,3 @@
 		animation: spin 1s linear infinite;
 	}
 </style>
-
-
-<!-- old spline styel -ml-[13rem] 2xl:-ml-36 sm:ml-0  -->
