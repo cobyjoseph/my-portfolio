@@ -12,13 +12,15 @@
 	onMount(async () => {
 		const spline = new Application(canvas);
 		await spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
-		loading = false;
+		setTimeout(() => {
+			loading = false;
+		}, 3000); // Wait 3 seconds
 	});
 </script>
 
 {#if loading}
-	<div class="loading-overlay">
-		<div class="spinner" />
+	<div id="loading-overlay">
+		<div class="stripe" style="--delay: 0s" />
 	</div>
 {/if}
 
@@ -38,17 +40,31 @@
 </div>
 
 <style>
-	.loading-overlay {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	#loading-overlay {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100vh;
-		background-color: rgba(255, 255, 255, 0.9);
+		height: 100%;
+		overflow: hidden;
 		z-index: 1000;
+	}
+
+	.stripe {
+		position: absolute;
+		bottom: 90%; /* start position from the bottom */
+		left: -90%; /* start position offscreen from the left */
+		width: 50%; /* width larger than screen to cover full width when rotated */
+		height: 50%;
+		background-color: #6a5695;
+
+		animation: moveStripe 2s cubic-bezier(0.4, 0, 0.2, 1) var(--delay) forwards; /* animation */
+	}
+
+	@keyframes moveStripe {
+		to {
+			transform: translateX(100%) translateY(100%);
+		}
 	}
 
 	.canvas-container {
