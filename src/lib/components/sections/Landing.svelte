@@ -18,11 +18,7 @@
 	});
 </script>
 
-{#if loading}
-	<div id="loading-overlay">
-		<div class="stripe" style="--delay: 0s" />
-	</div>
-{/if}
+
 
 <div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
 	<div class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5 ">
