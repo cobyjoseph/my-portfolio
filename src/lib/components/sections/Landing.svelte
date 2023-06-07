@@ -12,24 +12,38 @@
 	onMount(async () => {
 		const spline = new Application(canvas);
 		await spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
-		setTimeout(() => {
-			loading = false;
-		}, 3000); // Wait 3 seconds
+		loading = false;
 	});
 </script>
 
+<svelte:head>
+	{#if loading}
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	{/if}
+</svelte:head>
 
+{#if loading}
+	<div id="loading-overlay">
+		<div class="loading-indicator">
+			<div class="spinner" />
+		</div>
+	</div>
+{/if}
 
 <div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
 	<div class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5 ">
 		<HeroSection />
 	</div>
-	<div class="relative sm:col-span-3   ">
+	<div class="relative sm:col-span-3">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
 			<canvas
 				id="canvas3d"
 				bind:this={canvas}
-				class="transform -translate-x-[13rem] -my-[7rem] sm:my-0 sm:transform sm:-translate-x-[rem] "
+				class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
 			/>
 		</div>
 	</div>
@@ -44,17 +58,6 @@
 		height: 100%;
 		overflow: hidden;
 		z-index: 1000;
-	}
-
-	.stripe {
-		position: absolute;
-		bottom: 90%; /* start position from the bottom */
-		left: -90%; /* start position offscreen from the left */
-		width: 50%; /* width larger than screen to cover full width when rotated */
-		height: 50%;
-		background-color: #6a5695;
-
-		animation: moveStripe 2s cubic-bezier(0.4, 0, 0.2, 1) var(--delay) forwards; /* animation */
 	}
 
 	@keyframes moveStripe {
@@ -76,7 +79,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 1);
 	}
 
 	@keyframes spin {
