@@ -34,10 +34,10 @@
 						shutter,
 						{ scaleY: 1 },
 						{
-							duration: 0.5,
+							duration: 0.4,
 							scaleY: 0,
 							transformOrigin: 'bottom',
-							delay: index * 0.05,
+							delay: index * 0.04,
 							onComplete: () => {
 								if (index === shutters.length - 1) {
 									// All animations completed, remove the overlay
@@ -47,7 +47,7 @@
 						}
 					);
 				});
-			}, 1500); // Add a 1-second delay before starting the animation
+			}, 1800); // Add a 1-second delay before starting the animation
 		}
 	});
 </script>
@@ -118,8 +118,8 @@
 		position: absolute;
 		left: 0;
 		width: 100%;
-		height: 5%; /* Change this */
-		background-color: rgba(162, 182, 220, 1);
+		height: calc(5% + 1px); /* Add 1px overlap */
+		background-color: rgba(101, 78, 52, 1);
 	}
 
 	.loading-indicator {
