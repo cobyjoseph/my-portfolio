@@ -1,36 +1,82 @@
 <script lang="ts">
-	import Menu from '$lib/components/sections/landing-components/Menu.svelte';
-	import BackgroundElements from '$lib/components/sections/landing-components/BackgroundElements.svelte';
-	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
-	import ExamplesSection from '$lib/components/sections/landing-components/ExamplesSection.svelte';
 	import { onMount } from 'svelte';
 	import { Application } from '@splinetool/runtime';
+	import { gsap } from 'gsap';
+	import { writable, get, derived } from 'svelte/store';
+	import { fade, fly } from 'svelte/transition';
+	import { sineIn, backIn, backOut } from 'svelte/easing';
+	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
 
 	let canvas;
-	let loading = true;
+	let loading = writable(true); // Loading state store
+	let splineLoaded = false; // Changed to a regular variable
+	let shutters = []; // Here we'll store the shutter elements
+	let mountWelcome = false;
 
 	onMount(async () => {
+		mountWelcome = !mountWelcome;
 		const spline = new Application(canvas);
 		await spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
-		loading = false;
+		splineLoaded = true;
+		shutters = Array.from(document.querySelectorAll('.shutter'));
+
+		if (splineLoaded) {
+			setTimeout(() => {
+				const welcomeText = document.getElementById('welcome-text');
+				gsap.to(welcomeText, {
+					opacity: 0,
+					duration: 0.5
+				});
+
+				shutters.forEach((shutter, index) => {
+					console.log('Animating shutter ' + index);
+					gsap.fromTo(
+						shutter,
+						{ scaleY: 1 },
+						{
+							duration: 0.5,
+							scaleY: 0,
+							transformOrigin: 'bottom',
+							delay: index * 0.05,
+							onComplete: () => {
+								if (index === shutters.length - 1) {
+									// All animations completed, remove the overlay
+									loading.set(false);
+								}
+							}
+						}
+					);
+				});
+			}, 1500); // Add a 1-second delay before starting the animation
+		}
 	});
 </script>
 
-<svelte:head>
-	{#if loading}
+<!-- <svelte:head>
+	{#if $loading}
 		<style>
 			body {
 				overflow: hidden;
 			}
 		</style>
 	{/if}
-</svelte:head>
+</svelte:head> -->
 
-{#if loading}
+{#if $loading && mountWelcome}
+	<div
+		in:fade={{ duration: 400 }}
+		id="welcome-text"
+		class="font-genSans font-medium welcome-text text-baseColor"
+	>
+		Welcome
+	</div>
+{/if}
+
+{#if $loading}
 	<div id="loading-overlay">
-		<div class="loading-indicator">
-			<div class="spinner" />
-		</div>
+		{#each Array(20) as _, i}
+			<div class="shutter" style="top: {i * 5}%" />
+		{/each}
 	</div>
 {/if}
 
@@ -56,30 +102,31 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		overflow: hidden;
-		z-index: 1000;
+		z-index: 950;
 	}
 
-	@keyframes moveStripe {
-		to {
-			transform: translateX(100%) translateY(100%);
-		}
+	.welcome-text {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 7rem;
+		z-index: 960;
 	}
 
-	.canvas-container {
-		position: relative;
+	.shutter {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 5%; /* Change this */
+		background-color: rgba(162, 182, 220, 1);
 	}
 
 	.loading-indicator {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(255, 255, 255, 1);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	@keyframes spin {
