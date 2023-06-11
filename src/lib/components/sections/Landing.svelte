@@ -47,7 +47,7 @@
 						}
 					);
 				});
-			}, 1800); // Add a 1-second delay before starting the animation
+			}, 1800);
 		}
 	});
 </script>
@@ -66,7 +66,7 @@
 	<div
 		in:fade={{ duration: 400 }}
 		id="welcome-text"
-		class="font-genSans font-medium welcome-text text-baseColor"
+		class="font-genSans text-[4rem] sm:text-[7rem] font-medium welcome-text text-baseColor"
 	>
 		Welcome
 	</div>
@@ -110,7 +110,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		font-size: 7rem;
 		z-index: 960;
 	}
 
