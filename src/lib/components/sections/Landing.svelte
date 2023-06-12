@@ -85,35 +85,47 @@
 </svelte:head>
 
 {#if $loading && mountWelcome}
-	<div id="welcome-text" class="welcome-text text-center font-genSans text-baseColor ">
-		<div
-			in:fly={{ duration: 300, y: 30, easing: backIn }}
-			class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
-		>
-			Welcome
-		</div>
-		<div class="flex gap-6">
+	<div
+		id="welcome-text"
+		class="welcome-text text-center font-genSans text-baseColor -mt-20 sm:mt-0 "
+	>
+		<div class="flex flex-col   ">
 			<div
-				in:fly={{ duration: 300, y: 30, delay: 200, easing: backIn }}
-				class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
+				in:fly={{ duration: 300, y: 30, easing: backIn }}
+				class="text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
-				to
+				Welcome
 			</div>
-			<div
-				in:fly={{ duration: 300, y: 30, delay: 400, easing: backIn }}
-				class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
-			>
-				my
+			<div class="flex gap-6 text-center">
+				<div
+					in:fly={{ duration: 300, y: 30, delay: 200, easing: backIn }}
+					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
+				>
+					to
+				</div>
+				<div
+					in:fly={{ duration: 300, y: 30, delay: 400, easing: backIn }}
+					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
+				>
+					my
+				</div>
+				<div
+					in:fly={{ duration: 300, y: 30, delay: 600, easing: backIn }}
+					class="hidden sm:block text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
+				>
+					portfolio
+				</div>
 			</div>
 			<div
 				in:fly={{ duration: 300, y: 30, delay: 600, easing: backIn }}
-				class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
+				class="block sm:hidden text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				portfolio
 			</div>
+			<div class="text-[0.7rem] sm:text-[0.9rem] lg:text-[1.2rem] xl:text-[1.4rem] mt-10 ">
+				It's loading...
+			</div>
 		</div>
-		<div class="text-[0.7rem] sm:text-[0.9rem] lg:text-[1.4rem] xl:text-[2rem] ">Loading...</div>
-
 	</div>
 {/if}
 
@@ -127,7 +139,7 @@
 
 <div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
 	<div
-		style="transition: opacity 1s; opacity: {$contentOpacity};"
+		style="transition: opacity 0.15s; opacity: {$contentOpacity};"
 		class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5  "
 	>
 		<HeroSection />
@@ -159,6 +171,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 960;
+		line-height: 1;
 	}
 
 	.shutter {
