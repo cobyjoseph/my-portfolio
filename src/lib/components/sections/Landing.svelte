@@ -3,8 +3,8 @@
 	import { Application } from '@splinetool/runtime';
 	import { gsap } from 'gsap';
 	import { writable, get, derived } from 'svelte/store';
-	import { fade, fly } from 'svelte/transition';
-	import { sineIn, backIn, backOut } from 'svelte/easing';
+	import { fade, fly, slide } from 'svelte/transition';
+	import { sineIn, backIn, backOut, bounceIn, cubicIn } from 'svelte/easing';
 	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
 
 	let canvas;
@@ -63,12 +63,37 @@
 </svelte:head> -->
 
 {#if $loading && mountWelcome}
-	<div
-		in:fade={{ duration: 400 }}
-		id="welcome-text"
-		class="font-genSans text-[4rem] sm:text-[7rem] font-medium welcome-text text-baseColor"
-	>
-		Welcome
+	<div id="welcome-text" class="welcome-text text-center">
+		<div
+			in:fly={{ duration: 100, y: 100, easing: backIn }}
+			id="welcome-text"
+			class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
+		>
+			Welcome
+		</div>
+		<div class="flex gap-6">
+			<div
+				in:fly={{ duration: 100, y: 100, delay: 200, easing: backIn }}
+				id="welcome-text"
+				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
+			>
+				to
+			</div>
+			<div
+				in:fly={{ duration: 100, y: 100, delay: 400, easing: backIn }}
+				id="welcome-text"
+				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
+			>
+				my
+			</div>
+			<div
+				in:fly={{ duration: 100, y: 100, delay: 600, easing: backIn }}
+				id="welcome-text"
+				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
+			>
+				portfolio
+			</div>
+		</div>
 	</div>
 {/if}
 
