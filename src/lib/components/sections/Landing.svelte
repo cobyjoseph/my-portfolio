@@ -13,6 +13,14 @@
 	let shutters = []; // Here we'll store the shutter elements
 	let mountWelcome = false;
 
+	// $: {
+	// 	if ($loading) {
+	// 		document.body.style.marginRight = '0px';
+	// 	} else {
+	// 		document.body.style.marginRight = '40px'; // change 15px to the width of your scrollbar
+	// 	}
+	// }
+
 	onMount(async () => {
 		mountWelcome = !mountWelcome;
 		const spline = new Application(canvas);
@@ -57,6 +65,19 @@
 		<style>
 			body {
 				overflow: hidden;
+				padding-right: 12px; /* Adjust to the width of your scrollbar */
+			}
+			@media (min-width: 1440px) {
+				body {
+					padding-right: 22px; /* Adjust to the width of your scrollbar for large screens */
+				}
+			}
+		</style>
+	{/if}
+	{#if !$loading}
+		<style>
+			body {
+				padding-right: 0px;
 			}
 		</style>
 	{/if}
