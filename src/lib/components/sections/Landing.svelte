@@ -52,7 +52,7 @@
 	});
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
 	{#if $loading}
 		<style>
 			body {
@@ -60,12 +60,12 @@
 			}
 		</style>
 	{/if}
-</svelte:head> -->
+</svelte:head>
 
 {#if $loading && mountWelcome}
-	<div id="welcome-text" class="welcome-text text-center">
+	<div id="welcome-text" class="welcome-text text-center ">
 		<div
-			in:fly={{ duration: 100, y: 100, easing: backIn }}
+			in:fly={{ duration: 300, y: 30, easing: backIn }}
 			id="welcome-text"
 			class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
 		>
@@ -73,21 +73,21 @@
 		</div>
 		<div class="flex gap-6">
 			<div
-				in:fly={{ duration: 100, y: 100, delay: 200, easing: backIn }}
+				in:fly={{ duration: 300, y: 30, delay: 200, easing: backIn }}
 				id="welcome-text"
 				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
 			>
 				to
 			</div>
 			<div
-				in:fly={{ duration: 100, y: 100, delay: 400, easing: backIn }}
+				in:fly={{ duration: 300, y: 30, delay: 400, easing: backIn }}
 				id="welcome-text"
 				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
 			>
 				my
 			</div>
 			<div
-				in:fly={{ duration: 100, y: 100, delay: 600, easing: backIn }}
+				in:fly={{ duration: 300, y: 30, delay: 600, easing: backIn }}
 				id="welcome-text"
 				class="font-genSans text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium  text-baseColor"
 			>
