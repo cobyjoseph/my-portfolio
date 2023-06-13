@@ -12,7 +12,8 @@
 	let splineLoaded = false; // Changed to a regular variable
 	let shutters = []; // Here we'll store the shutter elements
 	let mountWelcome = false;
-	let contentOpacity = derived(loading, ($loading) => ($loading ? 0 : 1));
+
+	// let contentOpacity = derived(loading, ($loading) => ($loading ? 0 : 1));
 
 	// $: {
 	// 	if ($loading) {
@@ -89,14 +90,14 @@
 		id="welcome-text"
 		class="welcome-text text-center font-genSans text-baseColor -mt-20 sm:mt-0 "
 	>
-		<div class="flex flex-col   ">
+		<div class="flex flex-col text-center  justify-center  ">
 			<div
 				in:fly={{ duration: 300, y: 30, easing: backIn }}
 				class="text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				Welcome
 			</div>
-			<div class="flex gap-6 text-center">
+			<div class="flex gap-6 text-center justify-center">
 				<div
 					in:fly={{ duration: 300, y: 30, delay: 200, easing: backIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
@@ -138,10 +139,7 @@
 {/if}
 
 <div class="flex flex-col gap-2 sm:grid-cols-8  sm:grid mt-5 sm:mt-0 ">
-	<div
-		style="transition: opacity 0.15s; opacity: {$contentOpacity};"
-		class="flex flex-col mt-[10%] sm:py-[20vh] sm:my-auto sm:w-full sm:col-span-5  "
-	>
+	<div class="flex flex-col mt-[10%] sm:pb-[12vh] sm:my-auto sm:w-full sm:col-span-5  ">
 		<HeroSection />
 	</div>
 	<div class="relative sm:col-span-3">

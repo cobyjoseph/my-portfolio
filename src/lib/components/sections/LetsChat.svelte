@@ -22,8 +22,7 @@
 	<div class="text-3xl font-semibold text-dark2">Let's chat</div>
 
 	<div class="text-xl text-dark2">
-		I'm looking for new projects. Have something you need built? Want to talk through an idea? Get
-		in touch. I'm friendly!
+		Have something you need built? Want to talk through an idea? Get in touch. I'm friendly!
 	</div>
 	<div>
 		<a href="mailto:coby.joseph@gmail.com" class="text-light1 font-bold text-2xl">

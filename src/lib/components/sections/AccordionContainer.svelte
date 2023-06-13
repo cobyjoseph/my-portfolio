@@ -19,24 +19,24 @@
 
 <div class="text-2xl gap-4 flex flex-col font-genSans font-semibold text-dark2 ">
 	<Accordion>
-		<AccordionSection title="Who am I?">
-			<WhoAmI2 />
-		</AccordionSection>
-
-		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
-
 		<AccordionSection title="What can I do for you?">
 			<WhatCanIDo />
+
 		</AccordionSection>
 
 		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
 		<AccordionSection title="Example projects">
 			<ExampleProjects />
+
 		</AccordionSection>
 
 		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 
-	
+		<AccordionSection title="Who am I?">
+			<WhoAmI2 />
+		</AccordionSection>
+
+		<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[2%]" />
 	</Accordion>
 </div>
