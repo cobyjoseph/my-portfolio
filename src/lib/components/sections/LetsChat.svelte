@@ -18,7 +18,9 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 </svelte:head>
 
-<div class="mb-[8rem] p-5 font-genSans mt-5 justify-center text-center  gap-5 flex flex-col ">
+<div
+	class="mb-[15rem] 2xl:mb-[18rem] p-5 font-genSans mt-[5rem] justify-center text-center  gap-5 flex flex-col "
+>
 	<div class="text-3xl font-semibold text-dark2">Let's chat</div>
 
 	<div class="text-xl text-dark2">
