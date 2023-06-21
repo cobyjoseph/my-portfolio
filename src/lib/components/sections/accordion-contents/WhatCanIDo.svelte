@@ -17,7 +17,7 @@
 		<div class="flex">
 			<div class="  mt-3 flex">Have an idea?</div>
 			{#if mounted}
-				<div class="flex svg-container -mt-1 ">
+				<div class="flex svg-container -mt-1  pt-1">
 					<svg
 						viewBox="200 0 1320 1080"
 						version="1.1"
@@ -48,6 +48,7 @@
 							/>
 						</g>
 						<path
+							class="light-lines"
 							transition:draw={{ duration: 8000, delay: 1200, easing: quintOut }}
 							id="light-lines"
 							serif:id="light-lines"
@@ -305,5 +306,23 @@
 	.svg-container svg {
 		width: 100%;
 		height: 100%;
+	}
+
+	.light-lines {
+		stroke-dasharray: 100; /* Replace with your path's actual length */
+		stroke-dashoffset: 100; /* Replace with your path's actual length */
+		animation: draw 2s infinite;
+	}
+
+	@keyframes draw {
+		0% {
+			stroke-dashoffset: 100; /* Replace with your path's actual length */
+		}
+		50% {
+			stroke-dashoffset: 0;
+		}
+		100% {
+			stroke-dashoffset: 100; /* Replace with your path's actual length */
+		}
 	}
 </style>

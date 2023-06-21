@@ -39,7 +39,6 @@
 				});
 
 				shutters.forEach((shutter, index) => {
-					console.log('Animating shutter ' + index);
 					gsap.fromTo(
 						shutter,
 						{ scaleY: 1 },
