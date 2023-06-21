@@ -20,7 +20,7 @@
 </script>
 
 <div class="flex items-center justify-center  w-full    ">
-	<div class=" font-genSans w-full  justify-center flex flex-col gap-2 ">
+	<div class=" font-genSans w-full  justify-center flex flex-col gap-3 ">
 		<div class="text-lg  font-satoshi text-dark2  flex">Hi. My name is:</div>
 		<div class="text-light1 font-bold largeClamp flex -mt-2">Coby Joseph</div>
 		<div
