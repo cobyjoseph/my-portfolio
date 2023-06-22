@@ -26,7 +26,10 @@
 			</div>
 			<div class="text-base font-normal sm:mr-[25%] leading-[1.35rem]">
 				I designed and developed the Luminary Partners website with Sveltekit as an example site for
-				a boutique marketing consulting company. <a href="https://danielarey.myportfolio.com/" class="underline" target="_blank">Dani Rey</a
+				a boutique marketing consulting company. <a
+					href="https://danielarey.myportfolio.com/"
+					class="underline"
+					target="_blank">Dani Rey</a
 				> assisted with the design.
 			</div>
 
@@ -70,11 +73,11 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-3  ">
+		<div class="flex flex-col gap-3 w-full">
 			<div class="flex gap-5 ">
 				<div class="text-2xl leading-6 ">Rise Tutoring</div>
 			</div>
-			<div class="text-base font-normal sm:mr-[25%] leading-[1.35rem] ">
+			<div class="text-base font-normal sm:mr-[25%] leading-[1.35rem]  ">
 				I designed and developed the Rise Tutoring website with Sveltekit as an example site for a
 				private tutoring company.
 			</div>
@@ -104,7 +107,7 @@
 		</div>
 	</div>
 
-	<div class="flex w-full gap-3 sm:gap-5 lg:flex-row flex-col ">
+	<div class="flex w-full lg:flex-row flex-col gap-3 sm:gap-5 font-genSans">
 		<div
 			class="h-[12rem] sm:ml-1 w-full max-w-[21rem]  sm:w-[26rem] sm:min-w-[26rem] relative sm:h-[15rem]  sm:max-w-[26rem]  flex rounded-lg overflow-hidden "
 		>

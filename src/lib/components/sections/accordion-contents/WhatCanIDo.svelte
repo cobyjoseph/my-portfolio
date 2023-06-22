@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="font-satoshi font-normal text-[1.35rem] xl:text-[1.5rem] 2xl:text-[1.6rem]  mx-1 text-xl leading-[1.7rem] 2xl:leading-[1.8rem] flex flex-col lg:grid lg:grid-cols-2  -mt-5  "
+	class="font-satoshi font-normal text-[1.35rem] xl:text-[1.4rem] 2xl:text-[1.6rem]  mx-1  leading-[1.7rem] 2xl:leading-[1.8rem] flex flex-col lg:grid lg:grid-cols-2  -mt-5  "
 >
 	<div class="flex  flex-col  gap-[1.2rem] xl:gap-[1.6rem] 2xl:gap-[1.8rem]">
 		<div class="flex">
@@ -126,7 +126,7 @@
 	</div>
 
 	{#if mounted}
-		<div class="-translate-x-4 sm:translate-x-0 flex svg-container2 mt-4 lg:mt-0 lg:mb-0 mb-6  ">
+		<div class="-translate-x-4 sm:translate-x-0 flex svg-container2 mt-4 lg:mt-0 lg:mb-0 mb-3  ">
 			<svg
 				viewBox="450 20 950 620"
 				version="1.1"

@@ -16,7 +16,7 @@
 		/>
 
 		<p class="sm:hidden">I work as a freelance designer and developer for a range of clients.</p>
-		<div class="hidden justify-center   sm:flex sm:flex-col sm:gap-3">
+		<div class="hidden justify-center   sm:flex sm:flex-col sm:gap-4">
 			<p>I work as a freelance designer and developer for a range of clients.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
