@@ -5,6 +5,7 @@
 	let isOpen = false;
 	const setActiveSection = getContext('setActiveSection');
 	const activeSection = getContext('activeSection');
+	let accordionElement; // added line
 
 	function toggleSection() {
 		if (title === $activeSection) {
@@ -16,11 +17,19 @@
 
 	// Reactive statement to update isOpen based on the activeSection store value
 	$: isOpen = $activeSection === title;
+	$: if (isOpen && accordionElement) {
+		setTimeout(() => {
+			const offsetTop = accordionElement.getBoundingClientRect().top;
+			const offsetHeight = window.innerHeight * 0.1; // 10vh
+			window.scrollBy({ top: offsetTop - offsetHeight, behavior: 'smooth' }); // Scroll with offset
+		}, 250);
+	}
 </script>
 
 <!-- <Globe /> -->
 
 <div
+	bind:this={accordionElement}
 	class="accordion-section -m-4 rounded-lg overflow-hidden px-[2%]"
 	class:hover:bg-shade2={!isOpen}
 	class:bg-shade2={isOpen}

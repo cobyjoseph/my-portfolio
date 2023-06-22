@@ -24,7 +24,7 @@
 
 	<div class="bg-dark2  h-[0.05rem] my-[0.4rem] mx-[20%]" />
 
-	<div>Keep scrolling to see some highlights of how I got here:</div>
+	<div>Scroll up and down to see some highlights of how I got here:</div>
 
 	<div class="sm:hidden">
 		<InView yThreshold="0" let:isVisible>
