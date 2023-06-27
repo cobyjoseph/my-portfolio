@@ -10,7 +10,7 @@
 <div class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3">
 	<div class=" sm:flex gap-2">
 		<img
-			src="kraftTone/headshot-sytled-dots-v0.2.png"
+			src="elements/headshot-sytled-dots-v0.2-compressed.png"
 			alt="headshot of me"
 			class="w-[4rem] h-[5.76rem] float-left mr-2 "
 		/>
