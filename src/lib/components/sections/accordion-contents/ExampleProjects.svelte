@@ -1,7 +1,8 @@
 <script lang="ts">
 	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
-	import indelvve from '$lib/assets/example-sites/indelvve-ui-v2.png';
+	// import indelvve from '$lib/assets/example-sites/indelvve-ui-v2.png';
 	import LuminaryLandingPage from '$lib/components/example-sites/luminaryPartners/LuminaryLandingPage.svelte';
+	import indelvve from '$lib/assets/videos/indelvve-demo-recording-clipped-v0.3.mp4';
 </script>
 
 <div class="flex flex-col gap-6  font-satoshi  ">
@@ -109,18 +110,19 @@
 
 	<div class="flex w-full lg:flex-row flex-col gap-3 sm:gap-5 font-genSans">
 		<div
-			class="h-[12rem] sm:ml-1 w-full max-w-[21rem]  sm:w-[26rem] sm:min-w-[26rem] relative sm:h-[15rem]  sm:max-w-[26rem]  flex rounded-lg overflow-hidden "
+			class="h-[12rem] sm:ml-1 w-full max-w-[21rem] sm:w-[26rem] sm:min-w-[26rem] relative sm:h-[15rem] sm:max-w-[26rem] rounded-lg overflow-hidden"
 		>
-			<img
+			<video
 				src={indelvve}
-				alt="mock of indelvve website"
-				class="scale-150 translate-y-[3rem] sm:translate-y-[3.8rem] translate-x-[0.5rem] sm:translate-x-[0.5rem]"
+				autoplay
+				muted
+				loop
+				style="width: 100%; height: 100%; object-fit: fill;"
 			/>
 		</div>
-
 		<div class="flex flex-col gap-3 ">
 			<div class="flex  ">
-				<div class="text-2xl leading-6 ">Indelvve</div>
+				<div class="text-2xl leading-6 ">Indelvve (under development)</div>
 			</div>
 			<div class="text-base font-normal leading-[1.35rem] sm:mr-[25%]">
 				Indelvve is a platform to make insights more accessible. Imagine Wikipedia, for current
