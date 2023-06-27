@@ -5,15 +5,12 @@
 	import { sineIn } from 'svelte/easing';
 	import InView from '$lib/components/InView.svelte';
 	import InView2 from '$lib/components/InView2.svelte';
+	import headshot from '$lib/assets/elements/headshot-sytled-dots-v0.2-compressed.png';
 </script>
 
 <div class="flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3">
 	<div class=" sm:flex gap-2">
-		<img
-			src="elements/headshot-sytled-dots-v0.2-compressed.png"
-			alt="headshot of me"
-			class="w-[4rem] h-[5.76rem] float-left mr-2 "
-		/>
+		<img src={headshot} alt="headshot of me" class="w-[4rem] h-[5.76rem] float-left mr-2 " />
 
 		<p class="sm:hidden">I work as a freelance designer and developer for a range of clients.</p>
 		<div class="hidden justify-center   sm:flex sm:flex-col sm:gap-4">
