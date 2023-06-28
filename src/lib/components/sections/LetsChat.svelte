@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div
-	class="mb-[15rem] 2xl:mb-[18rem] p-5 font-genSans mt-[5rem] justify-center text-center  gap-5 flex flex-col "
+	class="mb-[10rem]  p-5 font-genSans mt-[3rem] justify-center text-center  gap-5 flex flex-col "
 >
 	<div class="text-3xl font-semibold text-dark2">Let's chat</div>
 
