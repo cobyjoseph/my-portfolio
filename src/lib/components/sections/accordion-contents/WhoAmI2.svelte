@@ -19,16 +19,16 @@
 
 		setTimeout(() => {
 			mounted1 = true;
-		}, 100);
+		}, 0);
 		setTimeout(() => {
 			mounted2 = true;
-		}, 200);
+		}, 0);
 		setTimeout(() => {
 			mounted3 = true;
-		}, 300);
+		}, 0);
 		setTimeout(() => {
 			mounted4 = true;
-		}, 400);
+		}, 0);
 	});
 </script>
 
@@ -36,14 +36,14 @@
 	class="lg:hidden flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3"
 >
 	<div class=" flex gap-2">
-		<img src={headshot} alt="headshot of me" class="w-[5rem] h-[7.2rem]  float-left mr-2 " />
+		<img src={headshot} alt="headshot of me" class="w-[7rem] h-[10.08rem]  float-left mr-2 " />
 
-		<p class="lg:hidden m-auto">
-			I work as a freelance designer and developer for a range of clients.
+		<p class="lg:hidden justify-center ">
+			I am a freelance designer and developer for a range of clients.
 		</p>
 
 		<div class=" justify-center  hidden lg:flex  flex-col gap-4">
-			<p>I work as a freelance designer and developer for a range of clients.</p>
+			<p>I am a freelance designer and developer for a range of clients.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
 	</div>
@@ -57,7 +57,7 @@
 			<div class=" relative ">
 				<div class="flex flex-col relative    ">
 					<div
-						class="absolute bottom-0 right-4 place-self-end text-xl sm:text-2xl flex  font-satoshi gap-2 font-extrabold z-50 "
+						class="absolute bottom-0 left-4 place-self-end text-xl sm:text-2xl flex  font-satoshi gap-2 font-extrabold z-50 "
 					>
 						<div class="text-lg place-self-end font-semibold order-2 text-white">1992</div>
 						<div class=" text-white  ">SF Bay Area</div>
@@ -182,7 +182,7 @@
 			<div class=" relative ">
 				<div class="flex flex-col relative    ">
 					<div
-						class="absolute bottom-0 right-4 place-self-end text-xl sm:text-2xl flex  font-satoshi gap-2 font-extrabold z-50 "
+						class="absolute bottom-0 left-4 place-self-end text-xl sm:text-2xl flex  font-satoshi gap-2 font-extrabold z-50 "
 					>
 						<div class="text-lg place-self-end font-semibold order-2 text-white">2015-17</div>
 						<div class=" text-white ">Washington, DC</div>
@@ -231,9 +231,9 @@
 							}}
 							class=" mt-2"
 						>
-							In DC, I was a Project Manager for several $1m+ international development projects
-							simultaneously. I also led business development trips and organized conferences in
-							four countries.
+							In DC, I was a Project Manager overseeing several $1m+ international development
+							projects simultaneously. I also led business development trips and organized
+							conferences in four countries.
 						</div>
 					</div>
 				</div>
@@ -293,7 +293,7 @@
 							}}
 							class=" mt-2 "
 						>
-							In Auckland, I played key roles analysing and designing transformative urban design
+							In Auckland, I played key roles analyzing and designing transformative urban design
 							and transport projects as a Sustainable Transport Planner.
 						</div>
 					</div>
@@ -309,13 +309,13 @@
 <!-- -------------------------------------------------------------------- -->
 
 <div
-	class=" hidden lg:flex flex-col gap-4 font-normal  text-lg -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3"
+	class=" hidden lg:flex flex-col gap-4 font-normal  text-lg xl:text-xl 2xl:text-xl -mt-5 mx-2 leading-[1.55rem] text-dark2  pb-3"
 >
 	<div class=" flex gap-2">
-		<img src={headshot} alt="headshot of me" class="w-[4rem] h-[5.76rem] float-left mr-2 " />
+		<img src={headshot} alt="headshot of me" class="w-[7rem] h-[10.08rem] float-left mr-2 " />
 
-		<div class="hidden justify-center  lg:flex flex-col gap-4">
-			<p>I work as a freelance designer and developer for a range of clients.</p>
+		<div class="hidden justify-center lg:flex flex-col  gap-6">
+			<p>I am a freelance designer and developer for a range of clients.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
 	</div>
@@ -503,9 +503,9 @@
 							}}
 							class=" mt-2"
 						>
-							In DC, I was a Project Manager for several $1m+ international development projects
-							simultaneously. I also led business development trips and organized conferences in
-							four countries.
+							In DC, I was a Project Manager overseeing several $1m+ international development
+							projects simultaneously. I also led business development trips and organized
+							conferences in four countries.
 						</div>
 					</div>
 				</div>
@@ -565,7 +565,7 @@
 							}}
 							class=" mt-2 text-right"
 						>
-							In Auckland, I played key roles analysing and designing transformative urban design
+							In Auckland, I played key roles analyzing and designing transformative urban design
 							and transport projects as a Sustainable Transport Planner.
 						</div>
 					</div>

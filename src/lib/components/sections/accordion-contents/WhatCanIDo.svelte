@@ -60,17 +60,21 @@
 				</div>
 			{/if}
 		</div>
-		<div class="-mt-1">I can make it a reality.</div>
+		<div class="-mt-1">I can make it a reality. Don't know what you want? I can help with that, too.</div>
 		<div class="lg:flex hidden flex-col gap-[1.2rem] xl:gap-[1.6rem] 2xl:gap-[1.8rem]">
 			<div>
-				I design and code beautiful, functional user interfaces, that are fully <span
+				I design and code beautiful, functional user interfaces, that are <span
 					class="font-semibold">interactive</span
 				>,
 				<span class="font-semibold">custom</span>, and
-				<span class="font-semibold">blazingly quick</span>. I work on sites with a wide range of
+				<span class="font-semibold">blazingly quick</span>. I build sites with a wide range of
 				complexity, from static pages to those with intricate data interactivity.
 			</div>
-			<div>Don't know what you want? I can help with that, too.</div>
+			<div>
+				As a former Project Manager, I have an eye for detail and value clear
+				communication in all my work.
+			</div>
+
 			<div class="flex-col flex gap-3 xl:gap-5 mb-3 ">
 				<div>These are my favorite tools:</div>
 				<div class="flex flex-wrap gap-[0.5rem]">
@@ -233,14 +237,19 @@
 	{/if}
 	<div class="lg:hidden flex flex-col gap-5 mt-1">
 		<div>
-			I design and code beautiful, functional user interfaces, that are fully <span
+			I design and code beautiful, functional user interfaces, that are <span
 				class="font-semibold">interactive</span
 			>,
 			<span class="font-semibold">custom</span>, and
-			<span class="font-semibold">blazingly quick</span>. I work on sites with a wide range of
+			<span class="font-semibold">blazingly quick</span>. I build sites with a wide range of
 			complexity, from static pages to those with intricate data interactivity.
 		</div>
-		<div>Don't know what you want? I can help with that, too.</div>
+		<div>
+			As a former Project Manager, I have an eye for detail and value clear communication
+			in all my work.
+		</div>
+		
+
 		<div class="flex-col flex gap-5 mb-1">
 			<div>These are my favorite tools:</div>
 			<div class="flex flex-wrap gap-2">
