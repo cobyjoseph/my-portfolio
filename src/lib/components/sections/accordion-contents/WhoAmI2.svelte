@@ -38,12 +38,12 @@
 	<div class=" flex gap-2">
 		<img src={headshot} alt="headshot of me" class="w-[7rem] h-[10.08rem]  float-left mr-2 " />
 
-		<p class="lg:hidden justify-center ">
-			I am a freelance designer and developer for a range of clients.
+		<p class="sm:hidden flex flex-col justify-center ">
+			I am a freelance designer and developer working on a range of projects.
 		</p>
 
-		<div class=" justify-center  hidden lg:flex  flex-col gap-4">
-			<p>I am a freelance designer and developer for a range of clients.</p>
+		<div class=" justify-center  hidden sm:flex  flex-col gap-4">
+			<p>I am a freelance designer and developer working on a range of projects.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
 	</div>
@@ -315,7 +315,7 @@
 		<img src={headshot} alt="headshot of me" class="w-[7rem] h-[10.08rem] float-left mr-2 " />
 
 		<div class="hidden justify-center lg:flex flex-col  gap-6">
-			<p>I am a freelance designer and developer for a range of clients.</p>
+			<p>I am a freelance designer and developer working on a range of projects.</p>
 			<p>When not working I'm probably playing soccer, a board game, or rock climbing.</p>
 		</div>
 	</div>
