@@ -16,7 +16,7 @@
 	<title>Coby Joseph - Web Designer & Developer</title>
 	<meta
 		name="description"
-		content="Coby Joseph, a freelance web designer and developer, creates interactive, custom, and blazingly quick websites using HTML, CSS, Javascript, Svelte, and Sveltekit. With a background as a Project Manager, he values detail and clear communication in all his work."
+		content="Coby Joseph, a freelance web designer and developer, creates interactive, custom, and speedy websites using HTML, CSS, Javascript, Svelte, and Sveltekit. With a background as a Project Manager, he values detail and clear communication in all his work."
 	/>
 </svelte:head>
 

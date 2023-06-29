@@ -67,7 +67,7 @@
 					class="font-semibold">interactive</span
 				>,
 				<span class="font-semibold">custom</span>, and
-				<span class="font-semibold">blazingly quick</span>. I build sites with a wide range of
+				<span class="font-semibold">speedy</span>. I build sites with a wide range of
 				complexity, from static pages to those with intricate data interactivity.
 			</div>
 			<div>
@@ -241,7 +241,7 @@
 				class="font-semibold">interactive</span
 			>,
 			<span class="font-semibold">custom</span>, and
-			<span class="font-semibold">blazingly quick</span>. I build sites with a wide range of
+			<span class="font-semibold">speedy</span>. I build sites with a wide range of
 			complexity, from static pages to those with intricate data interactivity.
 		</div>
 		<div>
