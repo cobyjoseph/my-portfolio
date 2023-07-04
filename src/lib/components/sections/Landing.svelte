@@ -62,6 +62,12 @@
 </script>
 
 <svelte:head>
+	<link
+		rel="preload"
+		href="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
+		as="fetch"
+	/>
+
 	{#if $loading}
 		<style>
 			body {
