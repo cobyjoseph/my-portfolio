@@ -36,10 +36,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splinetool/runtime": "^0.9.293",
+		"@splinetool/runtime": "^0.9.376",
 		"@types/three": "^0.150.1",
 		"@vercel/analytics": "^1.0.0",
 		"gsap": "^3.12.1",
+		"spline": "^0.0.0",
 		"three": "^0.151.3",
 		"three-obj-mtl-loader": "^1.0.3"
 	}
