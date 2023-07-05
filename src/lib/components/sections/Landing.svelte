@@ -8,20 +8,10 @@
 	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
 
 	let canvas;
-	let loading = writable(true); // Loading state store
-	let splineLoaded = false; // Changed to a regular variable
-	let shutters = []; // Here we'll store the shutter elements
+	let loading = writable(true);
+	let splineLoaded = false;
+	let shutters = [];
 	let mountWelcome = false;
-
-	// let contentOpacity = derived(loading, ($loading) => ($loading ? 0 : 1));
-
-	// $: {
-	// 	if ($loading) {
-	// 		document.body.style.marginRight = '0px';
-	// 	} else {
-	// 		document.body.style.marginRight = '40px'; // change 15px to the width of your scrollbar
-	// 	}
-	// }
 
 	onMount(async () => {
 		mountWelcome = !mountWelcome;
@@ -56,7 +46,7 @@
 						}
 					);
 				});
-			}, 1800);
+			}, 200);
 		}
 	});
 </script>
@@ -72,11 +62,11 @@
 		<style>
 			body {
 				overflow: hidden;
-				padding-right: 12px; /* Adjust to the width of your scrollbar */
+				padding-right: 12px;
 			}
 			@media (min-width: 1440px) {
 				body {
-					padding-right: 22px; /* Adjust to the width of your scrollbar for large screens */
+					padding-right: 22px;
 				}
 			}
 		</style>
@@ -97,33 +87,33 @@
 	>
 		<div class="flex flex-col text-center  justify-center  ">
 			<div
-				in:fly={{ duration: 300, y: 30, easing: backIn }}
+				in:fly={{ duration: 200, y: 30, delay: 100, easing: backIn }}
 				class="text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				Welcome
 			</div>
 			<div class="flex gap-6 text-center justify-center">
 				<div
-					in:fly={{ duration: 300, y: 30, delay: 200, easing: backIn }}
+					in:fly={{ duration: 200, y: 30, delay: 200, easing: backIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					to
 				</div>
 				<div
-					in:fly={{ duration: 300, y: 30, delay: 400, easing: backIn }}
+					in:fly={{ duration: 200, y: 30, delay: 400, easing: backIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					my
 				</div>
 				<div
-					in:fly={{ duration: 300, y: 30, delay: 600, easing: backIn }}
+					in:fly={{ duration: 200, y: 30, delay: 600, easing: backIn }}
 					class="hidden sm:block text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					portfolio
 				</div>
 			</div>
 			<div
-				in:fly={{ duration: 300, y: 30, delay: 600, easing: backIn }}
+				in:fly={{ duration: 200, y: 30, delay: 600, easing: backIn }}
 				class="block sm:hidden text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				portfolio
@@ -185,13 +175,6 @@
 		background-color: rgba(101, 78, 52, 1);
 	}
 
-	.loading-indicator {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
 	@keyframes spin {
 		0% {
 			transform: rotate(0deg);
@@ -199,14 +182,5 @@
 		100% {
 			transform: rotate(360deg);
 		}
-	}
-
-	.spinner {
-		border: 4px solid rgba(0, 0, 0, 0.1);
-		width: 36px;
-		height: 36px;
-		border-radius: 50%;
-		border-top-color: #333;
-		animation: spin 1s linear infinite;
 	}
 </style>
