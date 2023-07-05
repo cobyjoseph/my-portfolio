@@ -41,10 +41,10 @@
 					shutter,
 					{ scaleY: 1 },
 					{
-						duration: 0.8,
+						duration: 0.5,
 						scaleY: 0,
 						transformOrigin: 'bottom',
-						delay: index * 0.05,
+						delay: index * 0.04,
 						onComplete: () => {
 							if (index === shutters.length - 1) {
 								// All animations completed, remove the overlay
@@ -55,8 +55,6 @@
 				);
 			});
 		}, 1500);
-
-	
 	});
 </script>
 
