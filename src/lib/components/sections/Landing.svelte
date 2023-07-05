@@ -4,9 +4,11 @@
 	import { gsap } from 'gsap';
 	import { writable, get, derived } from 'svelte/store';
 	import { fade, fly, slide } from 'svelte/transition';
-	import { sineIn, backIn, backOut, bounceIn, cubicIn } from 'svelte/easing';
+	import { sineIn, backIn, backOut, bounceIn, cubicIn, quadInOut, quintIn } from 'svelte/easing';
 	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
+	import fallBack from '$lib/assets/elements/fallback-image-spline-phone-v0.2.png';
 
+	let canvasFallBack;
 	let canvas;
 	let loading = writable(true);
 	let splineLoaded = false;
@@ -15,39 +17,46 @@
 
 	onMount(async () => {
 		mountWelcome = !mountWelcome;
+
+		const splineFallBack = new Application(canvasFallBack);
 		const spline = new Application(canvas);
-		await spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode');
-		splineLoaded = true;
+
+		splineFallBack.load('https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode');
+
+		spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode').then(() => {
+			splineLoaded = true;
+		});
+
 		shutters = Array.from(document.querySelectorAll('.shutter'));
 
-		if (splineLoaded) {
-			setTimeout(() => {
-				const welcomeText = document.getElementById('welcome-text');
-				gsap.to(welcomeText, {
-					opacity: 0,
-					duration: 0.5
-				});
+		setTimeout(() => {
+			const welcomeText = document.getElementById('welcome-text');
+			gsap.to(welcomeText, {
+				opacity: 0,
+				duration: 0.8
+			});
 
-				shutters.forEach((shutter, index) => {
-					gsap.fromTo(
-						shutter,
-						{ scaleY: 1 },
-						{
-							duration: 0.4,
-							scaleY: 0,
-							transformOrigin: 'bottom',
-							delay: index * 0.04,
-							onComplete: () => {
-								if (index === shutters.length - 1) {
-									// All animations completed, remove the overlay
-									loading.set(false);
-								}
+			shutters.forEach((shutter, index) => {
+				gsap.fromTo(
+					shutter,
+					{ scaleY: 1 },
+					{
+						duration: 0.8,
+						scaleY: 0,
+						transformOrigin: 'bottom',
+						delay: index * 0.05,
+						onComplete: () => {
+							if (index === shutters.length - 1) {
+								// All animations completed, remove the overlay
+								loading.set(false);
 							}
 						}
-					);
-				});
-			}, 200);
-		}
+					}
+				);
+			});
+		}, 1500);
+
+	
 	});
 </script>
 
@@ -87,40 +96,40 @@
 	>
 		<div class="flex flex-col text-center  justify-center  ">
 			<div
-				in:fly={{ duration: 200, y: 30, delay: 100, easing: backIn }}
+				in:fly={{ duration: 150, y: 25, delay: 100, easing: quintIn }}
 				class="text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				Welcome
 			</div>
 			<div class="flex gap-6 text-center justify-center">
 				<div
-					in:fly={{ duration: 200, y: 30, delay: 200, easing: backIn }}
+					in:fly={{ duration: 150, y: 25, delay: 260, easing: quintIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					to
 				</div>
 				<div
-					in:fly={{ duration: 200, y: 30, delay: 400, easing: backIn }}
+					in:fly={{ duration: 150, y: 25, delay: 400, easing: quintIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					my
 				</div>
 				<div
-					in:fly={{ duration: 200, y: 30, delay: 600, easing: backIn }}
+					in:fly={{ duration: 150, y: 25, delay: 600, easing: quintIn }}
 					class="hidden sm:block text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					portfolio
 				</div>
 			</div>
 			<div
-				in:fly={{ duration: 200, y: 30, delay: 600, easing: backIn }}
+				in:fly={{ duration: 150, y: 25, delay: 600, easing: quintIn }}
 				class="block sm:hidden text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				portfolio
 			</div>
-			<div class="text-[0.7rem] sm:text-[0.9rem] lg:text-[1.2rem] xl:text-[1.4rem] mt-10 ">
+			<!-- <div class="text-[0.7rem] sm:text-[0.9rem] lg:text-[1.2rem] xl:text-[1.4rem] mt-10 ">
 				It's loading...
-			</div>
+			</div> -->
 		</div>
 	</div>
 {/if}
@@ -140,9 +149,18 @@
 	<div class="relative sm:col-span-3">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
 			<canvas
+				bind:this={canvasFallBack}
+				class=" {!splineLoaded
+					? 'block'
+					: 'hidden'} transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem]  "
+			/>
+
+			<canvas
 				id="canvas3d"
 				bind:this={canvas}
-				class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
+				class=" {splineLoaded
+					? 'block'
+					: 'hidden'} transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem]  "
 			/>
 		</div>
 	</div>
