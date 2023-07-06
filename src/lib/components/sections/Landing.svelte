@@ -33,7 +33,7 @@
 			const welcomeText = document.getElementById('welcome-text');
 			gsap.to(welcomeText, {
 				opacity: 0,
-				duration: 0.8
+				duration: 0.5
 			});
 
 			shutters.forEach((shutter, index) => {
@@ -41,7 +41,7 @@
 					shutter,
 					{ scaleY: 1 },
 					{
-						duration: 0.5,
+						duration: 0.7,
 						scaleY: 0,
 						transformOrigin: 'bottom',
 						delay: index * 0.04,
@@ -54,7 +54,7 @@
 					}
 				);
 			});
-		}, 1500);
+		}, 1000);
 	});
 </script>
 
