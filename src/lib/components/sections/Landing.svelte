@@ -21,7 +21,6 @@
 
 		await import('https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js');
 
-
 		shutters = Array.from(document.querySelectorAll('.shutter'));
 
 		setTimeout(() => {
@@ -133,11 +132,16 @@
 	<div class="flex flex-col mt-[10%] sm:pb-[12vh] sm:my-auto sm:w-full sm:col-span-5  ">
 		<HeroSection />
 	</div>
-	<spline-viewer
+	<!-- <spline-viewer
 		class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
 		url="https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode"
+	/> -->
+	<spline-viewer
+		class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
+		hint
+		loading-anim
+		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/>
-
 </div>
 
 <style>
