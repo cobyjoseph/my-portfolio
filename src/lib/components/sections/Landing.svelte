@@ -137,7 +137,6 @@
 	/> -->
 	<spline-viewer
 		class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
-		hint
 		loading-anim
 		url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 	/>
