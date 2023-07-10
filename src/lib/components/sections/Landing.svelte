@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Application } from '@splinetool/runtime';
 	import { gsap } from 'gsap';
 	import { writable, get, derived } from 'svelte/store';
 	import { fade, fly, slide } from 'svelte/transition';
