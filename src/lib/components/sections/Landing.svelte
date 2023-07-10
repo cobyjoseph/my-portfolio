@@ -7,7 +7,7 @@
 	import { sineIn, backIn, backOut, bounceIn, cubicIn, quadInOut, quintIn } from 'svelte/easing';
 	import HeroSection from '$lib/components/sections/landing-components/HeroSection.svelte';
 	import fallBack from '$lib/assets/elements/fallback-image-spline-phone-v0.2.png';
-	import phone from '$lib/assets/videos/phone-portfolio-home-page.mp4';
+	import phone from '$lib/assets/videos/phone-video-2.webm';
 
 	let canvasFallBack;
 	let canvas;
@@ -19,14 +19,14 @@
 	onMount(async () => {
 		mountWelcome = !mountWelcome;
 
-		const splineFallBack = new Application(canvasFallBack);
-		const spline = new Application(canvas);
+		// const splineFallBack = new Application(canvasFallBack);
+		// const spline = new Application(canvas);
 
-		splineFallBack.load('https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode');
+		// splineFallBack.load('https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode');
 
-		spline.load('https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode').then(() => {
-			splineLoaded = true;
-		});
+		// spline.load('https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode').then(() => {
+		// 	splineLoaded = true;
+		// });
 
 		shutters = Array.from(document.querySelectorAll('.shutter'));
 
@@ -147,7 +147,7 @@
 	</div>
 	<div class="relative sm:col-span-3">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
-			<canvas
+			<!-- <canvas
 				bind:this={canvasFallBack}
 				class=" {!splineLoaded
 					? 'block'
@@ -160,8 +160,8 @@
 				class=" {splineLoaded
 					? 'block'
 					: 'hidden'} transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem]  "
-			/>
-			<!-- <video src={phone} autoplay loop muted playsinline /> -->
+			/> -->
+			<video src={phone} autoplay loop muted playsinline />
 		</div>
 	</div>
 </div>
