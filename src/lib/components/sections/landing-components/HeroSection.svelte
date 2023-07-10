@@ -30,10 +30,10 @@
 		</div>
 		<div class="flex items-center gap-2">
 			<div class=" flex text-lg relative lg:hidden  text-dark2 leading-[1.35rem]">
-				Like the one I built on that phone. Use two fingers to drag it around!
+				Like the one I built on that phone. 
 			</div>
 			<div class="hidden lg:block text-lg relative   text-dark2 leading-[1.35rem]">
-				Like the one I built on that phone. Click and drag it!
+				Like the one I built on that phone. 
 			</div>
 
 			<svg
