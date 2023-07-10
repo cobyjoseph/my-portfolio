@@ -138,7 +138,7 @@
 		url="https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode"
 	/> -->
 			<spline-viewer
-				class=" block transform -translate-x-[13rem] -my-[7rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
+				class=" block transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
 				loading-anim
 				url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 			/>
