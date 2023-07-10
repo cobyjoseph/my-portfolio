@@ -21,14 +21,6 @@
 
 		await import('https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js');
 
-		// const splineFallBack = new Application(canvasFallBack);
-		// const spline = new Application(canvas);
-
-		// splineFallBack.load('https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode');
-
-		// spline.load('https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode').then(() => {
-		// 	splineLoaded = true;
-		// });
 
 		shutters = Array.from(document.querySelectorAll('.shutter'));
 
@@ -62,12 +54,6 @@
 </script>
 
 <svelte:head>
-	<!-- <link
-		rel="preload"
-		href="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
-		as="fetch"
-	/> -->
-
 	{#if $loading}
 		<style>
 			body {
@@ -151,25 +137,7 @@
 		class="transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem] "
 		url="https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode"
 	/>
-	<div class="relative sm:col-span-3">
-		<div class="canvas-container  overflow-hidden sm:overflow-visible">
-			<!-- <canvas
-				bind:this={canvasFallBack}
-				class=" {!splineLoaded
-					? 'block'
-					: 'hidden'} transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem]  "
-			/>
 
-			<canvas
-				id="canvas3d"
-				bind:this={canvas}
-				class=" {splineLoaded
-					? 'block'
-					: 'hidden'} transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[rem]  "
-			/> -->
-			<!-- <video src={phone} autoplay loop muted playsinline /> -->
-		</div>
-	</div>
 </div>
 
 <style>
