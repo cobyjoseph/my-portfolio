@@ -27,7 +27,7 @@
 			const welcomeText = document.getElementById('welcome-text');
 			gsap.to(welcomeText, {
 				opacity: 0,
-				duration: 0.5
+				duration: 0.8
 			});
 
 			shutters.forEach((shutter, index) => {
@@ -35,10 +35,10 @@
 					shutter,
 					{ scaleY: 1 },
 					{
-						duration: 0.7,
+						duration: 1.0,
 						scaleY: 0,
 						transformOrigin: 'bottom',
-						delay: index * 0.04,
+						delay: index * 0.05,
 						onComplete: () => {
 							if (index === shutters.length - 1) {
 								// All animations completed, remove the overlay
@@ -48,13 +48,7 @@
 					}
 				);
 			});
-			setTimeout(() => {
-				splineLoaded = true;
-			}, 2500);
-			setTimeout(() => {
-				splineLoadedDelay = true;
-			}, 3100);
-		}, 1000);
+		}, 2500);
 	});
 </script>
 
@@ -84,37 +78,37 @@
 {#if $loading && mountWelcome}
 	<div
 		id="welcome-text"
-		class="welcome-text text-center font-genSans text-baseColor -mt-20 sm:mt-0 "
+		class="welcome-text text-center font-genSans text-baseColor -mt-20 sm:-mt-5 "
 	>
 		<div class="flex flex-col text-center  justify-center  ">
 			<div
-				in:fly={{ duration: 150, y: 25, delay: 100, easing: quintIn }}
+				in:fly={{ duration: 250, y: 30, delay: 100, easing: quintIn }}
 				class="text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				Welcome
 			</div>
 			<div class="flex gap-6 text-center justify-center">
 				<div
-					in:fly={{ duration: 150, y: 25, delay: 260, easing: quintIn }}
+					in:fly={{ duration: 250, y: 30, delay: 360, easing: quintIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					to
 				</div>
 				<div
-					in:fly={{ duration: 150, y: 25, delay: 400, easing: quintIn }}
+					in:fly={{ duration: 250, y: 30, delay: 500, easing: quintIn }}
 					class=" text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					my
 				</div>
 				<div
-					in:fly={{ duration: 150, y: 25, delay: 600, easing: quintIn }}
+					in:fly={{ duration: 250, y: 30, delay: 700, easing: quintIn }}
 					class="hidden sm:block text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 				>
 					portfolio
 				</div>
 			</div>
 			<div
-				in:fly={{ duration: 150, y: 25, delay: 600, easing: quintIn }}
+				in:fly={{ duration: 250, y: 30, delay: 700, easing: quintIn }}
 				class="block sm:hidden text-[4rem] sm:text-[5rem] lg:text-[6rem] xl:text-[7rem] font-medium "
 			>
 				portfolio
@@ -139,17 +133,10 @@
 		<HeroSection />
 	</div>
 	<div class="relative sm:col-span-3">
-		<div class="canvas-container  overflow-hidden sm:overflow-visible">
+		<div class=" overflow-hidden sm:overflow-visible">
 			<spline-viewer
-				class=" {!splineLoadedDelay
-					? 'block'
-					: 'hidden'} block transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
-				url="https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode"
-			/>
-			<spline-viewer
-				class=" {splineLoaded
-					? 'block'
-					: 'hidden'} transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
+				class=" block transform -translate-x-[13rem] -my-[4rem] sm:-my-[9rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
+				loading-anim
 				url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 			/>
 		</div>
@@ -157,6 +144,32 @@
 </div>
 
 <style>
+	#border-box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border: solid 2px #000;
+		box-sizing: border-box;
+		animation: drawBox 2s ease forwards;
+	}
+
+	@keyframes drawBox {
+		0% {
+			border-width: 0 0 2px 0;
+		}
+		25% {
+			border-width: 0 2px 2px 0;
+		}
+		50% {
+			border-width: 2px 2px 2px 0;
+		}
+		100% {
+			border-width: 2px;
+		}
+	}
+
 	#loading-overlay {
 		position: fixed;
 		top: 0;
