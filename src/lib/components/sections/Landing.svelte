@@ -133,13 +133,16 @@
 	</div>
 	<div class="relative sm:col-span-3">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
-			<!-- <spline-viewer
-		class=" block transform -translate-x-[13rem] -my-[7rem] sm:-my-[10rem] 2xl:-my-0 sm:transform sm:-translate-x-[0rem] "
-		url="https://prod.spline.design/q2YvnGD03CAKYsge/scene.splinecode"
-	/> -->
 			<spline-viewer
-				class=" block transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
-				loading-anim
+				class=" {!splineLoaded
+					? 'block'
+					: 'hidden'} block transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
+				url="https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode"
+			/>
+			<spline-viewer
+				class=" {splineLoaded
+					? 'block'
+					: 'hidden'} transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
 				url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 			/>
 		</div>
