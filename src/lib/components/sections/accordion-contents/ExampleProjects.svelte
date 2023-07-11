@@ -2,7 +2,7 @@
 	import TutorLandingPage from '$lib/components/example-sites/tutorSite/TutorLandingPage.svelte';
 	// import indelvve from '$lib/assets/example-sites/indelvve-ui-v2.png';
 	import LuminaryLandingPage from '$lib/components/example-sites/luminaryPartners/LuminaryLandingPage.svelte';
-	import indelvve from '$lib/assets/videos/Indelvve-Demo-Recording-Clipped-compressed-V0.4.mp4';
+	import indelvve from '$lib/assets/videos/Indelvve-Demo-Recording-Clipped-Spedup-Compressed-V0.5.mp4';
 </script>
 
 <div class="flex flex-col gap-6  font-satoshi  ">
