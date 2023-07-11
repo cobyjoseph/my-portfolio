@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-	{#if $loading}
+	<!-- {#if $loading}
 		<style>
 			body {
 				overflow: hidden;
@@ -72,7 +72,7 @@
 				padding-right: 0px;
 			}
 		</style>
-	{/if}
+	{/if} -->
 </svelte:head>
 
 {#if $loading && mountWelcome}
