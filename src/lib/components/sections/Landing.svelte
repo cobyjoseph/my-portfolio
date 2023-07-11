@@ -50,7 +50,7 @@
 			});
 			setTimeout(() => {
 				splineLoaded = true;
-			}, 3000);
+			}, 2500);
 			setTimeout(() => {
 				splineLoadedDelay = true;
 			}, 3100);
