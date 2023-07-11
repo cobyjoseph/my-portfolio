@@ -53,7 +53,8 @@
 </script>
 
 <svelte:head>
-	<!-- {#if $loading}
+	<!-- i'M PRETTY SURE THIS WAS JUST FOR THE SCROLL BAR DURING THE LOADING PHASE -->
+	{#if $loading}
 		<style>
 			body {
 				overflow: hidden;
@@ -72,7 +73,7 @@
 				padding-right: 0px;
 			}
 		</style>
-	{/if} -->
+	{/if}
 </svelte:head>
 
 {#if $loading && mountWelcome}
