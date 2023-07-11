@@ -12,6 +12,7 @@
 	let canvas;
 	let loading = writable(true);
 	let splineLoaded = false;
+	let splineLoadedDelay = false;
 	let shutters = [];
 	let mountWelcome = false;
 
@@ -50,6 +51,9 @@
 			setTimeout(() => {
 				splineLoaded = true;
 			}, 3000);
+			setTimeout(() => {
+				splineLoadedDelay = true;
+			}, 3100);
 		}, 1000);
 	});
 </script>
@@ -137,7 +141,7 @@
 	<div class="relative sm:col-span-3">
 		<div class="canvas-container  overflow-hidden sm:overflow-visible">
 			<spline-viewer
-				class=" {!splineLoaded
+				class=" {!splineLoadedDelay
 					? 'block'
 					: 'hidden'} block transform -translate-x-[13rem] -my-[4rem] sm:-my-[5rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
 				url="https://prod.spline.design/ddCkNmnpRHEuu1Wu/scene.splinecode"
