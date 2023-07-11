@@ -133,9 +133,9 @@
 		<HeroSection />
 	</div>
 	<div class="relative sm:col-span-3">
-		<div class=" overflow-hidden sm:overflow-visible">
+		<div class=" sm:overflow-visible">
 			<spline-viewer
-				class=" block transform -translate-x-[13rem] -my-[4rem] sm:-my-[9rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
+				class=" block transform -translate-x-[13rem] -my-[5.5rem] sm:-my-[9rem] 2xl:-my-0 sm:transform sm:-translate-x-[10rem] "
 				loading-anim
 				url="https://prod.spline.design/SXQN4KXEQXI0xDE8/scene.splinecode"
 			/>
